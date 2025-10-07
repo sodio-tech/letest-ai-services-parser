@@ -1,0 +1,1856 @@
+Date, SB,#, Scenario Description, Pre- Condition,Expected Results, Test Step ,Test data, User Role / Profile, Tester,Result,Comments,Remarks,Screenshots
+Dashboard - Home page (UPDATED),,,,,,,,,,,,,
+,,TC-001,To verify if the dashboard page loads successfully upon login.,"1. Open the ""https://app.nostro.co/sign-in"" URL.
+","The dashboard page should load successfully, displaying all widgets and data.","1. Open the ""https://app.nostro.co/sign-in"" URL.
+2. Observe the Homepage loads successfully.",,,Shivam,,,,
+,,TC-002,"To verify ""Webpage error 404"" occurs.","1. Open the ""https://app.nostro.co/sign-in"" URL.
+","Window should show an ""Webpage error"" message to user when the link is invali or incorrect.","1. Open the ""https://app.nostro.co/sign-in"" URL.
+2. Enter the invalid link or extra characters in th valid link.",,,Shivam,,,,
+,,TC-003,"To verify error message page ""Go back"" button.","1. Open the ""https://app.nostro.co/sign-in"" URL.
+","Clicking on the """"Go back"" button it should go to the sign in, which is previous page.","1. Open the ""https://app.nostro.co/sign-in "" URL.
+2. Enter the invalid link or extra characters in th valid link.
+3. Click on the ""Go back"" button.",,,Shivam,,,,
+,,TC-004,To verify server error page.,"1. Open the ""https://app.nostro.co/sign-in"" URL.
+","When the server connection is failed to connect/offline, it should display the ""Server is Offline"" page with kind message for user.","1. Open the ""https://app.nostro.co/sign-in "" URL.
+2. Verify the server is offline page is displayed.",,,Shivam,,,,
+,,TC-005,"To verify server error page ""Go back"" button.","1. Open the ""https://app.nostro.co/sign-in"" URL.
+","Clicking on the """"Go back"" button it should go to the sign in, which is previous page.","1. Open the ""https://app.nostro.co/sign-in "" URL.
+2. Enter extra characters in the url.
+3. Click on the ""Go back"" button.",,,Shivam,,,,
+,,TC-006,To verify Website under maintenance page.,"1. Open the ""https://app.nostro.co/sign-in"" URL.
+","When the site is under maintanance, it should the ""We're under maintenance, come back soon"" message on the page for the user.","1. Open the ""https://app.nostro.co/sign-in "" URL.
+2. Verify the Website under maintenace page appears.",,,Shivam,,,,
+,,TC-007,"To verify ""Welcome Page"" popup.","1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".",Welcome page popup should be diplayed in the Homepage for ongoing offer including discounts.,"1. Open the Homepage.
+2. Observe the popup is displayed.",,,Shivam,,,,
+,,TC-008,"To verify Popup iframe ""Close"" icon button is functional.","1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".","Clicking on the ""Close"" icon button, it should close popup iframe.","1. Open the Homepage.
+2. Click on ""Close"" icon button.",,,Shivam,,,,
+,,TC-009,"To verify ""Click here to Claim your discount"" button.","1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".","Clicking on the ""Click here to Claim your discount"" button, the mentioned % of the discount should be claimed in the user account.","1. Open the Homepage.
+2. Click on the ""Click here to Claim your discount"" button.",,,Shivam,,,,
+,,TC-010,To verify the visibility of all action buttons on the dashboard.,"1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".","All buttons should be visible, clickable, and display the correct labels.","1. Open the dashboard.
+2. Inspect all buttons.",,,Shivam,,,,
+,,TC-011,To verify if all widgets on the dashboard display correct data.,"1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".",All widgets should display accurate and updated data.,"1. Open the Homepage.
+2. Verify data in each widget.",,,Shivam,,,,
+,,TC-012,To verify the search functionality on the dashboard page.,"1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".",Relevant search results should appear.,"1. Enter a keyword in the search bar.
+2. Click the search icon or press Enter.",,,Shivam,,,,
+,,TC-013,To verify dashboard page performance with multiple users.,"1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".",The dashboard should function smoothly without crashes or slowdowns.,"1. Open the Homepage.
+2. Simulate multiple concurrent users accessing the homepage.
+3. Observe the performance.",,,Shivam,,,,
+,,TC-014,To verify the URL is secure (HTTPS).,"1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".","The dashboard should use HTTPS, ensuring secure communication.","1. Open the Homepage.
+2. Check the protocol.",,,Shivam,,,,
+,,TC-015,To verify data protection against SQL injection.,"1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".",The system should not execute unauthorized commands and should display a proper error message.,"1. Enter malicious input in the search field.
+2. Observe the behavior.",,,Shivam,,,,
+,,TC-016,To verify the data updates in real-time.,"1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".",Updated data should reflect on the dashboard in real-time or after a refresh.,"1. Make changes to the data via an external process.
+2. Refresh the homepage.",,,Shivam,,,,
+,,TC-017,"To verify ""Start A Challenge"" button.","1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".","Clicking on the ""Start A Challenge"" button, it should navigate to ""New Challenge"" page.","1. Open the Homepage.
+2. Click on the ""Start A Challenge"" button.",,,Shivam,,,,
+,,TC-018,"To verify ""October Competition"" iframe 'LEARN MORE' hyperlink.","1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".","Clicking on the ""LEARN MORE"" hyperlink, it should navigate to ""Competition"" page to display more information. ","1. Open the Homepage.
+2. Click on the ""LEARN MORE"" hyperlink.",,,Shivam,,,,
+,,TC-019,"To verify Join Nostro Premium ""Get Premium"" button is functional.","1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".","Clicking on the ""Get Premium"" button, it should premium package purchase page.","1. Open the Homepage.
+2. Click on the ""Get Premium"" button.",,,Shivam,,,,
+,,TC-020,"To verify the accuracy of data displayed in ""User Activity"" widget.","1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".",Data on the dashboard should be matched with the database records.,"1. Open the Homepage.
+2. Compare data displayed on the ""User Activity"" with the database.",,,Shivam,,,,
+Dashboard - Home (Trial Account - UPDATED),,,,,,,,,,,,,
+,,TC-021,To verify Profile section.,"1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".",User DP and name should be correct and trial should displayed in the tab.,"1. Open the Dashboard
+2. Verify the user account details",,,Shivam,,,,
+,,TC-022,To verify the Days count toggle.,"1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".",Days toggle bar should be automatically increase a single day count as the 24 hours time period is completed,"1. Open the Dashboard
+2. Observe the days count.",,,Shivam,,,,
+,,TC-023,To verify the Giveaway iframe.,"1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".","Clicking on the iframe, it should open the Giveaway page with correct account challenges to giveaway.","1. Open the Homepage.
+2. Click on the ""Giveaway"" iframe.",,,Shivam,,,,
+,,TC-024,To verify New MT5 Update iframe.,"1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".","Clicking on the iframe, it should open the New MT5 Update page with updating instructions.","1. Open the Homepage.
+2. Click on the ""New MT5 Update"" iframe.",,,Shivam,,,,
+,,TC-025,To verify Balance Amount Display.,"1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".",Account balance should be fetched and displayed accurately.,"1. Open the Dashboard page.
+2. Verify the Balance amount. ",,,Shivam,,,,
+,,TC-026,To verify Last Payout Amount Display.,"1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".",Last payout amount should be fetched and displayed accurately.,"1. Open the Dashboard page.
+2. Verify the last payout amount.",,,Shivam,,,,
+,,TC-027,To verify Upcoming Payout Amount Display.,"1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".",Upcoming payout amount should be displayed accurately.,"1. Open the Dashboard page.
+2. Observe the upcoming payout amount details.",,,Shivam,,,,
+,,TC-028,To verify Payout Stats Display.,"1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".","Payout statistics (weekly, monthly, account rate) should be fetched from the account previous payout records and displayed accurately.","1. Open the Dashboard page.
+2. Verify the payout stats with account records.",,,Shivam,,,,
+,,TC-029,To verify Highest Withdrawal Details Display.,"1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".",List of top withdrawal amounts should be based on the calculations account's withdrawal records and displayed accurately with appropriate user account.,"1. Open the Dashboard page.
+2. Verify the Highest withdrawals user list.",,,Shivam,,,,
+,,TC-030,To verify Activity Feed Display.,"1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".",Recent activities should be displayed with correct date and activity name in the activity feed toggle.,"1. Open the Dashboard page.
+2. Verify the recent activities of the account.",,,Shivam,,,,
+,,TC-031,To verify Page Layout,"1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".","Page layout should be aligned, organized, and easy to navigate for the user.","1. Open the Dashboard page.
+2. Check for proper alignment and readability of elements.",,,Shivam,,,,
+,,TC-032,To verify Data Loading Error ,"1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".",An error message should be displayed or contacting support.,"1. Open the Dashboard page.
+2. Simulate a scenario where data fails to load.",,,Shivam,,,,
+,,TC-033,To verify Refresh Data.,"1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".",Data should be refreshed and updated with the latest information as per their time criterias are completed.,"1. Open the Dashboard page.
+2. Refresh the dashboard.",,,Shivam,,,,
+,,TC-034,To verify Payout of the Week display.,"1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".",The top payouts should be calculated by system and displayed the maximum payouts user account in the list accurately.,"1. Open the Dashboard page.
+2. Verify the top payout of the week list.",,,Shivam,,,,
+,,TC-035,"To verify Challenge Performance ""view more"" button.","1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".","Clicking on the ""View more"" button, it should display more accounts.","1. Open the Dashboard page.
+2. Click on the ""View more"" buton.",,,Shivam,,,,
+,,TC-036,To verify Challenge Performance Growth chart dipslay.,"1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".","Growth chart should display the active selected account growth based on the filters of Drawdown, Balance and equity.","1. Open the Dashboard page.
+2. Select the active account.
+3. Observe and verify the chart is accurate.",,,Shivam,,,,
+,,TC-037,To verify Challenge Performance Growth chart iframe.,"1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".","Clicking on the Challenge Performance Growth chart, it should be opened the iframe displaying the chart in zoom in and statistics amounts accurate.","1. Open the Dashboard page.
+2. Click on the Growth Chart.",,,Shivam,,,,
+,,TC-038,"To verify PRO ACCOUNT ""Upgrade to PRO"" button.","1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".","Clicking on the ""Upgrade to PRO"" button, it should navigate to the Pro account upgradation process page.","1. Open the Dashboard page.
+2. Click on the ""Upgrade to PRO"" button.",,,Shivam,,,,
+Challenges: New Challenge,,,,,,,,,,,,,
+,,TC-039,"To verify ""Challenges"" option dropdown.","1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".","Clicking on the ""Challenges"" option in the user panel, it should open a dropdown showing two Challenges options. ","1. Open the dashboard page.
+2. Click on the ""Challenges"" option and observe two options.",,,Shivam,,,,
+,,TC-040,"To verify ""New Challenge"" option.","1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".","Selecting the ""New Challenge"" option, it should navigate to ""Start A Challenge"" page.","1. Open the dashboard page.
+2. Click on the ""New Challenge"" option.",,,Shivam,,,,
+Challenges:- New Challenge ->  Build A Challenge,,,,,,,,,,,,,
+,,TC-041,"To verify ""START YOUR CHALLENGE"" button.","1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".","Clicking the ""START YOUR CHALLENGE"" button, it should navigate to ""Checkout"" process page.","1. Open the dashboard page.
+2. Click on the ""New Challenge"" option.
+3. Click on the ""START YOUR CHALLENGE"" button.",,,Shivam,,,,
+,,TC-042,"To verify ""Evaluation Stages"" tiles option.","1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".","Selecting the different ""Evaluation Stages"", the ""Checkout Card"" statistics should be changes  as per the selected evaluation stage.","1. Open the dashboard page.
+2. Click on the ""New Challenge"" option.
+3. Click on the ""START YOUR CHALLENGE"" button.
+4. Select the Single option.
+5. Then select other stage option and observe the statistics.",,,Shivam,,,,
+,,TC-043,"To verify ""Checkout Card"" statistics.","1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".","Changing the evaluation stage, it should change the ""Checkout Card"" statistics and display the correct statistics for the selected  stage.","1. Open the dashboard page.
+2. Click on the ""New Challenge"" option.
+3. Click on the ""START YOUR CHALLENGE"" button.
+4. Select the Single option.
+5. Change the stage option and verify the statistics.",,,Shivam,,,,
+,,TC-044,"To verify Account Balance page ""Next"" button.","1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".","Clicking on the ""Next"" button, it should navigate to tab for selecting the investing amount.","1. Open the dashboard page.
+2. Click on the ""New Challenge"" option.
+3. Click on the ""START YOUR CHALLENGE"" button.
+4. Select the account option.
+5. Click on the ""Next"" button.",,,Shivam,,,,
+,,TC-045,"To verify Account Balance ""Checkout Card"" statistics.","1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".","Changing the investing amount, it should change the ""Checkout Card"" statistics and display the correct statistics for the selected amount.","1. Open the dashboard page.
+2. Click on the ""New Challenge"" option.
+3. Click on the ""START YOUR CHALLENGE"" button.
+4. Select the Single option.
+5.  Verify the statistics.",,,Shivam,,,,
+,,TC-046,"To verify Account Balance tab ""Next"" button.","1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".","Clicking on the ""Next"" button, it should navigate to tab for selecting the Account type page.","1. Open the dashboard page.
+2. Click on the ""New Challenge"" option.
+3. Click on the ""START YOUR CHALLENGE"" button.
+4. Select the Single option.
+5. Select the Account Balance.
+6. Click on the ""Next"" button.",,,Shivam,,,,
+,,TC-047,"To verify ""Account Type"" tiles.","1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".","Selecting the ""Account Type"", it should highlighted and ""Checkout card Statistics"" should be changed as per the selected account type.","1. Open the dashboard page.
+2. Click on the ""New Challenge"" option.
+3. Click on the ""START YOUR CHALLENGE"" button.
+4. Select the Single option.
+5. Select the Account Balance.
+6. Click on the ""Next"" button.
+7. Select the ""Account Type"".",,,Shivam,,,,
+,,TC-048,"To verify Account Type page ""Next"" button.","1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".","Clicking on the ""Next"" button, it should navigate to ""Confirm Order"" page.","1. Open the dashboard page.
+2. Click on the ""New Challenge"" option.
+3. Click on the ""START YOUR CHALLENGE"" button.
+4. Select the Single option.
+5. Select the Account Balance.
+6. Click on the ""Next"" button.
+7. Select the ""Account Type"".
+8. Click on the ""Next"" button.",,,Shivam,,,,
+,,TC-049,"To verify ""Confirm Order"" page fields accept valid inputs.","1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".",All the fields should be filled with the required criteria of individual field.,"1. Open the dashboard page.
+2. Click on the ""New Challenge"" option.
+3. Click on the ""START YOUR CHALLENGE"" button.
+4. Select the Single option.
+5. Select the Account Balance.
+6. Click on the ""Next"" button.
+7. Select the ""Account Type"".
+8. Click on the ""Next"" button.
+9. Enter the valid inputs in all the fields.",,,Shivam,,,,
+,,TC-050,"To verify ""Confirm Order"" page fields accept invalid inputs.","1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".","Field should not be filled with invalid inputs, it should the error message to fill the valid input in specific field with the required criteria of the field.","1. Open the dashboard page.
+2. Click on the ""New Challenge"" option.
+3. Click on the ""START YOUR CHALLENGE"" button.
+4. Select the Single option.
+5. Select the Account Balance.
+6. Click on the ""Next"" button.
+7. Select the ""Account Type"".
+8. Click on the ""Next"" button.
+9. Enter the invalid inputs in every and check the error message is displayed.",,,Shivam,,,,
+,,TC-051,"To verify ""Confirm Order"" page ""Country"" field.","1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".","Selecting the country from the dropdown list, it should be displyaed as selected country in the field.","1. Open the dashboard page.
+2. Click on the ""New Challenge"" option.
+3. Click on the ""START YOUR CHALLENGE"" button.
+4. Select the Single option.
+5. Select the Account Balance.
+6. Click on the ""Next"" button.
+7. Select the ""Account Type"".
+8. Click on the ""Next"" button.
+9. Enter the valid inputs in all the fields.
+10. Select the Country from dropdown list.",,,Shivam,,,,
+,,TC-052,"To verify Confirm Order page ""Next"" button.","1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".","Clicking on the ""Next"" button, it should navigate to ""Payment Gateway"" page.","1. Open the dashboard page.
+2. Click on the ""New Challenge"" option.
+3. Click on the ""START YOUR CHALLENGE"" button.
+4. Select the Single option.
+5. Select the Account Balance.
+6. Click on the ""Next"" button.
+7. Select the ""Account Type"".
+8. Click on the ""Next"" button.
+9. Enter the valid inputs in all the fields.
+10. Select the Country from dropdown list.
+11.Click on the ""Next"" button.",,,Shivam,,,,
+,,TC-053,"To verify ""Payment Gateway"" options.","1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".","Selecting the ""Payment Gateway"" option, it should be highighted and ""Radio"" button checked.","1. Open the dashboard page.
+2. Click on the ""New Challenge"" option.
+3. Click on the ""START YOUR CHALLENGE"" button.
+4. Select the Single option.
+5. Select the Account Balance.
+6. Click on the ""Next"" button.
+7. Select the ""Account Type"".
+8. Click on the ""Next"" button.
+9. Enter the valid inputs in all the fields.
+10. Select the Country from dropdown list.
+11. Click on the ""Next"" button.
+12. Select the ""Payment Gateway"" option.",,,Shivam,,,,
+,,TC-054,"To verify ""Payment Gateway"" page ""Next"" button.","1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".","Clicking on the ""Next"" button, it should navigate to the selected payment site.","1. Open the dashboard page.
+2. Click on the ""New Challenge"" option.
+3. Click on the ""START YOUR CHALLENGE"" button.
+4. Select the Single option.
+5. Select the Account Balance.
+6. Click on the ""Next"" button.
+7. Select the ""Account Type"".
+8. Click on the ""Next"" button.
+9. Enter the valid inputs in all the fields.
+10. Select the Country from dropdown list.
+11. Click on the ""Next"" button.
+12. Select the ""Payment Gateway"" option.
+13. Click on the ""Next"" button.",,,Shivam,,,,
+,,TC-055,To verify Valid Payment from Credit Card.,"1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".",Payment process should be successfull and confirmation page displayed with transaction details.,"1. Open the dashboard page.
+2. Click on the ""New Challenge"" option.
+3. Click on the ""START YOUR CHALLENGE"" button.
+4. Select the Single option.
+5. Select the Account Balance.
+6. Click on the ""Next"" button.
+7. Select the ""Account Type"".
+8. Click on the ""Next"" button.
+9. Enter the valid inputs in all the fields.
+10. Select the Country from dropdown list.
+11. Click on the ""Next"" button.
+12. Select the ""Paypal"" option.
+13. Click on the ""Next"" button.
+14. Enter valid credit card details, billing information, and amount.",,,Shivam,,,,
+,,TC-056,To verify valid discount code.,"1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".",Entering valid discount code which will be getting from the social media channels should be applicable for as per offer disount amount.,"1. Open the dashboard page.
+2. Click on the ""New Challenge"" option.
+3. Click on the ""START YOUR CHALLENGE"" button.
+4. Select the Single option.
+5. Select the Account Balance.
+6. Click on the ""Next"" button.
+7. Select the ""Account Type"".
+8. Click on the ""Next"" button.
+9. Enter the valid inputs in all the fields.
+10. Select the Country from dropdown list.
+11. Click on the ""Next"" button.
+12. Select the ""Paypal"" option.
+13. Enter the valid discount code.
+",,,Shivam,,,,
+,,TC-057,"To verify Discount code ""Apply"" button.","1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".","Clicing on the ""Apply"" button, it should be applicable and subtract from the amount balance to pay.","1. Open the dashboard page.
+2. Click on the ""New Challenge"" option.
+3. Click on the ""START YOUR CHALLENGE"" button.
+4. Select the Single option.
+5. Select the Account Balance.
+6. Click on the ""Next"" button.
+7. Select the ""Account Type"".
+8. Click on the ""Next"" button.
+9. Enter the valid inputs in all the fields.
+10. Select the Country from dropdown list.
+11. Click on the ""Next"" button.
+12. Select the ""Paypal"" option.
+13. Enter the valid discount code.
+14. Click on the ""Apply"" button.",,,Shivam,,,,
+,,TC-058,To verify Valid Payment from Debit Card.,"1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".",Payment process should be successfull and confirmation page displayed with transaction details.,"1. Open the dashboard page.
+2. Click on the ""New Challenge"" option.
+3. Click on the ""START YOUR CHALLENGE"" button.
+4. Select the Single option.
+5. Select the Account Balance.
+6. Click on the ""Next"" button.
+7. Select the """"Account Type"""".
+8. Click on the ""Next"" button.
+9. Enter the valid inputs in all the fields.
+10. Select the Country from dropdown list.
+11. Click on the ""Next"" button.
+12. Select the ""Paypal"" option.
+13. Click on the ""Next"" button.
+14. Enter valid debit card details, billing information, and amount.",,,Shivam,,,,
+,,TC-059,To verify Valid Payment from PayPal Account.,"1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".
+2. Paypal Account.",Payment process should be successfull and confirmation page displayed with transaction details.,"1. Open the dashboard page.
+2. Click on the ""New Challenge"" option.
+3. Click on the ""START YOUR CHALLENGE"" button.
+4. Select the Single option.
+5. Select the Account Balance.
+6. Click on the ""Next"" button.
+7. Select the ""Account Type"".
+8. Click on the ""Next"" button.
+9. Enter the valid inputs in all the fields.
+10. Select the Country from dropdown list.
+11. Click on the ""Next"" button.
+12. Select the ""Paypal"" option.
+13. Click on the ""Next"" button.
+14. Log in with PayPal account, authorize payment.",,,Shivam,,,,
+,,TC-060,To verify Invalid Card Number.,"1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".","Error message should be displayed: ""Your card isn't valid. Update the number and try again.""","1. Open the dashboard page.
+2. Click on the ""New Challenge"" option.
+3. Click on the ""START YOUR CHALLENGE"" button.
+4. Select the Single option.
+5. Select the Account Balance.
+6. Click on the ""Next"" button.
+7. Select the ""Account Type"".
+8. Click on the ""Next"" button.
+9. Enter the valid inputs in all the fields.
+10. Select the Country from dropdown list.
+11. Click on the ""Next"" button.
+12. Select the ""Paypal"" option.
+13. Click on the ""Next"" button.
+14. Enter invalid card number such as incorrect length, invalid digits.",,,Shivam,,,,
+,,TC-061,To verify Expired Card.,"1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".","Error message should be displayed: ""Update your card's expiry date or Your card is expired.""","1. Open the dashboard page.
+2. Click on the ""New Challenge"" option.
+3. Click on the ""START YOUR CHALLENGE"" button.
+4. Select the Single option.
+5. Select the Account Balance.
+6. Click on the ""Next"" button.
+7. Select the ""Account Type"".
+8. Click on the ""Next"" button.
+9. Enter the valid inputs in all the fields.
+10. Select the Country from dropdown list.
+11. Click on the ""Next"" button.
+12. Select the ""Paypal"" option.
+13. Click on the ""Next"" button.
+14. Enter expired card details.",,,Shivam,,,,
+,,TC-062,To verify fields left empty.,"1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".","Error message should be displayed: ""Please fill in all required fields.""","1. Open the dashboard page.
+2. Click on the ""New Challenge"" option.
+3. Click on the ""START YOUR CHALLENGE"" button.
+4. Select the Single option.
+5. Select the Account Balance.
+6. Click on the ""Next"" button.
+7. Select the ""Account Type"".
+8. Click on the ""Next"" button.
+9. Enter the valid inputs in all the fields.
+10. Select the Country from dropdown list.
+11. Click on the ""Next"" button.
+12. Select the ""Paypal"" option.
+13. Click on the ""Next"" button.
+14. Leave required fields empty such as card number, CVV, billing address.",,,Shivam,,,,
+,,TC-063,To verify Incorrect Email Format.,"1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".","Error message should be displayed: ""Your email address isn't valid. Update the email address and try again.""","1. Open the dashboard page.
+2. Click on the ""New Challenge"" option.
+3. Click on the ""START YOUR CHALLENGE"" button.
+4. Select the Single option.
+5. Select the Account Balance.
+6. Click on the ""Next"" button.
+7. Select the ""Account Type"".
+8. Click on the ""Next"" button.
+9. Enter the valid inputs in all the fields.
+10. Select the Country from dropdown list.
+11. Click on the ""Next"" button.
+12. Select the ""Paypal"" option.
+13. Click on the ""Next"" button.
+14. Enter invalid email address format.",,,Shivam,,,,
+,,TC-064,To verify Cancel Payment.,"1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".","Clicking on the ""Cancel and return to merchant"" hyperlink, Payment should be canceled and user should returned to the previous page without any charges.","1. Open the dashboard page.
+2. Click on the ""New Challenge"" option.
+3. Click on the ""START YOUR CHALLENGE"" button.
+4. Select the Single option.
+5. Select the Account Balance.
+6. Click on the ""Next"" button.
+7. Select the ""Account Type"".
+8. Click on the ""Next"" button.
+9. Enter the valid inputs in all the fields.
+10. Select the Country from dropdown list.
+11. Click on the ""Next"" button.
+12. Select the ""Paypal"" option.
+13. Click on the ""Next"" button.
+14. Click ""Cancel"" button during payment process.",,,Shivam,,,,
+,,TC-065,To verify Security Features displaying.,"1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".",Security features should be present and displayed prominently.,"1. Open the dashboard page.
+2. Click on the ""New Challenge"" option.
+3. Click on the ""START YOUR CHALLENGE"" button.
+4. Select the Single option.
+5. Select the Account Balance.
+6. Click on the ""Next"" button.
+7. Select the ""Account Type"".
+8. Click on the ""Next"" button.
+9. Enter the valid inputs in all the fields.
+10. Select the Country from dropdown list.
+11. Click on the ""Next"" button.
+12. Select the ""Paypal"" option.
+13. Click on the ""Next"" button.
+14. Verify presence of security features like secure payment gateway logo and security badges.",,,Shivam,,,,
+,,TC-066,To verify Error Handling messages.,"1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".","Error messages should be clear, concise, and provide helpful guidance to the user.","1. Open the dashboard page.
+2. Click on the ""New Challenge"" option.
+3. Click on the ""START YOUR CHALLENGE"" button.
+4. Select the Single option.
+5. Select the Account Balance.
+6. Click on the ""Next"" button.
+7. Select the ""Account Type"".
+8. Click on the ""Next"" button.
+9. Enter the valid inputs in all the fields.
+10. Select the Country from dropdown list.
+11. Click on the ""Next"" button.
+12. Select the ""Paypal"" option.
+13. Click on the ""Next"" button.
+14. Check for clear and informative error messages.",,,Shivam,,,,
+,,TC-067,To verify Privacy Statement checkbox.,"1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".","Error message should be displayed ""Please confirm that you have read and agree to the PayPal Terms and Conditions"". without checking the Privacy Statement checkbox.","1. Open the dashboard page.
+2. Click on the ""New Challenge"" option.
+3. Click on the ""START YOUR CHALLENGE"" button.
+4. Select the Single option.
+5. Select the Account Balance.
+6. Click on the ""Next"" button.
+7. Select the ""Account Type"".
+8. Click on the ""Next"" button.
+9. Enter the valid inputs in all the fields.
+10. Select the Country from dropdown list.
+11. Click on the ""Next"" button.
+12. Select the ""Paypal"" option.
+13. Click on the ""Next"" button.
+14. Fill all the valid details in the fields. 
+15. Keep the checkbox unchecked and cllick ""Continue"" button.",,,Shivam,,,,
+,,TC-068,To verify Tazapay payment option.,"1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".","Selecting the Tazapay and and click ""Next"" button, it should ""Tazapay Payment"" page.","1. Open the dashboard page.
+2. Click on the ""New Challenge"" option.
+3. Click on the ""START YOUR CHALLENGE"" button.
+4. Select the Single option.
+5. Select the Account Balance.
+6. Click on the ""Next"" button.
+7. Select the ""Account Type"".
+8. Click on the ""Next"" button.
+9. Enter the valid inputs in all the fields.
+10. Select the Country from dropdown list.
+11. Click on the ""Next"" button.
+12. Select the ""Tazapay"" option.
+13. Click on the ""Next"" button.",,,Shivam,,,,
+,,TC-069,To verify valid discount code.,"1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".",Entering valid discount code which will be getting from the social media channels should be applicable for as per offer disount amount.,"1. Open the dashboard page.
+2. Click on the ""New Challenge"" option.
+3. Click on the ""START YOUR CHALLENGE"" button.
+4. Select the Single option.
+5. Select the Account Balance.
+6. Click on the ""Next"" button.
+7. Select the ""Account Type"".
+8. Click on the ""Next"" button.
+9. Enter the valid inputs in all the fields.
+10. Select the Country from dropdown list.
+11. Click on the ""Next"" button.
+12. Select the ""Paypal"" option.
+13. Enter the valid discount code.
+",,,Shivam,,,,
+,,TC-070,"To verify Discount code ""Apply"" button.","1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".","Clicing on the ""Apply"" button, it should be applicable and subtract from the amount balance to pay.","1. Open the dashboard page.
+2. Click on the ""New Challenge"" option.
+3. Click on the ""START YOUR CHALLENGE"" button.
+4. Select the Single option.
+5. Select the Account Balance.
+6. Click on the ""Next"" button.
+7. Select the ""Account Type"".
+8. Click on the ""Next"" button.
+9. Enter the valid inputs in all the fields.
+10. Select the Country from dropdown list.
+11. Click on the ""Next"" button.
+12. Select the ""Paypal"" option.
+13. Enter the valid discount code.
+14. Click on the ""Apply"" button.",,,Shivam,,,,
+,,TC-071,To verify Valid Payment from Credit Card.,"1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".",Payment process should be successful and confirmation page should be displayed with transaction details.,"1. Open the dashboard page.
+2. Click on the ""New Challenge"" option.
+3. Click on the ""START YOUR CHALLENGE"" button.
+4. Select the Single option.
+5. Select the Account Balance.
+6. Click on the ""Next"" button.
+7. Select the ""Account Type"".
+8. Click on the ""Next"" button.
+9. Enter the valid inputs in all the fields.
+10. Select the Country from dropdown list.
+11. Click on the ""Next"" button.
+12. Select the ""Tazapay"" option.
+13. Click on the ""Next"" button.
+14. Enter valid credit card details.
+15. Click on the ""Pay"" button with selected amount.",,,Shivam,,,,
+,,TC-072,To verify invalid Credit Card number.,"1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".","Entering Invalid credit card number should show an error message ""We currently support only Visa or Mastercard for this transaction"" and field should be highlighted in red color.","1. Open the dashboard page.
+2. Click on the ""New Challenge"" option.
+3. Click on the ""START YOUR CHALLENGE"" button.
+4. Select the Single option.
+5. Select the Account Balance.
+6. Click on the ""Next"" button.
+7. Select the ""Account Type"".
+8. Click on the ""Next"" button.
+9. Enter the valid inputs in all the fields.
+10. Select the Country from dropdown list.
+11. Click on the ""Next"" button.
+12. Select the ""Tazapay"" option.
+13. Click on the ""Next"" button.
+14. Enter invalid credit card number.",,,Shivam,,,,
+,,TC-073,To verify Expired Card.,"1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".","Error message should be displayed: ""Enter valid expiry date"" and field should be highlighted in red color..","1. Open the dashboard page.
+2. Click on the ""New Challenge"" option.
+3. Click on the ""START YOUR CHALLENGE"" button.
+4. Select the Single option.
+5. Select the Account Balance.
+6. Click on the ""Next"" button.
+7. Select the ""Account Type"".
+8. Click on the ""Next"" button.
+9. Enter the valid inputs in all the fields.
+10. Select the Country from dropdown list.
+11. Click on the ""Next"" button.
+12. Select the ""Tazapay"" option.
+13. Click on the ""Next"" button.
+14. Enter valid credit card number.
+15. Enter invalid expiry date",,,Shivam,,,,
+,,TC-074,To verify invalid CVV,"1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".","Invalid CVV should show error message ""Enter valid CVV"".","1. Open the dashboard page.
+2. Click on the ""New Challenge"" option.
+3. Click on the ""START YOUR CHALLENGE"" button.
+4. Select the Single option.
+5. Select the Account Balance.
+6. Click on the ""Next"" button.
+7. Select the ""Account Type"".
+8. Click on the ""Next"" button.
+9. Enter the valid inputs in all the fields.
+10. Select the Country from dropdown list.
+11. Click on the ""Next"" button.
+12. Select the ""Tazapay"" option.
+13. Click on the ""Next"" button.
+14. Enter valid credit card number.
+15. Enter valid expiry date.
+16. Enter invalid CVV.",,,Shivam,,,,
+,,TC-075,To verify Name on Card left empty.,"1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".","Empty field should show an error message ""Enter card holder name"".","1. Open the dashboard page.
+2. Click on the ""New Challenge"" option.
+3. Click on the ""START YOUR CHALLENGE"" button.
+4. Select the Single option.
+5. Select the Account Balance.
+6. Click on the ""Next"" button.
+7. Select the ""Account Type"".
+8. Click on the ""Next"" button.
+9. Enter the valid inputs in all the fields.
+10. Select the Country from dropdown list.
+11. Click on the ""Next"" button.
+12. Select the ""Tazapay"" option.
+13. Click on the ""Next"" button.
+14. Enter valid credit card number.
+15. Enter valid expiry date.
+16. Enter valid CVV.
+17. Enter valid Card holder name.",,,Shivam,,,,
+,,TC-076,"To verify ""Proceed"" button is enable.","1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".","Filling all the fields with valid inputs, ""Proceed"" button should be enabled to click for completing the transaction process.  ","1. Open the dashboard page.
+2. Click on the ""New Challenge"" option.
+3. Click on the ""START YOUR CHALLENGE"" button.
+4. Select the Single option.
+5. Select the Account Balance.
+6. Click on the ""Next"" button.
+7. Select the ""Account Type"".
+8. Click on the ""Next"" button.
+9. Enter the valid inputs in all the fields.
+10. Select the Country from dropdown list.
+11. Click on the ""Next"" button.
+12. Select the ""Tazapay"" option.
+13. Click on the ""Next"" button.
+14. Enter valid credit card number.
+15. Enter valid expiry date.
+16. Enter valid CVV.
+17. Enter valid Card holder name.
+18. Verify the ""Proceed"" button is enable.",,,Shivam,,,,
+,,TC-077,To verify popup message display.,"1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".","Clicking on the ""Next"" button, it should show an popup message for the Important instruction.","1. Open the dashboard page.
+2. Click on the ""New Challenge"" option.
+3. Click on the ""START YOUR CHALLENGE"" button.
+4. Select the Single option.
+5. Select the Account Balance.
+6. Click on the ""Next"" button.
+7. Select the ""Account Type"".
+8. Click on the ""Next"" button.
+9. Enter the valid inputs in all the fields.
+10. Select the Country from dropdown list.
+11. Click on the ""Next"" button.
+12. Select the ""Confirmo"" option.
+13. Click on the ""Next"" button.
+14. Verify the popup message appears.",,,Shivam,,,,
+,,TC-078,"To verify popup message ""OK' button.","1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".","Clicking on the ""Ök"" button, it shhould navigate to ""Custom Payout"" page.","1. Open the dashboard page.
+2. Click on the ""New Challenge"" option.
+3. Click on the ""START YOUR CHALLENGE"" button.
+4. Select the Single option.
+5. Select the Account Balance.
+6. Click on the ""Next"" button.
+7. Select the ""Account Type"".
+8. Click on the ""Next"" button.
+9. Enter the valid inputs in all the fields.
+10. Select the Country from dropdown list.
+11. Click on the ""Next"" button.
+12. Select the ""Confirmo"" option.
+13. Click on the ""Next"" button.
+14. Click on the ""Ok"" button.",,,Shivam,,,,
+,,TC-079,To verify custom payout tab showing the selected amount.,"1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".",Custom payout tab should show the correct selected amount and currency sign.,"1. Open the dashboard page.
+2. Click on the ""New Challenge"" option.
+3. Click on the ""START YOUR CHALLENGE"" button.
+4. Select the Single option.
+5. Select the Account Balance.
+6. Click on the ""Next"" button.
+7. Select the ""Account Type"".
+8. Click on the ""Next"" button.
+9. Enter the valid inputs in all the fields.
+10. Select the Country from dropdown list.
+11. Click on the ""Next"" button.
+12. Select the ""Confirmo"" option.
+13. Click on the ""Next"" button.
+14. Click on the ""Ok"" button.
+15. Verify the amount displayed in tab.",,,Shivam,,,,
+,,TC-080,"To verify Confirmo page ""Search"" field.","1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".","Search field is accepting valid input, it should show the Cryptocurrency result for same.","1. Open the dashboard page.
+2. Click on the ""New Challenge"" option.
+3. Click on the ""START YOUR CHALLENGE"" button.
+4. Select the Single option.
+5. Select the Account Balance.
+6. Click on the ""Next"" button.
+7. Select the ""Account Type"".
+8. Click on the ""Next"" button.
+9. Enter the valid inputs in all the fields.
+10. Select the Country from dropdown list.
+11. Click on the ""Next"" button.
+12. Select the ""Confirmo"" option.
+13. Click on the ""Next"" button.
+14. Click on the ""Ok"" button.
+15. Enter the valid input.",,,Shivam,,,,
+,,TC-081,To verify selected Cryptocurrency option.,"1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".
+2.Cryptocurrency Account.","Selecting the Cryptocurrency, it should show the options for selecting the network to the cryptocurrency.","1. Open the dashboard page.
+2. Click on the ""New Challenge"" option.
+3. Click on the ""START YOUR CHALLENGE"" button.
+4. Select the Single option.
+5. Select the Account Balance.
+6. Click on the ""Next"" button.
+7. Select the ""Account Type"".
+8. Click on the ""Next"" button.
+9. Enter the valid inputs in all the fields.
+10. Select the Country from dropdown list.
+11. Click on the ""Next"" button.
+12. Select the ""Confirmo"" option.
+13. Click on the ""Next"" button.
+14. Click on the ""Ok"" button.
+15. Enter the valid input.
+16. Select the Crptocurrency type/ category.
+",,,Shivam,,,,
+,,TC-082,To verify Transaction QR code.,"1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".
+2.Cryptocurrency Account.","Scanning the QR code for the transaction, it should detect the exact amount selected by the user and covert the smae into selected the cryptocurrency.","1. Open the dashboard page.
+2. Click on the ""New Challenge"" option.
+3. Click on the ""START YOUR CHALLENGE"" button.
+4. Select the Single option.
+5. Select the Account Balance.
+6. Click on the ""Next"" button.
+7. Select the ""Account Type"".
+8. Click on the ""Next"" button.
+9. Enter the valid inputs in all the fields.
+10. Select the Country from dropdown list.
+11. Click on the ""Next"" button.
+12. Select the ""Confirmo"" option.
+13. Click on the ""Next"" button.
+14. Click on the ""Ok"" button.
+15. Enter the valid input.
+16. Select the Crptocurrency type/ category.
+17.Verify the QR code by scanning.",,,Shivam,,,,
+,,TC-083,"To verify ""Pay from Wallet"" button.","1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".
+2.Cryptocurrency Account.","Clicking on the ""Pay from Wallet"" button, it should navigate to user's account wallet page.","1. Open the dashboard page.
+2. Click on the ""New Challenge"" option.
+3. Click on the ""START YOUR CHALLENGE"" button.
+4. Select the Single option.
+5. Select the Account Balance.
+6. Click on the ""Next"" button.
+7. Select the ""Account Type"".
+8. Click on the ""Next"" button.
+9. Enter the valid inputs in all the fields.
+10. Select the Country from dropdown list.
+11. Click on the ""Next"" button.
+12. Select the ""Confirmo"" option.
+13. Click on the ""Next"" button.
+14. Click on the ""Ok"" button.
+15. Enter the valid input.
+16. Select the Crptocurrency type/ category.
+17. Click on the ""Pay from Wallet"" button.",,,Shivam,,,,
+,,TC-084,To verify transaction time limit.,"1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".
+2.Cryptocurrency Account.",Transaction for the amount should be done successfully in the mentioned time shown on bottom of invoice iframe.,"1. Open the dashboard page.
+2. Click on the ""New Challenge"" option.
+3. Click on the ""START YOUR CHALLENGE"" button.
+4. Select the Single option.
+5. Select the Account Balance.
+6. Click on the ""Next"" button.
+7. Select the ""Account Type"".
+8. Click on the ""Next"" button.
+9. Enter the valid inputs in all the fields.
+10. Select the Country from dropdown list.
+11. Click on the ""Next"" button.
+12. Select the ""Confirmo"" option.
+13. Click on the ""Next"" button.
+14. Click on the ""Ok"" button.
+15. Enter the valid input.
+16. Select the Crptocurrency type/ category.
+17. See the time limit for successful transaction.",,,Shivam,,,,
+,,TC-085,"To verify Payment Gateway ""Ecompay"" option.","1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".","Selecting the ""Ecompay"" option, it should be highlighted and ""Radio"" button should be checked.","1. Open the dashboard page.
+2. Click on the ""New Challenge"" option.
+3. Click on the ""START YOUR CHALLENGE"" button.
+4. Select the Single option.
+5. Select the Account Balance.
+6. Click on the ""Next"" button.
+7. Select the ""Account Type"".
+8. Click on the ""Next"" button.
+9. Enter the valid inputs in all the fields.
+10. Select the Country from dropdown list.
+11. Click on the ""Next"" button.
+12. Select the ""Ecompay"" option.",,,Shivam,,,,
+,,TC-086,"To verify Payment Gateway ""Next"" button.","1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".","Clicking on the ""Next"" button, it should navigate to Ecompay payment page for transaction.","1. Open the dashboard page.
+2. Click on the ""New Challenge"" option.
+3. Click on the ""START YOUR CHALLENGE"" button.
+4. Select the Single option.
+5. Select the Account Balance.
+6. Click on the ""Next"" button.
+7. Select the ""Account Type"".
+8. Click on the ""Next"" button.
+9. Enter the valid inputs in all the fields.
+10. Select the Country from dropdown list.
+11. Click on the ""Next"" button.
+12. Select the ""Ecompay"" option.
+13. Click on the ""Next"" button.",,,Shivam,,,,
+,,TC-087,"To verify Payment Page ""Card Payments"" field is functional.","1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".","Clicking on the ""Card Payments"" field, it should redirect to iframe for ""Enter Payment Details"".","1. Open the dashboard page.
+2. Click on the ""New Challenge"" option.
+3. Click on the ""START YOUR CHALLENGE"" button.
+4. Select the Single option.
+5. Select the Account Balance.
+6. Click on the ""Next"" button.
+7. Select the ""Account Type"".
+8. Click on the ""Next"" button.
+9. Enter the valid inputs in all the fields.
+10. Select the Country from dropdown list.
+11. Click on the ""Next"" button.
+12. Select the ""Ecompay"" option.
+13. Click on the ""Next"" button.
+14. Enter the input in the ""Card Number"" field.",,,Shivam,,,,
+,,TC-088,"To verify Payment Details page ""Back"" icon button is functional.","1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".","Clicking on the ""Back"" icon button,, it should go back to the previous page.","1. Open the dashboard page.
+2. Click on the ""New Challenge"" option.
+3. Click on the ""START YOUR CHALLENGE"" button.
+4. Select the Single option.
+5. Select the Account Balance.
+6. Click on the ""Next"" button.
+7. Select the ""Account Type"".
+8. Click on the ""Next"" button.
+9. Enter the valid inputs in all the fields.
+10. Select the Country from dropdown list.
+11. Click on the ""Next"" button.
+12. Select the ""Ecompay"" option.
+13. Click on the ""Next"" button.
+14. Click on the ""Back"" icon button.",,,Shivam,,,,
+,,TC-089,"To verify ""Cart"" icon button.","1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".","Clicking on the ""Cart"" icon button, it should display the payment information. ","1. Open the dashboard page.
+2. Click on the ""New Challenge"" option.
+3. Click on the ""START YOUR CHALLENGE"" button.
+4. Select the Single option.
+5. Select the Account Balance.
+6. Click on the ""Next"" button.
+7. Select the ""Account Type"".
+8. Click on the ""Next"" button.
+9. Enter the valid inputs in all the fields.
+10. Select the Country from dropdown list.
+11. Click on the ""Next"" button.
+12. Select the ""Ecompay"" option.
+13. Click on the ""Next"" button.
+14. Click on the ""Cart"" icon button.",,,Shivam,,,,
+,,TC-090,"To verify Payment Details ""Card Details"" fields.","1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".","All the fields or atleast one field is left empty, it should show an error message that fields below them.","1. Open the dashboard page.
+2. Click on the ""New Challenge"" option.
+3. Click on the ""START YOUR CHALLENGE"" button.
+4. Select the Single option.
+5. Select the Account Balance.
+6. Click on the ""Next"" button.
+7. Select the ""Account Type"".
+8. Click on the ""Next"" button.
+9. Enter the valid inputs in all the fields.
+10. Select the Country from dropdown list.
+11. Click on the ""Next"" button.
+12. Select the ""Ecompay"" option.
+13. Click on the ""Next"" button.
+14. Keep all the fields empty and verify error message.",,,Shivam,,,,
+,,TC-091,"To verify ""Pay"" button.","1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".","Clicking on the ""Pay"" button, it should navigate to Trasaction successful/ Thank You page. ","1. Open the dashboard page.
+2. Click on the ""New Challenge"" option.
+3. Click on the ""START YOUR CHALLENGE"" button.
+4. Select the Single option.
+5. Select the Account Balance.
+6. Click on the ""Next"" button.
+7. Select the ""Account Type"".
+8. Click on the ""Next"" button.
+9. Enter the valid inputs in all the fields.
+10. Select the Country from dropdown list.
+11. Click on the ""Next"" button.
+12. Select the ""Ecompay"" option.
+13. Click on the ""Next"" button.
+14. Fill all the fields with valid input.
+15. Click on the ""Pay"" button.",,,Shivam,,,,
+,,TC-092,"To verify ""Korapay"" payment option.","1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".","Selecting the Korapay and click ""Next"" button, it should ""Choose Payment Method"" page.","1. Open the dashboard page.
+2. Click on the ""New Challenge"" option.
+3. Click on the ""START YOUR CHALLENGE"" button.
+4. Select the Single option.
+5. Select the Account Balance.
+6. Click on the ""Next"" button.
+7. Select the ""Account Type"".
+8. Click on the ""Next"" button.
+9. Enter the valid inputs in all the fields.
+10. Select the Country from dropdown list.
+11. Click on the ""Next"" button.
+12. Select the ""Korapay option.
+13. Click on the ""Next"" button.",,,Shivam,,,,
+,,TC-093,To verify valid discount code.,"1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".",Entering valid discount code which will be getting from the social media channels should be applicable for as per offer discount amount.,"1. Open the dashboard page.
+2. Click on the ""New Challenge"" option.
+3. Click on the ""START YOUR CHALLENGE"" button.
+4. Select the Single option.
+5. Select the Account Balance.
+6. Click on the ""Next"" button.
+7. Select the ""Account Type"".
+8. Click on the ""Next"" button.
+9. Enter the valid inputs in all the fields.
+10. Select the Country from dropdown list.
+11. Click on the ""Next"" button.
+12. Select the ""Korapay"" option.
+13. Enter the valid discount code.",,,Shivam,,,,
+,,TC-094,"To verify Discount code ""Apply"" button.","1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".","Clicking on the ""Apply"" button, it should be applicable and subtract from the amount balance to pay.","1. Open the dashboard page.
+2. Click on the ""New Challenge"" option.
+3. Click on the ""START YOUR CHALLENGE"" button.
+4. Select the Single option.
+5. Select the Account Balance.
+6. Click on the ""Next"" button.
+7. Select the ""Account Type"".
+8. Click on the ""Next"" button.
+9. Enter the valid inputs in all the fields.
+10. Select the Country from dropdown list.
+11. Click on the ""Next"" button.
+12. Select the ""Korapay"" option.
+13. Click on the ""Next"" button.
+14. Enter the valid discount code.
+15. Click on the ""Apply"" button.",,,Shivam,,,,
+,,TC-095,"To verify ""Pay with Debit Card"" method.","1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".","Clicking on ""Pay with Debit Card"" method, it should be navigate ""Payment Details"" page.","1. Open the dashboard page.
+2. Click on the ""New Challenge"" option.
+3. Click on the ""START YOUR CHALLENGE"" button.
+4. Select the Single option.
+5. Select the Account Balance.
+6. Click on the ""Next"" button.
+7. Select the ""Account Type"".
+8. Click on the ""Next"" button.
+9. Enter the valid inputs in all the fields.
+10. Select the Country from dropdown list.
+11. Click on the ""Next"" button.
+12. Select the ""Korapay"" option.
+13. Click on the ""Next"" button.
+14. Click on the ""Pay with Debit Card"" option.",,,Shivam,,,,
+,,TC-096,To verify debit card details page amount.,"1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".",Amount displayed on the page shoud same as the user selected for amount balance.,"1. Open the dashboard page.
+2. Click on the ""New Challenge"" option.
+3. Click on the ""START YOUR CHALLENGE"" button.
+4. Select the Single option.
+5. Select the Account Balance.
+6. Click on the ""Next"" button.
+7. Select the ""Account Type"".
+8. Click on the ""Next"" button.
+9. Enter the valid inputs in all the fields.
+10. Select the Country from dropdown list.
+11. Click on the ""Next"" button.
+12. Select the ""Korapay"" option.
+13. Click on the ""Next"" button.
+14. Select the ""Pay with Debit Card"" option.
+15. Verify the amount is same.",,,Shivam,,,,
+,,TC-097,"To verify valid ""Card Number'.","1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".","Entering the valid and correct input in field, it should accept it without any error message.","1. Open the dashboard page.
+2. Click on the ""New Challenge"" option.
+3. Click on the ""START YOUR CHALLENGE"" button.
+4. Select the Single option.
+5. Select the Account Balance.
+6. Click on the ""Next"" button.
+7. Select the ""Account Type"".
+8. Click on the ""Next"" button.
+9. Enter the valid inputs in all the fields.
+10. Select the Country from dropdown list.
+11. Click on the ""Next"" button.
+12. Select the ""Korapay"" option.
+13. Click on the ""Next"" button.
+14. Select the ""Pay with Debit Card"" option.
+15. Enter the valid card number in the field.",,,Shivam,,,,
+,,TC-098,"To verify invalid ""Card Number'.","1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".","Entering the invalid and correct input in field, it should not accept and show an error message.","1. Open the dashboard page.
+2. Click on the ""New Challenge"" option.
+3. Click on the ""START YOUR CHALLENGE"" button.
+4. Select the Single option.
+5. Select the Account Balance.
+6. Click on the ""Next"" button.
+7. Select the ""Account Type"".
+8. Click on the ""Next"" button.
+9. Enter the valid inputs in all the fields.
+10. Select the Country from dropdown list.
+11. Click on the ""Next"" button.
+12. Select the ""Korapay"" option.
+13. Click on the ""Next"" button.
+14. Select the ""Pay with Debit Card"" option.
+15. Enter the invalid card number in the field and verify the error message appears.",,,Shivam,,,,
+,,TC-099,"To verify valid ""Expiry Date'.","1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".","Entering the valid and correct input in field, it should accept it without any error message.","1. Open the dashboard page.
+2. Click on the ""New Challenge"" option.
+3. Click on the ""START YOUR CHALLENGE"" button.
+4. Select the Single option.
+5. Select the Account Balance.
+6. Click on the ""Next"" button.
+7. Select the ""Account Type"".
+8. Click on the ""Next"" button.
+9. Enter the valid inputs in all the fields.
+10. Select the Country from dropdown list.
+11. Click on the ""Next"" button.
+12. Select the ""Korapay"" option.
+13. Click on the ""Next"" button.
+14. Select the ""Pay with Debit Card"" option.
+15. Enter the valid expiry date in the field.",,,Shivam,,,,
+,,TC-100,"To verify invalid ""Expiry Date'.","1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".","Entering the invalid input in field, it should display an error message.","1. Open the dashboard page.
+2. Click on the ""New Challenge"" option.
+3. Click on the ""START YOUR CHALLENGE"" button.
+4. Select the Single option.
+5. Select the Account Balance.
+6. Click on the ""Next"" button.
+7. Select the ""Account Type"".
+8. Click on the ""Next"" button.
+9. Enter the valid inputs in all the fields.
+10. Select the Country from dropdown list.
+11. Click on the ""Next"" button.
+12. Select the ""Korapay"" option.
+13. Click on the ""Next"" button.
+14. Select the ""Pay with Debit Card"" option.
+15. Enter the invalid expiry date in the field.",,,Shivam,,,,
+,,TC-101,"To verify valid ""CVV'.","1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".","Entering the valid and correct input in field, it should accept it without any error message.","1. Open the dashboard page.
+2. Click on the ""New Challenge"" option.
+3. Click on the ""START YOUR CHALLENGE"" button.
+4. Select the Single option.
+5. Select the Account Balance.
+6. Click on the ""Next"" button.
+7. Select the ""Account Type"".
+8. Click on the ""Next"" button.
+9. Enter the valid inputs in all the fields.
+10. Select the Country from dropdown list.
+11. Click on the ""Next"" button.
+12. Select the ""Korapay"" option.
+13. Click on the ""Next"" button.
+14. Select the ""Pay with Debit Card"" option.
+15. Enter the valid ""CVV"" in the field.",,,Shivam,,,,
+,,TC-102,"To verify invalid ""CVV"".","1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".","Entering the invalid input in field, it should display an error message.","1. Open the dashboard page.
+2. Click on the ""New Challenge"" option.
+3. Click on the ""START YOUR CHALLENGE"" button.
+4. Select the Single option.
+5. Select the Account Balance.
+6. Click on the ""Next"" button.
+7. Select the ""Account Type"".
+8. Click on the ""Next"" button.
+9. Enter the valid inputs in all the fields.
+10. Select the Country from dropdown list.
+11. Click on the ""Next"" button.
+12. Select the ""Korapay"" option.
+13. Click on the ""Next"" button.
+14. Select the ""Pay with Debit Card"" option.
+15. Enter the invalid ""CVV"" in the field.",,,Shivam,,,,
+,,TC-103,"To verify ""Pay"" button.","1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".","Clicking on the ""Pay"" button, it should navigate to Transaction successful or Thank You page.","1. Open the dashboard page.
+2. Click on the ""New Challenge"" option.
+3. Click on the ""START YOUR CHALLENGE"" button.
+4. Select the Single option.
+5. Select the Account Balance.
+6. Click on the ""Next"" button.
+7. Select the ""Account Type"".
+8. Click on the ""Next"" button.
+9. Enter the valid inputs in all the fields.
+10. Select the Country from dropdown list.
+11. Click on the ""Next"" button.
+12. Select the ""Korapay"" option.
+13. Click on the ""Next"" button.
+14. Select the ""Pay with Debit Card"" option.
+15. Enter the valid debit card details.
+16. Click on the ""Pay"" button.",,,Shivam,,,,
+,,TC-104,"To verify ""Pay with Bank Transfer"" option.","1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".","Clicking on the ""Pay with Bank Transfer"" option, it should navigate to Confirmation page.","1. Open the dashboard page.
+2. Click on the ""New Challenge"" option.
+3. Click on the ""START YOUR CHALLENGE"" button.
+4. Select the Single option.
+5. Select the Account Balance.
+6. Click on the ""Next"" button.
+7. Select the ""Account Type"".
+8. Click on the ""Next"" button.
+9. Enter the valid inputs in all the fields.
+10. Select the Country from dropdown list.
+11. Click on the ""Next"" button.
+12. Select the ""Korapay"" option.
+13. Click on the ""Next"" button.
+14. Select the ""Pay with bank Transfer"" option.",,,Shivam,,,,
+,,TC-105,"To verify ""Tap to copy amount"" button .","1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".","Clicking on the ""Tap to copy amount"" button, it should copy the amount displayed on the page. ","1. Open the dashboard page.
+2. Click on the ""New Challenge"" option.
+3. Click on the ""START YOUR CHALLENGE"" button.
+4. Select the Single option.
+5. Select the Account Balance.
+6. Click on the ""Next"" button.
+7. Select the ""Account Type"".
+8. Click on the ""Next"" button.
+9. Enter the valid inputs in all the fields.
+10. Select the Country from dropdown list.
+11. Click on the ""Next"" button.
+12. Select the ""Korapay"" option.
+13. Click on the ""Next"" button.
+14. Select the ""Pay with Bank Transfer"".
+15. Click on the ""Tap to copy amount"" button.",,,Shivam,,,,
+,,TC-106,"To verify Confirmation page ""Checkbox"".","1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".","Clicking on the ""Checkbox"", it shoud be checked and ""Continue"" button should be enabled.","1. Open the dashboard page.
+2. Click on the ""New Challenge"" option.
+3. Click on the ""START YOUR CHALLENGE"" button.
+4. Select the Single option.
+5. Select the Account Balance.
+6. Click on the ""Next"" button.
+7. Select the ""Account Type"".
+8. Click on the ""Next"" button.
+9. Enter the valid inputs in all the fields.
+10. Select the Country from dropdown list.
+11. Click on the ""Next"" button.
+12. Select the ""Korapay"" option.
+13. Click on the ""Next"" button.
+14. Select the ""Pay with Bank Transfer"".
+15. Click on the ""Checkbox"" and verify the ""Continue"" button is enable.",,,Shivam,,,,
+,,TC-107,"To verify Confirmation page ""Continue"" button is functional.","1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".","Clicking on the ""Continue"" button, it should display the Bank Account details for Transaction. ","1. Open the dashboard page.
+2. Click on the ""New Challenge"" option.
+3. Click on the ""START YOUR CHALLENGE"" button.
+4. Select the Single option.
+5. Select the Account Balance.
+6. Click on the ""Next"" button.
+7. Select the ""Account Type"".
+8. Click on the ""Next"" button.
+9. Enter the valid inputs in all the fields.
+10. Select the Country from dropdown list.
+11. Click on the ""Next"" button.
+12. Select the ""Korapay"" option.
+13. Click on the ""Next"" button.
+14. Select the ""Pay with Bank Transfer"".
+15. Click on the ""Checkbox"".
+16. Click on the ""Continue"".",,,Shivam,,,,
+,,TC-108,"To verify ""Pay with Bank"" option.","1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".","Clicking on the ""Pay with Bank"" option, it should navigate to Confirmation page.","1. Open the dashboard page.
+2. Click on the ""New Challenge"" option.
+3. Click on the ""START YOUR CHALLENGE"" button.
+4. Select the Single option.
+5. Select the Account Balance.
+6. Click on the ""Next"" button.
+7. Select the ""Account Type"".
+8. Click on the ""Next"" button.
+9. Enter the valid inputs in all the fields.
+10. Select the Country from dropdown list.
+11. Click on the ""Next"" button.
+12. Select the ""Korapay"" option.
+13. Click on the ""Next"" button.
+14. Select the ""Pay with Bank"" option.",,,Shivam,,,,
+,,TC-109,"To verify Pay with Bank ""Search"" field.","1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".","Search the correct Bank name, it should display in the matching results.","1. Open the dashboard page.
+2. Click on the ""New Challenge"" option.
+3. Click on the ""START YOUR CHALLENGE"" button.
+4. Select the Single option.
+5. Select the Account Balance.
+6. Click on the ""Next"" button.
+7. Select the ""Account Type"".
+8. Click on the ""Next"" button.
+9. Enter the valid inputs in all the fields.
+10. Select the Country from dropdown list.
+11. Click on the ""Next"" button.
+12. Select the ""Korapay"" option.
+13. Click on the ""Next"" button.
+14. Select the ""Pay with Bank"" option.
+15. Enter the Bank in the Search field.",,,Shivam,,,,
+,,TC-110,To verify selected bank is doing transaction.,"1. User should logged in and navigate to the dashboard page URL ""https://app.nostro.co/dashboard "".",Selected bank should process the complete transaction and give confirmation for successful transaction.,"1. Open the dashboard page.
+2. Click on the ""New Challenge"" option.
+3. Click on the ""START YOUR CHALLENGE"" button.
+4. Select the Single option.
+5. Select the Account Balance.
+6. Click on the ""Next"" button.
+7. Select the ""Account Type"".
+8. Click on the ""Next"" button.
+9. Enter the valid inputs in all the fields.
+10. Select the Country from dropdown list.
+11. Click on the ""Next"" button.
+12. Select the ""Korapay"" option.
+13. Click on the ""Next"" button.
+14. Select the ""Pay with Bank"" option.
+15. Enter the Bank in the Search field.
+16. Select the bank from the list and complte the process for transaction.",,,Shivam,,,,
+Challenges: New Challenge -> Free Trial (UPDATED),,,,,,,,,,,,,
+,,TC-111,"To verify ""START YOUR FREE CHALLENGE"" display.",1. User should logged in and navigate to New Challlenge Page.,"When the user has completed the verification process successfully and free challenges are available, then the ""START YOUR FREE CHALLENGE"" button should be displayed in the Free trial tab.","1. Open the New Challenge page.
+2. Verify the ""START YOUR FREE CHALLENGE"" button is displayed.",,,Shivam,,,,
+,,TC-112,"To verify ""Number of Free Challenges"" info button.",1. User should logged in and navigate to New Challlenge Page.,"Clicking on the ""Info"" button, it should show an message: ""Free challenges can be obtained by either referring 3 verified users or using a free trial code. A maximum of 10 free challenges per user is allowed"".","1. Open the New Challenge page.
+2. Click on the ""Info"" button and verify the message appears.",,,Shivam,,,,
+,,TC-113,"To verify ""Available Free Challenges"" info button.",1. User should logged in and navigate to New Challlenge Page.,"Clicking on the ""Info"" button, it should show an message: ""This shows the number of free challenges currently available to you. You can earn more free challenges by referring at least 3 verified users"".","1. Open the New Challenge page.
+2. Click on the ""Info"" button and verify the message appears.",,,Shivam,,,,
+,,TC-114,"To verify ""Free Challenge Code"" field.",1. User should logged in and navigate to New Challlenge Page.,"Entering the valid code, it should add the 1 free challenge to the user's account and pop up message is displayed.","1. Open the New Challenge page.
+2. Enter the valid code in the field.",,,Shivam,,,,
+,,TC-115,"To verify ""NO AVAILABLE CHALLENGES"" button display.",1. User should logged in and navigate to New Challlenge Page.,"When the user does not have a single free challenge available, then the disabled ""NO AVAILABLE CHALLENGES"" button should be displayed.","1. Open the New Challenge page.
+2. Verify the ""NO AVAILABLE CHALLENGES"" button is displayed.",,,Shivam,,,,
+,,TC-116,"To verify ""NO AVAILABLE CHALLENGES"" button error message.",1. User should logged in and navigate to New Challlenge Page.,"Clicking on the ""NO AVAILABLE CHALLENGES"" button, it should display an error message: ""You have no available free challenges. You can earn challenges by referring at least 3 verified users to Nostro"".","1. Open the New Challenge page.
+2. Click on the ""NO AVAILABLE CHALLENGES"" and verify the error message is displayed.",,,Shivam,,,,
+,,TC-117,"To verify ""MAX ALLOCATION REACHED"" button display.",1. User should logged in and navigate to New Challlenge Page.,"When the user has already reached 10 free challenges, then the ""MAX ALLOCATION REACHED"" button should be visible in the free trial tab.","1. Open the New Challenge page.
+2. Verify the ""MAX ALLOCATION REACHED"" button is visible.",,,Shivam,,,,
+,,TC-118,"To verify ""MAX ALLOCATION REACHED"" button error message",1. User should logged in and navigate to New Challlenge Page.,"Clicking on the ""MAX ALLOCATION REACHED"" button, it should show an error message: ""You have reached the maximum challenges and are no longer eligible for additional free challenges"".","1. Open the New Challenge page.
+2. Click on the ""MAX ALLOCATION REACHED"" button and verify the error message appears.",,,Shivam,,,,
+,,TC-119,"To verify ""START VERIFICATION"" button display.",1. User should logged in and navigate to New Challlenge Page.,"When the user has not done the verification process and free challenges are available, then the ""START VERIFICATION"" button should be displayed in the Free trial tab.","1. Open the New Challenge page.
+2. Verify the ""START VERIFICATION"" button is displayed.",,,Shivam,,,,
+,,TC-120,"To verify ""START VERIFICATION"" button is functional.",1. User should logged in and navigate to New Challlenge Page.,"Clicking on the ""START VERIFICATION"" button, it should navigate to Mobile Verfication page.","1. Open the New Challenge page.
+2. Click on the ""START VERIFICATION"" button.",,,Shivam,,,,
+,,TC-121,"To verify ""Verify Your Mobile Number"" Country code dropdown.",1. User should logged in and navigate to New Challlenge Page.,"Clicking on the ""Country Code"" dropdown, it should show the list of country codes to be selected.","1. Open the New Challenge page.
+2. Click on the ""START VERIFICATION"" button.
+3. Click on the ""Country Code"" dropdown and verify the list appears.",,,Shivam,,,,
+,,TC-122,"To verify ""Mobile Number"" field is functional.",1. User should logged in and navigate to New Challlenge Page.,"Entering the valid ""Mobile Number"" in the field, it should enable the ""Send Code"" button.","1. Open the New Challenge page.
+2. Click on the ""START VERIFICATION"" button.
+3. Click on the ""Country Code"" dropdown.
+4. Enter the valid ""Mobile Number"".",,,Shivam,,,,
+,,TC-123,"To verify existing ""Mobile Number"" in database .",1. User should logged in and navigate to New Challlenge Page.,"If the entered mobile number is already exists in the database, then it should show an error message for ""Verification Failed"".","1. Open the New Challenge page.
+2. Click on the ""START VERIFICATION"" button.
+3. Click on the ""Country Code"" dropdown.
+4. Enter the existing ""Mobile Number"" in the database.
+5. Verify the ""Verification is failed.'",,,Shivam,,,,
+,,TC-124,"To verify ""Send Code"" button is functinal.",1. User should logged in and navigate to New Challlenge Page.,"Clicking on the ""Send Code"" button, it should send the code to the entered mobile number and displays the verification code field.","1. Open the New Challenge page.
+2. Click on the ""START VERIFICATION"" button.
+3. Click on the ""Country Code"" dropdown.
+4. Enter the valid ""Mobile Number"".
+5. Click on the ""Send Code"" button.",,,Shivam,,,,
+,,TC-125,To verify valid Verfication code.,1. User should logged in and navigate to New Challlenge Page.,"Entering the correct ""Verification Code"" in the field, it should display an popup message: ""Your code is verified successfully"" and enables the ""Next"" button.","1. Open the New Challenge page.
+2. Click on the ""START VERIFICATION"" button.
+3. Click on the ""Country Code"" dropdown.
+4. Enter the valid ""Mobile Number"".
+5. Click on the ""Send Code"" button.
+6. Enter the Verification code and verify the ""Next"" button is enabled.",,,Shivam,,,,
+,,TC-126,To verify invalid Verfication code.,1. User should logged in and navigate to New Challlenge Page.,"Entering the incorrect ""Verification Code"" in the field, it should display an popup error message: ""Your verification code is incorrect.""  and ""Next"" button should be remain disabled.","1. Open the New Challenge page.
+2. Click on the ""START VERIFICATION"" button.
+3. Click on the ""Country Code"" dropdown.
+4. Enter the valid ""Mobile Number"".
+5. Click on the ""Send Code"" button.
+6. Enter the incorrect Verification code and verify the error message appears.
+7. Verify the ""Next"" is disabled.",,,Shivam,,,,
+,,TC-127,"To verify ""Next"" button is functional.",1. User should logged in and navigate to New Challlenge Page.,"Clicking on the ""Next"" button, it should navigate ""Social Media Verification"" page.","1. Open the New Challenge page.
+2. Click on the ""START VERIFICATION"" button.
+3. Click on the ""Country Code"" dropdown.
+4. Enter the valid ""Mobile Number"".
+5. Click on the ""Send Code"" button.
+6. Enter the Verification code.
+7. Click on the ""Next"" button.",,,Shivam,,,,
+,,TC-128,"To verify ""Social Media Verification"" page ""BACK"" button.",1. User should logged in and navigate to New Challlenge Page.,"Clicking on the ""BACK"" button, it should go to the previous page.","1. Open the New Challenge page.
+2. Click on the ""START VERIFICATION"" button.
+3. Click on the ""Country Code"" dropdown.
+4. Enter the valid ""Mobile Number"".
+5. Click on the ""Send Code"" button.
+6. Enter the Verification code.
+7. Click on the ""Next"" button.
+8. Click on the ""BACK"" button.",,,Shivam,,,,
+,,TC-129,"To verify Facebook ""CONNECT"" button. ",1. User should logged in and navigate to New Challlenge Page.,"Clicking on the ""CONNECT""  button, it should connect the facebook profile and the button should be displayed as ""CONNECTED"".","1. Open the New Challenge page.
+2. Click on the ""START VERIFICATION"" button.
+3. Click on the ""Country Code"" dropdown.
+4. Enter the valid ""Mobile Number"".
+5. Click on the ""Send Code"" button.
+6. Enter the Verification code.
+7. Click on the ""Next"" button.
+8. Click on the Facebook ""Coonect"" button.",,,Shivam,,,,
+,,TC-130,"To verify Instagram ""CONNECT"" button. ",1. User should logged in and navigate to New Challlenge Page.,"Clicking on the ""CONNECT""  button, it should connect the Instagram profile and the button should be displayed as ""CONNECTED"".","1. Open the New Challenge page.
+2. Click on the ""START VERIFICATION"" button.
+3. Click on the ""Country Code"" dropdown.
+4. Enter the valid ""Mobile Number"".
+5. Click on the ""Send Code"" button.
+6. Enter the Verification code.
+7. Click on the ""Next"" button.
+8. Click on the Instagram ""CONNECT"" button.",,,Shivam,,,,
+,,TC-131,"To verify ""Social Media Verification"" page ""NEXT"" button is disable.",1. User should logged in and navigate to New Challlenge Page.,"""NEXT"" button should remain disabled, until atleast 2 Social media profile is being connected to Nostro.","1. Open the New Challenge page.
+2. Click on the ""START VERIFICATION"" button.
+3. Click on the ""Country Code"" dropdown.
+4. Enter the valid ""Mobile Number"".
+5. Click on the ""Send Code"" button.
+6. Enter the Verification code.
+7. Click on the ""Next"" button.
+8. Click on the Instagram ""CONNECT"" button.
+9. Verify the ""NEXT"" button is disabled.",,,Shivam,,,,
+,,TC-132,"To verify ""Social Media Verification"" page ""NEXT"" button is enable.",1. User should logged in and navigate to New Challlenge Page.,"""NEXT"" button should be enabled, if atleast 2 Social media profile is being connected to Nostro.","1. Open the New Challenge page.
+2. Click on the ""START VERIFICATION"" button.
+3. Click on the ""Country Code"" dropdown.
+4. Enter the valid ""Mobile Number"".
+5. Click on the ""Send Code"" button.
+6. Enter the Verification code.
+7. Click on the ""Next"" button.
+8. Click on the Facebook ""Coonect"" button.
+9. Click on the Instagram ""CONNECT"" button.
+10. Verify the ""NEXT"" button is enabled. ",,,Shivam,,,,
+,,TC-133,"To verify ""NEXT"" button is functional.",1. User should logged in and navigate to New Challlenge Page.,"Clicking on the ""NEXT"" button, it should navigate ""ID Upload and Verification"" page.","1. Open the New Challenge page.
+2. Click on the ""START VERIFICATION"" button.
+3. Click on the ""Country Code"" dropdown.
+4. Enter the valid ""Mobile Number"".
+5. Click on the ""Send Code"" button.
+6. Enter the Verification code.
+7. Click on the ""Next"" button.
+8. Click on the Facebook ""Coonect"" button.
+9. Click on the Instagram ""CONNECT"" button.
+10. Click on the ""NEXT"" button. ",,,Shivam,,,,
+,,TC-134,"To verify  ""ID Upload and Verification"" page ""Click to Upload"" button.",1. User should logged in and navigate to New Challlenge Page.,"Clicking on the ""Click to Upload"" buton, it should open the iframe to select and upload the file. ","1. Open the New Challenge page.
+2. Click on the ""START VERIFICATION"" button.
+3. Click on the ""Country Code"" dropdown.
+4. Enter the valid ""Mobile Number"".
+5. Click on the ""Send Code"" button.
+6. Enter the Verification code.
+7. Click on the ""Next"" button.
+8. Click on the Facebook ""Coonect"" button.
+9. Click on the Instagram ""CONNECT"" button.
+10. Click on the ""NEXT"" button. 
+11. Click on the ""Click to Upload"" button.",,,Shivam,,,,
+,,TC-135,To verify File Uploaded Successfully. ,1. User should logged in and navigate to New Challlenge Page.,Selecting and uploading file successfully should start the process to capture the file data by SUMSUB.,"1. Open the New Challenge page.
+2. Click on the ""START VERIFICATION"" button.
+3. Click on the ""Country Code"" dropdown.
+4. Enter the valid ""Mobile Number"".
+5. Click on the ""Send Code"" button.
+6. Enter the Verification code.
+7. Click on the ""Next"" button.
+8. Click on the Facebook ""Coonect"" button.
+9. Click on the Instagram ""CONNECT"" button.
+10. Click on the ""NEXT"" button. 
+11. Click on the ""Click to Upload"" button.
+12. Select and Upload the file.",,,Shivam,,,,
+,,TC-136,To verify File Upload failed. ,1. User should logged in and navigate to New Challlenge Page.,"Uploading the file is failed, then it should display the red coloured highlighted error message: ""Upload failed, please try again"".","1. Open the New Challenge page.
+2. Click on the ""START VERIFICATION"" button.
+3. Click on the ""Country Code"" dropdown.
+4. Enter the valid ""Mobile Number"".
+5. Click on the ""Send Code"" button.
+6. Enter the Verification code.
+7. Click on the ""Next"" button.
+8. Click on the Facebook ""Coonect"" button.
+9. Click on the Instagram ""CONNECT"" button.
+10. Click on the ""NEXT"" button. 
+11. Click on the ""Click to Upload"" button.
+12. Select and Upload the file.
+13. Verify the upload failed. (For any reason)",,,Shivam,,,,
+,,TC-137,To verify Capture File data displays correctly.,1. User should logged in and navigate to New Challlenge Page.,File data captured by SUMSUB should reflect the same in the screen below uploaded file.,"1. Open the New Challenge page.
+2. Click on the ""START VERIFICATION"" button.
+3. Click on the ""Country Code"" dropdown.
+4. Enter the valid ""Mobile Number"".
+5. Click on the ""Send Code"" button.
+6. Enter the Verification code.
+7. Click on the ""Next"" button.
+8. Click on the Facebook ""Coonect"" button.
+9. Click on the Instagram ""CONNECT"" button.
+10. Click on the ""NEXT"" button. 
+11. Click on the ""Click to Upload"" button.
+12. Select and Upload the file.
+13. Verify the displayed data is correct.",,,Shivam,,,,
+,,TC-138,"To verify ""BACK"" button is functional.",1. User should logged in and navigate to New Challlenge Page.,"Clicking on the ""BACK"" button, it go to the previous page.","1. Open the New Challenge page.
+2. Click on the ""START VERIFICATION"" button.
+3. Click on the ""Country Code"" dropdown.
+4. Enter the valid ""Mobile Number"".
+5. Click on the ""Send Code"" button.
+6. Enter the Verification code.
+7. Click on the ""Next"" button.
+8. Click on the Facebook ""Coonect"" button.
+9. Click on the Instagram ""CONNECT"" button.
+10. Click on the ""NEXT"" button. 
+11. Click on the ""BACK"" button.",,,Shivam,,,,
+,,TC-139,"To verify ""NEXT"" button is functional.",1. User should logged in and navigate to New Challlenge Page.,"Clicking on the ""NEXT"" button, it should display the iframe ""Analyzing your ID, please wait...""  with the timer reflecting the accurate percentage count.","1. Open the New Challenge page.
+2. Click on the ""START VERIFICATION"" button.
+3. Click on the ""Country Code"" dropdown.
+4. Enter the valid ""Mobile Number"".
+5. Click on the ""Send Code"" button.
+6. Enter the Verification code.
+7. Click on the ""Next"" button.
+8. Click on the Facebook ""Coonect"" button.
+9. Click on the Instagram ""CONNECT"" button.
+10. Click on the ""NEXT"" button. 
+11. Click on the ""Click to Upload"" button.
+12. Select and Upload the file.
+13. Click on the ""NEXT"" button.",,,Shivam,,,,
+,,TC-140,"To verify ""VERIFICATION COMPLETE!"" page displays.",1. User should logged in and navigate to New Challlenge Page.,"If the analyzing process is completed successfully, it should display the ""VERIFICATION COMPLETE!"" page.","1. Open the New Challenge page.
+2. Click on the ""START VERIFICATION"" button.
+3. Click on the ""Country Code"" dropdown.
+4. Enter the valid ""Mobile Number"".
+5. Click on the ""Send Code"" button.
+6. Enter the Verification code.
+7. Click on the ""Next"" button.
+8. Click on the Facebook ""Coonect"" button.
+9. Click on the Instagram ""CONNECT"" button.
+10. Click on the ""NEXT"" button. 
+11. Click on the ""Click to Upload"" button.
+12. Select and Upload the file.
+13. Click on the ""NEXT"" button.
+14. Wait for the process to complete successfully.
+15. VerIfy the Verification complete page is displayed.",,,Shivam,,,,
+,,TC-141,"To verify ""GO TO ACCOUNT"" button is functional.",1. User should logged in and navigate to New Challlenge Page.,"Clicking on the ""GO TO ACCOUNT"" button, it should navigate to the New Challenge page.","1. Open the New Challenge page.
+2. Click on the ""START VERIFICATION"" button.
+3. Click on the ""Country Code"" dropdown.
+4. Enter the valid ""Mobile Number"".
+5. Click on the ""Send Code"" button.
+6. Enter the Verification code.
+7. Click on the ""Next"" button.
+8. Click on the Facebook ""Coonect"" button.
+9. Click on the Instagram ""CONNECT"" button.
+10. Click on the ""NEXT"" button. 
+11. Click on the ""Click to Upload"" button.
+12. Select and Upload the file.
+13. Click on the ""NEXT"" button.
+14. Wait for the process to complete successfully.
+15. Click on the ""GO TO ACCOUNT"" button.",,,Shivam,,,,
+,,TC-142,"To verify ""VERIFICATION FAILED!"" page displays.",1. User should logged in and navigate to New Challlenge Page.,"If the analyzing process is interrupted/ failed, it should display the ""VERIFICATION FAILED!"" page.","1. Open the New Challenge page.
+2. Click on the ""START VERIFICATION"" button.
+3. Click on the ""Country Code"" dropdown.
+4. Enter the valid ""Mobile Number"".
+5. Click on the ""Send Code"" button.
+6. Enter the Verification code.
+7. Click on the ""Next"" button.
+8. Click on the Facebook ""Coonect"" button.
+9. Click on the Instagram ""CONNECT"" button.
+10. Click on the ""NEXT"" button. 
+11. Click on the ""Click to Upload"" button.
+12. Select and Upload the file.
+13. Click on the ""NEXT"" button.
+14. VerIfy the Verification failed page is displayed.",,,Shivam,,,,
+,,TC-143,"To verify ""CONTACT SUPPORT"" button is functional.",1. User should logged in and navigate to New Challlenge Page.,"Clicking on the ""CONTACT SUPPORT"" button, it should navigate to Contact Support page.","1. Open the New Challenge page.
+2. Click on the ""START VERIFICATION"" button.
+3. Click on the ""Country Code"" dropdown.
+4. Enter the valid ""Mobile Number"".
+5. Click on the ""Send Code"" button.
+6. Enter the Verification code.
+7. Click on the ""Next"" button.
+8. Click on the Facebook ""Coonect"" button.
+9. Click on the Instagram ""CONNECT"" button.
+10. Click on the ""NEXT"" button. 
+11. Click on the ""Click to Upload"" button.
+12. Select and Upload the file.
+13. Click on the ""NEXT"" button.
+14. Click on the ""CONTACT SUPPORT"" button.",,,Shivam,,,,
+,,TC-144,"To verify Free Trial tab display ""VERIFICATION FAILED"" button.",1. User should logged in and navigate to New Challlenge Page.,"When the Verfication process is failed, then the Free trial tab should displays the red colored ""VERIFICATION FAILED"" button.","1. Open the New Challenge page.
+2. Click on the ""START VERIFICATION"" button.
+3. Click on the ""Country Code"" dropdown.
+4. Enter the valid ""Mobile Number"".
+5. Click on the ""Send Code"" button.
+6. Enter the Verification code.
+7. Click on the ""Next"" button.
+8. Click on the Facebook ""Coonect"" button.
+9. Click on the Instagram ""CONNECT"" button.
+10. Click on the ""NEXT"" button. 
+11. Click on the ""Click to Upload"" button.
+12. Select and Upload the file.
+13. Click on the ""NEXT"" button.
+14. Verify the Verfication failed page is displayed.
+15. GO to the New Challenge page and verify the ""Verification Failed"" button is visible.",,,Shivam,,,,
+Challenges: My Challenges,,,,,,,,,,,,,
+,,TC-145,To verify the Account Balance Display (Negative Balance),"1. User should logged in and navigate to the My Challenges page URL ""https://app.nostro.co/my-challenges "".",Negative Account Balance should be displayed in red text.,"1. Open the My Challenges page.
+2. Click on the Account's dashboard button.
+3. Verify the negative amount is displaying in red text.",,,Shivam,,,,
+,,TC-146,To verify Active Accounts tabs display.,"1. User should logged in and navigate to the My Challenges page URL ""https://app.nostro.co/my-challenges "".",Active Account tabs background should be displayed in white color.,"1. Open the My Challenges page.
+2. Verify the Active account tabs displays White backgraound.",,,Shivam,,,,
+,,TC-147,To verify Active Accounts details.,"1. User should logged in and navigate to the My Challenges page URL ""https://app.nostro.co/my-challenges "".","Active Account tabs should display correct and appropriate details of specific account. 
+(Evaluation Stages, Account Type, Current Stages, Total Profit bar)","1. Open the My Challenges page.
+2. Verify the Active accoun tabs displays correct details of the account.",,,Shivam,,,,
+,,TC-148,"To verify My Challenges page ""Dashboard"" button is functional.","1. User should logged in and navigate to the My Challenges page URL ""https://app.nostro.co/my-challenges "".","Clicking on the ""Dashboard"" button, it should navigate to the ""Dashboard Funded"" page.","1. Open the My Challenges page.
+2. Click on the Account's ""Dashboard"" button.",,,Shivam,,,,
+,,TC-149,To verify Current Profit / Profit Target tile display correct balance.,"1. User should logged in and navigate to the My Challenges page URL ""https://app.nostro.co/my-challenges "".",Current Profit / Profit Target tile should calculate and display the appropriate balance as per the account data.,"1. Open the My Challenges page.
+2. Click on the Account's ""Dashboard"" button.
+3. Verify the Current Profit / Profit Target tile details.",,,Shivam,,,,
+,,TC-150,To verify Total Equity / Total Balance tile display correct equity.,"1. User should logged in and navigate to the My Challenges page URL ""https://app.nostro.co/my-challenges "".","Total Equity / Total Balance tile should calculate and display exact equity and balance, also it should display the exact EOD equity.","1. Open the My Challenges page.
+2. Click on the Account's ""Dashboard"" button.
+3. Verify the Total Equity / Total Balance and EOD Equity amounts.",,,Shivam,,,,
+,,TC-151,To verify Daily Drawdown tile.,"1. User should logged in and navigate to the My Challenges page URL ""https://app.nostro.co/my-challenges "".",Daily Drawdown tile should calculate and display exact drawdown and equity amount.,"1. Open the My Challenges page.
+2. Click on the Account's ""Dashboard"" button.
+3. Verify the Daily Drawdown tile amounts.",,,Shivam,,,,
+,,TC-152,To verify Maximum Drawdown tile.,"1. User should logged in and navigate to the My Challenges page URL ""https://app.nostro.co/my-challenges "".",Maximum Drawdown tile should calculate and display exact drawdown and equity amount.,"1. Open the My Challenges page.
+2. Click on the Account's ""Dashboard"" button.
+3. Verify the Maximum Drawdown tile amounts.",,,Shivam,,,,
+,,TC-153,To verify Daily Growth Chart.,"1. User should logged in and navigate to the My Challenges page URL ""https://app.nostro.co/my-challenges "".",Daily Growth Chart should display the proper and correct graph according to day wise which is based on fluctuation of data on the server.,"1. Open the My Challenges page.
+2. Click on the Account's ""Dashboard"" button.
+3. Observe the Daily Growth Chart graph.",,,Shivam,,,,
+,,TC-154,"To verify Daily Growth Chart ""Balance"" button.","1. User should logged in and navigate to the My Challenges page URL ""https://app.nostro.co/my-challenges "".","Clicking on the ""Balance"" button, it should change the graph according to balance amounts and graph line color should turns faint..","1. Open the My Challenges page.
+2. Click on the Account's ""Dashboard"" button.
+3. Click on the ""Balance"" button and verify the changes in graphline color and graph.",,,Shivam,,,,
+,,TC-155,"To verify Daily Growth Chart ""Equity"" button.","1. User should logged in and navigate to the My Challenges page URL ""https://app.nostro.co/my-challenges "".","Clicking on the ""Equity"" button, it should change the graph according to equity amounts and graph line color should turns dark.","1. Open the My Challenges page.
+2. Click on the Account's ""Dashboard"" button.
+3. Click on the ""Equity"" button and verify the changes in graphline color and graph.",,,Shivam,,,,
+,,TC-156,To verify Account's Detailed Analytics.,"1. User should logged in and navigate to the My Challenges page URL ""https://app.nostro.co/my-challenges "".","The Monthly Analytics iframe should Monthly gain data fetch from the database and the bar chart should be same as the fetched data.
+
+","1. Open the My Challenges page.
+2. Click on the Account's ""Dashboard"" button.
+3. Observe the bar chart for monthly gain.",,,Shivam,,,,
+,,TC-157,"To verify ""Credentials"" button is functional.","1. User should logged in and navigate to the My Challenges page URL ""https://app.nostro.co/my-challenges "".","Clicking on the ""Credentials"" button, it should open the iframe for Account Credentials.","1. Open the My Challenges page.
+2. Click on the Account's ""Dashboard"" button.
+3. Click on the ""Credentials"" button.",,,Shivam,,,,
+,,TC-158,"To verify ""Account Credentials"" iframe.","1. User should logged in and navigate to the My Challenges page URL ""https://app.nostro.co/my-challenges "".","Account Credentials iframe should display: Account Number, Account Pasword, Account Currency, Account Type, Server Details and MT5 Installer fields.","1. Open the My Challenges page.
+2. Click on the Account's ""Dashboard"" button.
+3. Click on the ""Credentials"" button.",,,Shivam,,,,
+Leaderboard,,,,,,,,,,,,,
+,,TC-159,To verify correct display of top 10 accounts.,"1. User should logged in and navigate to the Leaderboard page URL ""https://app.nostro.co/leaderboard "".","Leaderboard page should display top 10 accounts with rank, username, profit, account size, gain percentage, trade statistics and country, wwhich is based on total gain.","1. Open the Leaderboard page.
+2. Verify the data displaying is correct. ",,,Shivam,,,,
+,,TC-160,To verify modifying of any data.,"1. User should logged in and navigate to the Leaderboard page URL ""https://app.nostro.co/leaderboard "".","Leaderboard page data should not be modified manually, it should fetched from server database.(Read only Data)","1. Open the Leaderboard page.
+2. Try to change/modify data. ",,,Shivam,,,,
+,,TC-161,To verify visual appearance of page.,"1. User should logged in and navigate to the Leaderboard page URL ""https://app.nostro.co/leaderboard "".","Leaderboard page layout should be clean, organized, and easy to read for the users.","1. Open the Leaderboard page.
+2. Verify the alignment of columns and rows are correct. ",,,Shivam,,,,
+,,TC-162,To verify Unauthorized access to leaderboard page.,"1. User should logged in and navigate to the Leaderboard page URL ""https://app.nostro.co/leaderboard "".",Access should be denied or redirected to login page.,"1. Open the Leaderboard page.
+2. Try to access leaderboard without authentication/login.",,,Shivam,,,,
+Tools: Advanced Chart,,,,,,,,,,,,,
+ ,,TC-163,"To verify ""Advanced Chart"" is functional.","1. User should logged in and navigate to the Tools page URL ""https://app.nostro.co/advanced-chart "".",Advanced Chart should show the dotted lines for x-axis and y-axis with the target sign which is controllled to move the axis line.,"1. Open the Advanced Chart page.
+2. Observe the Advanced Chart carefully and move the target on the chart.",,,Shivam,,,,
+,,TC-164,"To verify all the data is reflecting from ""TradingView"" website.","1. User should logged in and navigate to the Tools page URL ""https://app.nostro.co/advanced-chart "".","All the data in the advanced chart should be reflecting from ""TradeView"" servers., any external data should not reflect in the advanced chart.","1. Open the Advanced Chart page.
+2. Confirm that the data is only coming from ""TradeView"" websites.",,,Shivam,,,,
+,,TC-165,"To verify ""Symbol Search"" is functional.","1. User should logged in and navigate to the Tools page URL ""https://app.nostro.co/advanced-chart "".","Enter the valid input in the search field, it should reflect the data for the same in the chart.","1. Open the Advanced Chart page.
+2. Enter the valid input in search field.",,,Shivam,,,,
+,,TC-166,"To verify ""Add Symbol"" is functional.","1. User should logged in and navigate to the Tools page URL ""https://app.nostro.co/advanced-chart "".","Clicking on the Add symbol, it should open the tab to create a shortcut button for an trade view of the company or stocks.","1. Open the Advanced Chart page.
+2. Click on the ""Add Symbol"" button and create a shorctcut button.",,,Shivam,,,,
+,,TC-167,To verify Time interval buttons.,"1. User should logged in and navigate to the Tools page URL ""https://app.nostro.co/advanced-chart "".","Clicking on the ""Time interval"" buttons, the data should be reflected as per the selected time only.
+(Time Interval Buttons: 1m, 30m, 1h, 4h)","1. Open the Advanced Chart page.
+2. Click on the Time Interval buttons and see the changes in the chart.",,,Shivam,,,,
+,,TC-168,"To verify ""Bar view"" button.","1. User should logged in and navigate to the Tools page URL ""https://app.nostro.co/advanced-chart "".","Clicking on the ""Bar view"" button, it should display the data in bar view graph.","1. Open the Advanced Chart page.
+2. Click on the ""Bar view"" button.",,,Shivam,,,,
+,,TC-169,"To verify ""Candle view"" button.","1. User should logged in and navigate to the Tools page URL ""https://app.nostro.co/advanced-chart "".","Clicking on the ""Candle view"" button, it should display the data in Candle view graph.","1. Open the Advanced Chart page.
+2. Click on the ""Candle view"" button.",,,Shivam,,,,
+,,TC-170,"To verify ""Area View"" button.","1. User should logged in and navigate to the Tools page URL ""https://app.nostro.co/advanced-chart "".","Clicking on the ""Area view"" button, it should display the data in area wise graph.","1. Open the Advanced Chart page.
+2. Click on the ""Area view"" button.",,,Shivam,,,,
+,,TC-171,"To verify ""Bar Style"" dropdown button.","1. User should logged in and navigate to the Tools page URL ""https://app.nostro.co/advanced-chart "".","Clicking on the ""Bar Style"" dropdown button, it should show the list for viewwing the graph iin various styles.","1. Open the Advanced Chart page.
+2. Click on the ""Bar Style"" dropdown button.",,,Shivam,,,,
+,,TC-172,"To verify ""Indicatiors"" button.","1. User should logged in and navigate to the Tools page URL ""https://app.nostro.co/advanced-chart "".","Clicking on the ""Indicators"" button, it shoud open an iframe to`showing the search field at the top, list of metrics and index.","1. Open the Advanced Chart page.
+2. Click on the ""Indicators"" button.",,,Shivam,,,,
+,,TC-173,"To verify ""Take a Snapshot"" button.","1. User should logged in and navigate to the Tools page URL ""https://app.nostro.co/advanced-chart "".","Clicking on the ""Take a Snapshot"" button, it should display the two options for taking the snapshot.","1. Open the Advanced Chart page.
+2. Click on the ""Take a Snapshot"" button.",,,Shivam,,,,
+,,TC-174,"To verify ""Download image"" option.","1. User should logged in and navigate to the Tools page URL ""https://app.nostro.co/advanced-chart "".","Clicking on the ""Download image"" button, it should download the image and save it in user's system.","1. Open the Advanced Chart page.
+2. Select the ""Download image"" option.",,,Shivam,,,,
+,,TC-175,"To verify ""Copy Image"" option.","1. User should logged in and navigate to the Tools page URL ""https://app.nostro.co/advanced-chart "".","Clicking on the ""Copy image"" button, it should display snapshot image in the new tab with full preview.","1. Open the Advanced Chart page.
+2. Select the ""Copy image"" option.",,,Shivam,,,,
+,,TC-176,"To verify ""Zoom out"" button.","1. User should logged in and navigate to the Tools page URL ""https://app.nostro.co/advanced-chart "".","Clicking on the ""Zoom out"" button, the chart should zoom out the chart view.","1. Open the Advanced Chart page.
+2. Click on the ""Zoom out"" button.",,,Shivam,,,,
+,,TC-177,"To verify ""Zoom in"" button.","1. User should logged in and navigate to the Tools page URL ""https://app.nostro.co/advanced-chart "".","Clicking on the ""Zoom in"" button, the chart should zoom in the chart view.","1. Open the Advanced Chart page.
+2. Click on the ""Zoom in"" button.",,,Shivam,,,,
+,,TC-178,"To verify ""Scroll to the left"" button.","1. User should logged in and navigate to the Tools page URL ""https://app.nostro.co/advanced-chart "".","Clicking on the ""Scroll to the left"" button, the chart view should be scrolled to the left side.","1. Open the Advanced Chart page.
+2. Click on the ""Scroll to the left"" button.",,,Shivam,,,,
+,,TC-179,"To verify ""Scroll to the right"" button.","1. User should logged in and navigate to the Tools page URL ""https://app.nostro.co/advanced-chart "".","Clicking on the ""Scroll to the right"" button, the chart view should be scrolled to the right side.","1. Open the Advanced Chart page.
+2. Select the ""Scroll to the right"" button..",,,Shivam,,,,
+,,TC-180,"To verify ""Reset chart view"" button.","1. User should logged in and navigate to the Tools page URL ""https://app.nostro.co/advanced-chart "".","Clicking on the ""Reset chart view"" button, the chart view should be get reset and show the default view.","1. Open the Advanced Chart page.
+2. Select the ""Reset chart view"" button.",,,Shivam,,,,
+,,TC-181,"To verify ""Track all markets on TradingView"" hyperlink.","1. User should logged in and navigate to the Tools page URL ""https://app.nostro.co/advanced-chart "".","Clicking on the ""Track all markets on TradingView"" hyperlink, it should be redirected to the ""TradingView Track All Markets"" official site.","1. Open the Advanced Chart page.
+2. Click on the ""Track all markets on TradingView"" hyperlink.",,,Shivam,,,,
+,,TC-182,"To verify ""Chatbot"" is functional.","1. User should logged in and navigate to the Tools page URL ""https://app.nostro.co/advanced-chart "".","Quering any Valid Issue relevant to Nostro, the chatbot should give appropriate suggestions to the user.","1. Open the Advanced Chart page.
+2. Click on the ""Chatbot"" icon and enter the query for suggestions.",,,Shivam,,,,
+Tools: Economic Calendar,,,,,,,,,,,,,
+,,TC-183,"To verify ""Economic Calendar"" page is opened.","1. User should logged in and navigate to the Tools page URL ""https://app.nostro.co/economic-calendar "".","Clicking on the ""Economic Calendar"" option tile, the page should be opened with the ecomonic details.",1. Click on the Economic Calendar option.,,,Shivam,,,,
+,,TC-184,To verify Economic Calender page load time.,"1. User should logged in and navigate to the Tools page URL ""https://app.nostro.co/economic-calendar "".",Economic Calendar should get load within an acceptable time frame.,"1. Open the Ëconomic Calendar page.
+2. Observe load time of the page.",,,Shivam,,,,
+,,TC-185,To verify Economic Calendar is fetching data.,"1. User should logged in and navigate to the Tools page URL ""https://app.nostro.co/economic-calendar "".","The data displaying in the Economic Calendar should be onl from the ""TradingView"" official website.","1. Open the Ëconomic Calendar page.
+2. Verify the data is reflected only from TradingView site.",,,Shivam,,,,
+,,TC-186,To verify visual appearance of the webpage.,"1. User should logged in and navigate to the Tools page URL ""https://app.nostro.co/economic-calendar "".","Calendar layout should be clean, aligned, easy to read and understand.","1. Open the Ëconomic Calendar page.
+2. Verify webpage visual appearance is aligned properly.",,,Shivam,,,,
+,,TC-187,"To verify ""Countries"" button.","1. User should logged in and navigate to the Tools page URL ""https://app.nostro.co/economic-calendar "".",Economic Calendar should displays only events scheduled for the selected country name.,"1. Open the Ëconomic Calendar page.
+2. Select the country name.",,,Shivam,,,,
+,,TC-188,"To verify ""High importance"" button.","1. User should logged in and navigate to the Tools page URL ""https://app.nostro.co/economic-calendar "".",Economic Calendar should displays only events higher Prior percentage.,"1. Open the Ëconomic Calendar page.
+2. Select the ""High importance"" button as the event type filter.",,,Shivam,,,,
+,,TC-189,To verify Invalid Input in search countries field.,"1. User should logged in and navigate to the Tools page URL ""https://app.nostro.co/economic-calendar "".","System should displays an error message: ""No markets match your criteria"".","1. Open the Ëconomic Calendar page.
+2. Enter invalid input or non-existent country.",,,Shivam,,,,
+,,TC-190,To verify Handle large data.,"1. User should logged in and navigate to the Tools page URL ""https://app.nostro.co/economic-calendar "".","Economic Calendar should displays data efficiently, potentially with individual pages or scrolling.","1. Open the Ëconomic Calendar page.
+2. Observe the calendar with 100+ events.",,,Shivam,,,,
+,,TC-191,"To verify ""More Events"" button.","1. User should logged in and navigate to the Tools page URL ""https://app.nostro.co/economic-calendar "".","Clicking on the ""More Events"" button, it should be navigated to TradingView economic calendar webpage.","1. Open the Ëconomic Calendar page.
+2. Click on the ""More Events"" button.",,,Shivam,,,,
+Tools: Downloads,,,,,,,,,,,,,
+,,TC-192,"To verify ""Tradings Platforms"" section.","1. User should logged in and navigate to the Tools page URL ""https://app.nostro.co/downloads "".",Trading Platforms section display three options to download. ,"1. Open the Downloads page.
+2. Verify the options displayed are correct.",,,Shivam,,,,
+,,TC-193,"To verify ""Title"" is displayed correct.","1. User should logged in and navigate to the Tools page URL ""https://app.nostro.co/downloads "".","The title name displayed on the ""Title"" column should be the same as download link is provided for content, it should not be the mismatch of title and download link provided for specific file.","1. Open the Downloads page.
+2. Verify the title and download link of the file is for same content.",,,Shivam,,,,
+,,TC-194,"To verify ""Download icon"" button is functional.","1. User should logged in and navigate to the Tools page URL ""https://app.nostro.co/downloads "".","Clicking on the ""Download"" icon button, it should download the contents file in the user's system.","1. Open the Downloads page.
+2. Click on the ""Download"" icon button.",,,Shivam,,,,
+,,TC-195,"To verify ""Graphics"" section.","1. User should logged in and navigate to the Tools page URL ""https://app.nostro.co/downloads "".","Graphics section should display ""Nostro - Brand kit"" option.","1. Open the Downloads page.
+2. Verify the correct option is displayed in the section tile.",,,Shivam,,,,
+,,TC-196,"To verify Nostro - Brand Kit ""Download"" icon button is functional.","1. User should logged in and navigate to the Tools page URL ""https://app.nostro.co/downloads "".","Clicking on the ""Download"" icon button, it should download the content file in the user's system.","1. Open the Downloads page.
+2. Click on the ""Download"" icon button.",,,Shivam,,,,
+,,TC-197,"To verify ""Policies"" section.","1. User should logged in and navigate to the Tools page URL ""https://app.nostro.co/downloads "".","Policies section should displays the appropriate three options.
+(Terms & Conditions, Privacy Policy, GDPR Policy)","1. Open the Downloads page.
+2. Verify the three options is displayed.",,,Shivam,,,,
+,,TC-198,"To verify Terms & Conditions ""Download"" icon button.","1. User should logged in and navigate to the Tools page URL ""https://app.nostro.co/downloads "".","Clicking on the ""Download"" icon button, it should download the ""Terms & Conditions"" PDF file in the user's system.","1. Open the Downloads page.
+2. Click on the Terms & Conditions ""Download"" icon button.",,,Shivam,,,,
+,,TC-199,"To verify Privacy Policy ""Download"" icon button.","1. User should logged in and navigate to the Tools page URL ""https://app.nostro.co/downloads "".","Clicking on the ""Download"" icon button, it should download the ""Privacy Policy"" PDF file in the user's system.","1. Open the Downloads page.
+2. Click on the Privacy Policy ""Download"" icon button.",,,Shivam,,,,
+,,TC-200,"To verify GDPR Policy ""Download"" icon button.","1. User should logged in and navigate to the Tools page URL ""https://app.nostro.co/downloads "".","Clicking on the ""Download"" icon button, it should download the ""GDPR Policy"" PDF file in the user's system.","1. Open the Downloads page.
+2. Click on the GDPR Policy ""Download"" icon button.",,,Shivam,,,,
+Education: Nostro Tutorials,,,,,,,,,,,,,
+,,TC-201,To verify Video Archive page.,"1. User should logged in and navigate to the Education: Nostro Tutorials page URL ""https://app.nostro.co/nostro-tutorials "".",Video Archive page should display the small iframes mentioning the content's feature and how wto use them tutorials video.,"1. Open the Video Archive page.
+2. Verify the small iframes display content name and relevent feature tutorial video.",,,Shivam,,,,
+,,TC-202,"To verify small iframe's ""Learn More"" button is functional.","1. User should logged in and navigate to the Education: Nostro Tutorials page URL ""https://app.nostro.co/nostro-tutorials "".","Clicking on iframe's ""Learn More"" button, it should be navigated to video preview page to watch that video.","1. Open the Video Archive page.
+2. Click on the small iframe's ""Learn More"" button.",,,Shivam,,,,
+,,TC-203,"To verify ""Backward"" icon button.","1. User should logged in and navigate to the Education: Nostro Tutorials page URL ""https://app.nostro.co/nostro-tutorials "".","Clicking on the ""Backward"" icon button, it should go the previous slide of video archives, only if  the current screen is forward from slide 1. ","1. Open the Video Archive page.
+2. Click on the ""Backward"" icon button.",,,Shivam,,,,
+,,TC-204,"To verify ""Forward"" icon button.","1. User should logged in and navigate to the Education: Nostro Tutorials page URL ""https://app.nostro.co/nostro-tutorials "".","Clicking on the ""Forward"" icon button, it should go the next slide of video archives, only if there are more videos and present on next slide. ","1. Open the Video Archive page.
+2. Click on the ""Forward"" icon button.",,,Shivam,,,,
+Mastery: Achievements -> Daily Achievements,,,,,,,,,,,,,
+,,TC-205,"To verify ""Contest Conqueror"" achievement.","1. User should logged in and navigate to the Mastery: Achievements page URL ""https://app.nostro.co/achievements "".","When the first competition is started, the tile should be highlighted and target should be 1/1 as a sign for acquiring achievement.","1. Open the Mastery: Achievements page.
+2. Verify the ""Contest Conqueror"" tile is highlighted and number is1/1.",,,Shivam,,,,
+,,TC-206,"To verify ""Good Friend"" achievement.","1. User should logged in and navigate to the Mastery: Achievements page URL ""https://app.nostro.co/achievements "".","When the user refers Nostro app to 2 friends and they joined the Nostro app, then the tile should be highlighted and target should be 1/1 as a sign for acquiring achievement.","1. Open the Mastery: Achievements page.
+2. Verify the ""Good Friend"" tile is highlighted and number is1/1.",,,Shivam,,,,
+Mastery: Achievements -> Weekly Achievements,,,,,,,,,,,,,
+,,TC-207,"To verify ""Referral Ninja"" achievement.","1. User should logged in and navigate to the Mastery: Achievements page URL ""https://app.nostro.co/achievements "".","When the user refers Nostro app to 10 friends and they joined the Nostro app, then the tile should be highlighted and target should be 10/10 as a sign for acquiring achievement.","1. Open the Mastery: Achievements page.
+2. Verify the ""Referral Ninja"" tile is highlighted and number is 10/10.",,,Shivam,,,,
+,,TC-208,"To verify ""Profile Wizard"" achievement.","1. User should logged in and navigate to the Mastery: Achievements page URL ""https://app.nostro.co/achievements "".","When the user completes Challenge Stage, the tile should be highlighted and target should be 1/1 as a sign for acquiring achievement.","1. Open the Mastery: Achievements page.
+2. Verify the ""Profile Wizard"" tile is highlighted and number is 1/1.",,,Shivam,,,,
+Mastery: Achievements -> Monthly Achievements,,,,,,,,,,,,,
+,,TC-209,"To verify ""Pay Day"" achievement.","1. User should logged in and navigate to the Mastery: Achievements page URL ""https://app.nostro.co/achievements "".","When the user Reaches a total of $100 in payouts,  then the tile should be highlighted and target should be 100/100 as a sign for acquiring achievement.
+
+","1. Open the Mastery: Achievements page.
+2. Verify the ""Pay Day"" tile is highlighted and number is 100/100.",,,Shivam,,,,
+,,TC-210,"To verify ""The Challenger"" achievement.","1. User should logged in and navigate to the Mastery: Achievements page URL ""https://app.nostro.co/achievements "".","When the user starts 10 challenges,  then the tile should be highlighted and target should be 10/10 as a sign for acquiring achievement.
+
+","1. Open the Mastery: Achievements page.
+2. Verify the ""The Challenger"" tile is highlighted and number is 10/10.",,,Shivam,,,,
+Mastery: Certificates,,,,,,,,,,,,,
+,,TC-211,"To verify ""Funded Account"" iframe is disable.","1. User should logged in and navigate to the Mastery: Certificates page URL ""https://app.nostro.co/certificates "".","""Funded Account"" certificate iframe should be disabled until its target value is achieved.","1. Open the Certificates page.
+2. Verify the ""Funded Account iframe"" is disable.",,,Shivam,,,,
+,,TC-212,"To verify ""Funded Account"" iframe is enable.","1. User should logged in and navigate to the Mastery: Certificates page URL ""https://app.nostro.co/certificates "".","""Funded Account"" certicate iframe should be enabled only when the expected target value is achieved by the user account.","1. Open the Certificates page.
+2. Verify the ""Funded Account iframe"" is enable.",,,Shivam,,,,
+,,TC-213,"To verify Funded Account ""Download"" icon button is functional..","1. User should logged in and navigate to the Mastery: Certificates page URL ""https://app.nostro.co/certificates "".","Clicking on the ""Download"" icon button, it should download the zip file for 2 certificates.","1. Open the Certificates page.
+2. Click on the ""Download"" icon button.",,,Shivam,,,,
+,,TC-214,"To verify ""Payout Certificate"" iframe is disable.","1. User should logged in and navigate to the Mastery: Certificates page URL ""https://app.nostro.co/certificates "".","""Payout Certificate"" iframe should be disabled until user reach the total of $100 payout from the account.","1. Open the Certificates page.
+2. Verify the ""Payout Certificate"" iframe is disable.",,,Shivam,,,,
+,,TC-215,"To verify ""Payout Certificate"" iframe is enable.","1. User should logged in and navigate to the Mastery: Certificates page URL ""https://app.nostro.co/certificates "".","""Payout Certificate"" iframe should be enabled, only when the user reach the total of $100 payout from the account.","1. Open the Certificates page.
+2. Verify the ""Payout Certificate"" iframe is enable.",,,Shivam,,,,
+,,TC-216,"To verify Payout Certificate ""Download"" icon button is functional..","1. User should logged in and navigate to the Mastery: Certificates page URL ""https://app.nostro.co/certificates "".","Clicking on the ""Download"" icon button, it should download the zip file for 2 certificates.","1. Open the Certificates page.
+2. Click on the ""Download"" icon button.",,,Shivam,,,,
+,,TC-217,"To verify ""Competition Winner"" iframe is disable.","1. User should logged in and navigate to the Mastery: Certificates page URL ""https://app.nostro.co/certificates "".","Competition Winner iframe should be disabled, until the user wins the competition.","1. Open the Certificates page.
+2. Competition Winner iframe is disable.",,,Shivam,,,,
+Affiliate (UPDATED),,,,,,,,,,,,,
+,,TC-218,"To verify ""Affiliate"" Menu option.","1. User should logged in and navigate to the Affiliate page URL ""https://app.nostro.co/affiliate "" .","Clicking on the ""Affiliate"" option, it should open the Affliate page which should not be get stucked and loaded properly.",1. Open the Affiliate page.,,,Shivam,,,,
+,,TC-219,"To verify ""Terms & Conditions Acceptance"" popup display.","1. User should logged in and navigate to the Affiliate page URL ""https://app.nostro.co/affiliate "" .","""Terms & Conditions Acceptance"" iframe should appear when the affiliate page is loaded for the first time only.","1. Open the Affiliate page.
+2. Verify the ""Terms & Conditions Acceptance"" popup is displayed.",,,Shivam,,,,
+,,TC-220,"To verify ""Terms & Conditions Acceptance"" popup ""Cancel"" buton.","1. User should logged in and navigate to the Affiliate page URL ""https://app.nostro.co/affiliate "" .","Clicking on the ""Cancel"" button, it should go to the leave the Affiliate page..","1. Open the Affiliate page.
+2. Click on the ""Cancel"".",,,Shivam,,,,
+,,TC-221,"To verify ""Terms & Conditions Acceptance"" popup ""Continue"" button is disable.","1. User should logged in and navigate to the Affiliate page URL ""https://app.nostro.co/affiliate "" .","""Continue"" button should remain disabled, until the checkbox is checked.","1. Open the Affiliate page.
+2. Verify the ""Continue"" button is disable.",,,Shivam,,,,
+,,TC-222,"To verify ""Terms & Conditions Acceptance"" popup ""Continue"" button is enable.","1. User should logged in and navigate to the Affiliate page URL ""https://app.nostro.co/affiliate "" .","""Continue"" button should be enabled when clicked on the ""Checkbox"".","1. Open the Affiliate page.
+2. Verify the ""Continue"" button is enable.",,,Shivam,,,,
+,,TC-223,"To verify ""Terms & Conditions Acceptance"" popup ""Continue"" button is functional.","1. User should logged in and navigate to the Affiliate page URL ""https://app.nostro.co/affiliate "" .","Clicking on the ""Continue"" button, it should be navigated to ""Affiliate- Main page"".","1. Open the Affiliate page.
+2. Click on the ""Checkbox""
+3. Click on the ""Continue"" button.",,,Shivam,,,,
+,,TC-224,To verify all the tabs value.,"1. User should logged in and navigate to the Affiliate page URL ""https://app.nostro.co/affiliate "" .","All the tabs value should be set to default/static, until the Verification process is completed successfully.","1. Open the Affiliate page.
+2. Click on the ""Continue"" button.
+3. Verify all the values in the page is default.",,,Shivam,,,,
+,,TC-225,"To verify ""Notification"" icon.","1. User should logged in and navigate to the Affiliate page URL ""https://app.nostro.co/affiliate "" .","Clicking on the notificaion icon, it should open the tab for displaying notifications.","1. Open the Affiliate page.
+2.Click on the ""Continue"" button.
+3. Click on the ""Notification"" icon.",,,Shivam,,,,
+,,TC-226,"To verify ""Profile"" icon.","1. User should logged in and navigate to the Affiliate page URL ""https://app.nostro.co/affiliate "" .","The profile icon displaying should be the same as user's account, it should not be different / unmatched.","1. Open the Affiliate page.
+2. Click on the ""Continue"" button.
+3. Verify the profile icon is a match.",,,Shivam,,,,
+,,TC-227,"To verify ""VERIFY NOW"" button is functional.","1. User should logged in and navigate to the Affiliate page URL ""https://app.nostro.co/affiliate "" .","Clicking on the ""VERIFY NOW"" button, it should be navigated to New Challenge page to Start the verification process for free trial account.","1. Open the Affiliate page.
+2. Click on the ""Continue"" button.
+3. Click on the ""Verify Now"" button.",,,Shivam,,,,
+,,TC-228,"To verify ""Affiliate"" page Dynamic values display.","1. User should logged in and navigate to the Affiliate page URL ""https://app.nostro.co/affiliate "" .","If the ""Free Trial"" verification has completed successfully, then according to the required criterias dynamic values should be fetched in affiliate page.","1. Open the Affiliate page.
+2. Click on the ""Verify Now"" button and Complete the Verification successfully. (If not completed, Execute the step)
+3. Verify the Dynamic values are fetched in Affiliate page.",,,Shivam,,,,
+,,TC-229,To verify Affiliate Page Layout.,"1. User should logged in and navigate to the Affiliate page URL ""https://app.nostro.co/affiliate "" .","Page layout should be clean, organized, and easy to navigate.","1. Open the Affiliate page.
+2. Check for proper alignment and readability of elements.",,,Shivam,,,,
+,,TC-230,"To verify ""Total Revenue"" amount .","1. User should logged in and navigate to the Affiliate page URL ""https://app.nostro.co/affiliate "" .",Total Revenue amount should be the sum of all the previous successful payouts amount.,"1. Open the Affiliate page.
+2. Verify the Total Revenue amount is accurate.",,,Shivam,,,,
+,,TC-231,"To verify ""Link Click"" counts.","1. User should logged in and navigate to the Affiliate page URL ""https://app.nostro.co/affiliate "" .","When the shared referral links are being clicked, Link clicks counts should be automatically updated/increased.","1. Open the Affiliate page.
+2. Verify the Link click count displayed is corrrect",,,Shivam,,,,
+,,TC-232,"To verify  ""Total Referrals - Verified"" counts.","1. User should logged in and navigate to the Affiliate page URL ""https://app.nostro.co/affiliate "" .","When the shared referred links has joined as Nostro Verified users, then it should update the count number.
+(If 5 shared referral links, but only 3 has joined Nostro (Verfified) then Total Referral count will be increase by +3.)","1. Open the Affiliate page.
+2. Verify the Total Referrals (Verified) count displayed is correct.",,,Shivam,,,,
+,,TC-233,"To verify ""Successfully Conversion"" counts.","1. User should logged in and navigate to the Affiliate page URL ""https://app.nostro.co/affiliate "" .",Successful conversions counts should be correct and accurate which is to fetched from the database records of an account.,"1. Open the Affiliate page.
+2. Verify the Succesful Conversion count displayed is correct.",,,Shivam,,,,
+,,TC-234,"To verify  ""Total Referrals - Unverified"" counts.","1. User should logged in and navigate to the Affiliate page URL ""https://app.nostro.co/affiliate "" .","When the shared referred links has joined as Nostro but Unverified users, then it should update the count number.","1. Open the Affiliate page.
+2. Verify the Total Referrals (Unverified) count displayed is correct.",,,Shivam,,,,
+,,TC-235,"To verify ""Lifetime Earnings"" amount.","1. User should logged in and navigate to the Affiliate page URL ""https://app.nostro.co/affiliate "" .",Lifetime Earning should be the sum of all previous earnings of an account which should be fetched from the database and accurately displayed .,"1. Open the Affiliate page.
+2. Verify Lifetime Earnings amount displayed is accurate.",,,Shivam,,,,
+,,TC-236,"To verify ""Pending Payouts"" amount.","1. User should logged in and navigate to the Affiliate page URL ""https://app.nostro.co/affiliate "" .","Pending payouts amounts should be the sum of all pending payouts data stored in the database, the same amount should be accurately displayed .","1. Open the Affiliate page.
+2. Verify Pending Payouts amount displayed is accurate.",,,Shivam,,,,
+,,TC-237,"To verify ""Conversion Rates"" percentage is correct.","1. User should logged in and navigate to the Affiliate page URL ""https://app.nostro.co/affiliate "" .",The percentage for the Conversion Rates should be calculated and displayed accurately.,"1. Open the Affiliate page.
+2. Verify the Conversion Rates Percenatge displayed is accurate.",,,Shivam,,,,
+,,TC-238,To verify Performance chart displays accurate graph.,"1. User should logged in and navigate to the Affiliate page URL ""https://app.nostro.co/affiliate "" .","Performance graph should fetched the accurate data for account Balance, Equity and displays the same.","1. Open the Affiliate page.
+2. Verify the Performance Chart displayed data is correct.",,,Shivam,,,,
+,,TC-239,To verify Reward Tier Display.,"1. User should logged in and navigate to the Affiliate page URL ""https://app.nostro.co/affiliate "" .","All reward tiers ( $20 Credit, $25K 3-step Challenge, $100 Credit, $100K 3-step Challenge) are displayed correctly with corresponding referral requirements.","1. Open the Affiliate page.
+2. Verify the Reward toggle tile displayed is correct.",,,Shivam,,,,
+,,TC-240,To Reward Claim button functionality.,"1. User should logged in and navigate to the Affiliate page URL ""https://app.nostro.co/affiliate "" .","Clicking on the ""Claim"" button the reward should be claimed successfully, and visual confirmation should be provided (updated referral count, reward status change).","1. Open the Affiliate page.
+2. Click on ""CLAIM"" button for a reachable reward tier.",,,Shivam,,,,
+,,TC-241,To verify Reward Tier Display.,"1. User should logged in and navigate to the Affiliate page URL ""https://app.nostro.co/affiliate "" .","All reward tiers (e.g., $20 Credit, $25K 3-step Challenge, $100 Credit, $100K 3-step Challenge) are displayed correctly with corresponding referral requirements.","1. Open the Affiliate page.
+2. Reload the page and observe the Reward Tiers.",,,Shivam,,,,
+,,TC-242,To verify Referral Count Display.,"1. User should logged in and navigate to the Affiliate page URL ""https://app.nostro.co/affiliate "" .",Current referral count should be displayed accurately.,"1. Open the Affiliate page.
+2. Reload the page and observe the Referral counts.",,,Shivam,,,,
+,,TC-243,To verify Unreachable Reward Tier.,"1. User should logged in and navigate to the Affiliate page URL ""https://app.nostro.co/affiliate "" .",Claim button should be disabled for unreached reward tier.,"1. Open the Affiliate page.
+2. Try to claim a reward tier that requires more referrals.",,,Shivam,,,,
+,,TC-244,To verify Referral Link Display.,"1. User should logged in and navigate to the Affiliate page URL ""https://app.nostro.co/affiliate "" .",Referral link should be displayed correctly and clickable.,"1. Open the Affiliate page.
+2. Veriify the link is visible and clickable.",,,Shivam,,,,
+,,TC-245,To verify Referral Link Sharing.,"1. User should logged in and navigate to the Affiliate page URL ""https://app.nostro.co/affiliate "" .",Link should be shared successfully and can be accessed by recipients.,"1. Open the Affiliate page.
+2. Share the referral link through different channels (social media, email).",,,Shivam,,,,
+,,TC-246,To verify Referral Code Display.,"1. User should logged in and navigate to the Affiliate page URL ""https://app.nostro.co/affiliate "" .",Referral code should be displayed correctly.,"1. Open the Affiliate page.
+2. Verify the Referral code is visible.",,,Shivam,,,,
+,,TC-247,To verify Referral Tracking.,"1. User should logged in and navigate to the Affiliate page URL ""https://app.nostro.co/affiliate "" .",Referral count should be updated accurately as new users joined and verified using the referral link.,"1. Open the Affiliate page.
+2. Verify new user generated through the link''s count is correct.",,,Shivam,,,,
+,,TC-248,To verify Referral Code.,"1. User should logged in and navigate to the Affiliate page URL ""https://app.nostro.co/affiliate "" .",The referral code should be correctly associated with the user who referred the new member..,"1. Open the Affiliate page.
+2. Use the valid referral code during registration/signup.",,,Shivam,,,,
+,,TC-249,"To verify Account Manager ""CONTACT NOW"" button.","1. User should logged in and navigate to the Affiliate page URL ""https://app.nostro.co/affiliate "" .","Clicking on the ""CONTACT NOW"" button, user should be directed to the contact page or a communication channel to reach the account manager.","1. Open the Affiliate page.
+2. Click on ""CONTACT NOW"".",,,Shivam,,,,
+,,TC-250,"To verify Reward History ""Top- Performing Referrals"" display.","1. User should logged in and navigate to the Affiliate page URL ""https://app.nostro.co/affiliate "" .",Top claimed reward user should be displayed accurately in the Top- Performing Referrals list..,"1. Open the Affiliate page.
+2. Verify top claimed reward user list is accurate.",,,Shivam,,,,
+Affiliate : Payouts (UPDATED),,,,,,,,,,,,,
+,,TC-251,To verify Payouts menu option.,1. User should logged in and navigate to the Affiliate: Payouts page.,"Clicking on the ""Payouts"" menu option, it should be navigated to the ""Payouts"" page.","1. Click on the Affiliate dropdown icon.
+2. Click on the ""Payouts"" option.",,,Shivam,,,,
+,,TC-252,To verify the all the amounts display.,1. User should logged in and navigate to the Affiliate: Payouts page.,"All amounts should be calculated accurately and display with respective headers.(Lifetime Earnings, Pending Payouts and Paid out Totals, Calcuated amounts should not be in negative.","1. Click on the Affiliate dropdown icon.
+2. Click on the ""Payouts"" option.
+3. All the amounts are correct.",,,Shivam,,,,
+,,TC-253,To verify Payout Breakdown data display.,1. User should logged in and navigate to the Affiliate: Payouts page.,"Breakdown of payout components (Referral ID, Earnings, Status) should be displayed accurately.","1. Click on the Affiliate dropdown icon.
+2. Click on the ""Payouts"" option.
+3. Verify all the components display correct data.",,,Shivam,,,,
+,,TC-254,To verify Available Balance display.,1. User should logged in and navigate to the Affiliate: Payouts page.,Available account balance should be displayed accurately.,"1. Click on the Affiliate dropdown icon.
+2. Click on the ""Payouts"" option.
+3. Verify the available amount displayed is accurate.",,,Shivam,,,,
+,,TC-255,To verify Upcoming Payout Schedule.,1. User should logged in and navigate to the Affiliate: Payouts page.,Upcoming payout schedule should displays the next upcoming Date for requesting the payout and date format is (DD MMM YYYY).,"1. Click on the Affiliate dropdown icon.
+2. Click on the ""Payouts"" option.
+3. Verify the Upcoming payout date and format is correct..",,,Shivam,,,,
+,,TC-256,To verify Request Payout button.,1. User should logged in and navigate to the Affiliate: Payouts page.,"Clicking on the ""Request Payout"" button, a request for payout should be successfully submitted.","1. Click on the Affiliate dropdown icon.
+2. Click on the ""Payouts"" option.
+3. Click on the ""Request Payout"" button.",,,Shivam,,,,
+,,TC-257,To verify Insufficient Balance.,1. User should logged in and navigate to the Affiliate: Payouts page.,"Insufficient Balance should displays an error message or disable the ""Request Payout"" button.","1. Click on the Affiliate dropdown icon.
+2. Click on the ""Payouts"" option.
+3. Verify the error message/ Request button is disable.",,,Shivam,,,,
+,,TC-258,To verify Payout Breakdown .,1. User should logged in and navigate to the Affiliate: Payouts page.,Previous payout transactions should be displayed accurately.,"1. Click on the Affiliate dropdown icon.
+2. Click on the ""Payouts"" option.
+3. Verify the payout breakdown data is accurate.",,,Shivam,,,,
+,,TC-259,To verify Payout Schedule.,1. User should logged in and navigate to the Affiliate: Payouts page.,Payout schedule and frequency should be displayed and updated correctly in the Upcoming payout schedule.,"1. Click on the Affiliate dropdown icon.
+2. Click on the ""Payouts"" option.
+3. Verify the payout schedule and frequency.",,,Shivam,,,,
+Affiliate : Resources (UPDATED),,,,,,,,,,,,,
+,,TC-260,To verify Resources Page Load.,1. User should logged in and navigate to the Affiliate: Resources page.,Resources Page should be loaded completely and displays all elements correctly.,"1. Click on dopdown icon of the Affiliate menu option.
+2. Click on the ""Resources"" option.",,,Shivam,,,,
+,,TC-261,"To verify ""DOWNLOAD ALL ASSETS"" button.",1. User should logged in and navigate to the Affiliate: Resources page.,"Clicking on the ""Download All Assets"" button, it should downloads all assets as a zip file.","1. Click on dopdown icon of the Affiliate menu option.
+2. Click on the ""Resources"" option.
+3. Click on ""DOWNLOAD ALL ASSETS"" button.",,,Shivam,,,,
+,,TC-262,To verify Guides & Tutorials navigation links.,1. User should logged in and navigate to the Affiliate: Resources page.,"Clicking on the ""Guides & Tutorials"" link, User should be redirected to the ""Guides & Tutorials"" page/section.","1. Click on dopdown icon of the Affiliate menu option.
+2. Click on the ""Resources"" option.
+3. Click on ""Guides & Tutorials"" link.",,,Shivam,,,,
+,,TC-263,"To verify Guides & Tutorials content ""LEARN MORE"" button.",1. User should logged in and navigate to the Affiliate: Resources page.," Clicking on the ""LEARN MORE"" button, User should be redirected to the corresponding page (""How to Optimize Your Referral Funnel"").","1. Click on dopdown icon of the Affiliate menu option.
+2. Click on the ""Resources"" option.
+3. Click on ""LEARN MORE"" button.",,,Shivam,,,,
+,,TC-264,To verify Terms & Conditions navigation links.,1. User should logged in and navigate to the Affiliate: Resources page.,"Clicking on the ""Guides & Tutorials"" link, User should be redirected to the ""Terms & Conditions"" page/section.","1. Click on dopdown icon of the Affiliate menu option.
+2. Click on the ""Resources"" option.
+3. Click on ""Terms & Conditions"" link.
+",,,Shivam,,,,
+,,TC-265,"To verify ""VIEW LEGAL DOCS"" hyperlink.",1. User should logged in and navigate to the Affiliate: Resources page.,"Clicking on the ""View Legal Docs"" hyperlink, legal documents page should be displayed correctly.","1. Click on dopdown icon of the Affiliate menu option.
+2. Click on the ""Resources"" option.
+3. Click on ""VIEW LEGAL DOCS"" hyperlink.",,,Shivam,,,,
+,,TC-266,To verify Image and Content display.,1. User should logged in and navigate to the Affiliate: Resources page.,Images and text content should be displayed correctly and without errors.,"1. Click on dopdown icon of the Affiliate menu option.
+2. Click on the ""Resources"" option.
+3. Verify that all images and text content are displayed correctly.",,,Shivam,,,,
+,,TC-267,To verify Giveaway iframe interaction.,1. User should logged in and navigate to the Affiliate: Resources page.,Users should directed to the appropriate landing page or form for the giveaway process.,"1. Click on dopdown icon of the Affiliate menu option.
+2. Click on the ""Resources"" option.
+3. Interact with the ""GIVEAWAY"" section (click on ""50 Accounts to be Won!"").",,,Shivam,,,,
+,,TC-268,To verify New MT5 Update iframe interaction.,1. User should logged in and navigate to the Affiliate: Resources page.,Users should be directed to the appropriate landing page of New MT5 update.,"1. Click on dopdown icon of the Affiliate menu option.
+2. Click on the ""Resources"" option.
+3. Interact with the New MT5 Update iframe.",,,Shivam,,,,
+,,TC-269,To verify Offer iframe interaction.,1. User should logged in and navigate to the Affiliate: Resources page.,Users should be directed to the appropriate landing page or form for the offer.,"1. Click on dopdown icon of the Affiliate menu option.
+2. Click on the ""Resources"" option.
+3. Interact with the ""ENJOY 50% OFF"" iframe.",,,Shivam,,,,
+Accounts: Profile,,,,,,,,,,,,,
+,,TC-270,To verify Account: Profile page loads.,"1. User should logged in and navigate to the Accounts Profile page URL: ""https://app.nostro.co/profile "".","Clicking on the ""Profile"" option, it should open the Profile page and loaded properly.","1. Click on dopdown icon of the Account menu option.
+2. Click on the ""Profile"" option and verify the page loads properly.",,,Shivam,,,,
+,,TC-271,To verify the profile page all the fields.,"1. User should logged in and navigate to the Accounts Profile page URL: ""https://app.nostro.co/profile "".","All the fields of the page should be locked and not clickable until the ""Edit Profile"" button is clicked.","1. Click on dopdown icon of the Account menu option.
+2. Click on the ""Profile"" option.
+3. Verify the all the fields are not clickable.",,,Shivam,,,,
+,,TC-272,"To verify ""Edit Profile"" button is functional.","1. User should logged in and navigate to the Accounts Profile page URL: ""https://app.nostro.co/profile "".","Clicking on the ""Edit Profile"" button, all profile details fields should be clickable. ","1. Click on dopdown icon of the Account menu option.
+2. Click on the ""Profile"" option.
+3. Click on the ""Edit Profile"" button.
+4. Verify the all the fields are clickable.",,,Shivam,,,,
+,,TC-273,"To verify Profile Details ""First Name"" field.","1. User should logged in and navigate to the Accounts Profile page URL: ""https://app.nostro.co/profile "".","Entering the valid input in the field, it should accept it.","1. Click on dopdown icon of the Account menu option.
+2. Click on the ""Profile"" option.
+3. Click on the ""Edit Profile"" button.
+4. Enter the first name in the field.",,,Shivam,,,,
+,,TC-274,"To verify Profile Details ""First Name"" field is empty.","1. User should logged in and navigate to the Accounts Profile page URL: ""https://app.nostro.co/profile "".","Keeping the field empty, it should show an error message: ""Please enter first name"".","1. Click on dopdown icon of the Account menu option.
+2. Click on the ""Profile"" option.
+3. Click on the ""Edit Profile"" button.
+4. Keep the first name field empty.",,,Shivam,,,,
+,,TC-275,"To verify Profile Details ""Last Name"" field.","1. User should logged in and navigate to the Accounts Profile page URL: ""https://app.nostro.co/profile "".","Entering the valid input in the field,, it should accept it.","1. Click on dopdown icon of the Account menu option.
+2. Click on the ""Profile"" option.
+3. Click on the ""Edit Profile"" button.
+4. Enter the last name in the field.",,,Shivam,,,,
+,,TC-276,"To verify Profile Details ""Last Name"" field is empty.","1. User should logged in and navigate to the Accounts Profile page URL: ""https://app.nostro.co/profile "".","Keeping the field empty, it should show an error message: ""Please enter last name"".","1. Click on dopdown icon of the Account menu option.
+2. Click on the ""Profile"" option.
+3. Click on the ""Edit Profile"" button.
+4. Keep the last name field empty.",,,Shivam,,,,
+,,TC-277,To verify the invalid Email in the email field.,"1. User should logged in and navigate to the Accounts Profile page URL: ""https://app.nostro.co/profile "".","Entering the invalid email in the field, it should show an error message: ""Enter the valid email"".","1. Click on dopdown icon of the Account menu option.
+2. Click on the ""Profile"" option.
+3. Click on the ""Edit Profile"" button.
+4. Enter the invalid email.",,,Shivam,,,,
+,,TC-278,To verify the valid Email in the email field.,"1. User should logged in and navigate to the Accounts Profile page URL: ""https://app.nostro.co/profile "".","Entering the valid email in the field, it should accept the email and does not show an error message.","1. Click on dopdown icon of the Account menu option.
+2. Click on the ""Profile"" option.
+3. Click on the ""Edit Profile"" button.
+4. Enter the valid email.",,,Shivam,,,,
+,,TC-279,To verify TimeZone dropdown.,"1. User should logged in and navigate to the Accounts Profile page URL: ""https://app.nostro.co/profile "".","Clicking on the TimeZone dropdown, it should open the list of continents with appropriate timezone.","1. Click on dopdown icon of the Account menu option.
+2. Click on the ""Profile"" option.
+3. Click on the ""Edit Profile"" button.
+4. Click on the ""TimeZone"" dropdown.
+5. Verif the continents and their timezone are correct.",,,Shivam,,,,
+,,TC-280,To verify Default Timezone.,"1. User should logged in and navigate to the Accounts Profile page URL: ""https://app.nostro.co/profile "".",Default timezone should be selected based on user's current location.,"1. Click on dopdown icon of the Account menu option.
+2. Click on the ""Profile"" option.
+3. Click on the ""Edit Profile"" button.
+4. Verify the default timezone is correct.",,,Shivam,,,,
+,,TC-281,To verify dropdown Continent Selection.,"1. User should logged in and navigate to the Accounts Profile page URL: ""https://app.nostro.co/profile "".",Timezone for the selected continent should be displayed.,"1. Click on dopdown icon of the Account menu option.
+2. Click on the ""Profile"" option.
+3. Click on the ""Edit Profile"" button.
+4. Click on the ""TimeZone"" dropdown.
+5. Select a continent from the dropdown list.",,,Shivam,,,,
+,,TC-282,To verify Timezone Selection.,"1. User should logged in and navigate to the Accounts Profile page URL: ""https://app.nostro.co/profile "".",Selected timezone should be applied correctly.,"1. Click on dopdown icon of the Account menu option.
+2. Click on the ""Profile"" option.
+3. Click on the ""Edit Profile"" button.
+4. Click on the ""TimeZone"" dropdown.
+5. Select a specific continent's timezone from the list.",,,Shivam,,,,
+,,TC-283,To verify Empty Selection.,"1. User should logged in and navigate to the Accounts Profile page URL: ""https://app.nostro.co/profile "".",A default timezone is applied or an error message should be displayed.,"1. Click on dopdown icon of the Account menu option.
+2. Click on the ""Profile"" option.
+3. Click on the ""Edit Profile"" button.
+4. Leave the timezone field empty.",,,Shivam,,,,
+,,TC-284,To verify Valid Country (Dropdown).,"1. User should logged in and navigate to the Accounts Profile page URL: ""https://app.nostro.co/profile "".",Country should be selected from the dropdown list successfully.,"1. Click on dopdown icon of the Account menu option.
+2. Click on the ""Profile"" option.
+3. Click on the ""Edit Profile"" button.
+4. Select a valid country from the dropdown.",,,Shivam,,,,
+,,TC-285,To verify Invalid Country.,"1. User should logged in and navigate to the Accounts Profile page URL: ""https://app.nostro.co/profile "".","Searching for non existent country name, an error message:""No results found"" should be displayed.","1. Click on dopdown icon of the Account menu option.
+2. Click on the ""Profile"" option.
+3. Click on the ""Edit Profile"" button.
+4. Attempt to select/ search an invalid country.",,,Shivam,,,,
+,,TC-286,To verify Valid Address.,"1. User should logged in and navigate to the Accounts Profile page URL: ""https://app.nostro.co/profile "".",Address is accepted without errors.,"1. Click on dopdown icon of the Account menu option.
+2. Click on the ""Profile"" option.
+3. Click on the ""Edit Profile"" button.
+4. Enter a valid address.",,,Shivam,,,,
+,,TC-288,To verify Empty Address Field.,"1. User should logged in and navigate to the Accounts Profile page URL: ""https://app.nostro.co/profile "".","Keepimg the Address field empty, an error message ""Enter the address"" should be displayed.","1. Click on dopdown icon of the Account menu option.
+2. Click on the ""Profile"" option.
+3. Click on the ""Edit Profile"" button.
+4. Leave the address field empty.",,,Shivam,,,,
+,,TC-289,To verify Valid City.,"1. User should logged in and navigate to the Accounts Profile page URL: ""https://app.nostro.co/profile "".","Entering the valid City, it should be accepted without errors.","1. Click on dopdown icon of the Account menu option.
+2. Click on the ""Profile"" option.
+3. Click on the ""Edit Profile"" button.
+4. Enter a valid city name.",,,Shivam,,,,
+,,TC-290,To verify Invalid City.,"1. User should logged in and navigate to the Accounts Profile page URL: ""https://app.nostro.co/profile "".","Entering the invalid City, an error message: ""Enter the valid city"" should be displayed.","1. Click on dopdown icon of the Account menu option.
+2. Click on the ""Profile"" option.
+3. Click on the ""Edit Profile"" button.
+4. Enter an invalid city name (non-existent city).",,,Shivam,,,,
+,,TC-291,To verify Empty City Field.,"1. User should logged in and navigate to the Accounts Profile page URL: ""https://app.nostro.co/profile "".","Keeping the city field empty, an error message: ""Enter the city"" should be displayed.","1. Click on dopdown icon of the Account menu option.
+2. Click on the ""Profile"" option.
+3. Click on the ""Edit Profile"" button.
+4. Leave the city field empty.",,,Shivam,,,,
+,,TC-292,To verify Valid State.,"1. User should logged in and navigate to the Accounts Profile page URL: ""https://app.nostro.co/profile "".","Entering valid State, it should be accepted/selected successfully.","1. Click on dopdown icon of the Account menu option.
+2. Click on the ""Profile"" option.
+3. Click on the ""Edit Profile"" button.
+4. Enter a valid state.",,,Shivam,,,,
+,,TC-293,To verify Invalid State.,"1. User should logged in and navigate to the Accounts Profile page URL: ""https://app.nostro.co/profile "".","Entering invalid State, an error message: ""Enter the valid state"" should be displayed.","1. Click on dopdown icon of the Account menu option.
+2. Click on the ""Profile"" option.
+3. Click on the ""Edit Profile"" button.
+4. Enter an invalid state.",,,Shivam,,,,
+,,TC-294,To verify Empty State Field.,"1. User should logged in and navigate to the Accounts Profile page URL: ""https://app.nostro.co/profile "".","Keeping the State field empty, an error message: ""Enter the State"" should be displayed.","1. Click on dopdown icon of the Account menu option.
+2. Click on the ""Profile"" option.
+3. Click on the ""Edit Profile"" button.
+4. Leave the state field empty.",,,Shivam,,,,
+,,TC-295,To verify Valid Zip Code.,"1. User should logged in and navigate to the Accounts Profile page URL: ""https://app.nostro.co/profile "".",Entering the valid Zip code should be accepted without errors.,"1. Click on dopdown icon of the Account menu option.
+2. Click on the ""Profile"" option.
+3. Click on the ""Edit Profile"" button.
+4. Enter a valid zip code.",,,Shivam,,,,
+,,TC-296,To verify Invalid Zip Code,"1. User should logged in and navigate to the Accounts Profile page URL: ""https://app.nostro.co/profile "".","Entering the invalid Zip code, an error message: ""Enter the valid zip code"" should be displayed.","1. Click on dopdown icon of the Account menu option.
+2. Click on the ""Profile"" option.
+3. Click on the ""Edit Profile"" button.
+4. Enter an invalid zip code (incorrect format, non-existent zip code).",,,Shivam,,,,
+,,TC-297,To verify Empty Zip Code Field,"1. User should logged in and navigate to the Accounts Profile page URL: ""https://app.nostro.co/profile "".","Keeping the Zip code field empty, an error message: ""Enter the zip code"" should be displayed.","1. Click on dopdown icon of the Account menu option.
+2. Click on the ""Profile"" option.
+3. Click on the ""Edit Profile"" button.
+4. Leave the zip code field empty.",,,Shivam,,,,
+,,TC-298,"To verify ""SAVE"" button is functional.","1. User should logged in and navigate to the Accounts Profile page URL: ""https://app.nostro.co/profile "".","Clicking on the ""SAVE"" button, it should save the edited details.","1. Click on dopdown icon of the Account menu option.
+2. Click on the ""Profile"" option.
+3. Click on the ""Edit Profile"" button.
+4. Enter/edit the details.
+5. Click on the ""SAVE"" button.",,,Shivam,,,,
+,,TC-299,"To verify ""Profile Changes Saved"" popup message.","1. User should logged in and navigate to the Accounts Profile page URL: ""https://app.nostro.co/profile "".","On successful saving of the edited details, it should display an popup message: ""Profile Changes Saved"".","1. Click on dopdown icon of the Account menu option.
+2. Click on the ""Profile"" option.
+3. Click on the ""Edit Profile"" button.
+4. Enter/edit the details.
+5. Click on the ""SAVE"" button.
+6. Verify the pop up message displays.",,,Shivam,,,,
+Accounts: Security,,,,,,,,,,,,,
+,,TC-300,To verify Page Layout,"1. User should logged in and navigate to the Accounts: Security page URL: ""https://app.nostro.co/security "".","Page layout should be clean, organized, and easy to navigate.","1. Open the Account: Security page.
+2. Check for proper alignment and readability of elements.",,,Shivam,,,,
+,,TC-301,To verify Valid Password Change.,"1. User should logged in and navigate to the Accounts: Security page URL: ""https://app.nostro.co/security "".","Password should be changed successfully, success message displayed.","1. Open the Account: Security page.
+2. Enter current password, new password meeting all requirements, and confirm new password.",,,Shivam,,,,
+,,TC-302,To verify Invalid Current Password.,"1. User should logged in and navigate to the Accounts: Security page URL: ""https://app.nostro.co/security "".","Entering the ""Invalid Current Password"", an error message should be displayed: ""Incorrect current password.""","1. Open the Account: Security page.
+2. Enter incorrect current password.",,,Shivam,,,,
+,,TC-303,To verify Empty Current Password.,"1. User should logged in and navigate to the Accounts: Security page URL: ""https://app.nostro.co/security "".","Keeping the ""Current Password"" field empty, an error message should be displayed: ""Enter your current password.""","1. Open the Account: Security page. 
+2. Leave current password field empty.",,,Shivam,,,,
+,,TC-304,To verify Empty New Password.,"1. User should logged in and navigate to the Accounts: Security page URL: ""https://app.nostro.co/security "".","Keeping the ""Current Password"" field empty, an error message should be displayed: ""Please enter a new password.""","1. Open the Account: Security page.
+2. Enter current password.
+3. Leave new password field empty.",,,Shivam,,,,
+,,TC-305,To verify Empty Confirm Password.,"1. User should logged in and navigate to the Accounts: Security page URL: ""https://app.nostro.co/security "".","Keeping the ""Confirm Password"" field empty, an error message should be displayed: ""Please confirm your new password.""","1. Open the Account: Security page.
+2. Enter current password.
+3. Enter new password.
+4. Leave confirm password field empty.",,,Shivam,,,,
+,,TC-306,To verify Mismatched Passwords.,"1. User should logged in and navigate to the Accounts: Security page URL: ""https://app.nostro.co/security "".","Entering the different password in the fileds, an error message should be displayed: ""Passwords do not match.""","1. Open the Account: Security page.
+2. Enter current password.
+3. Enter different values in new password and confirm password fields.",,,Shivam,,,,
+,,TC-307,To verify Weak Password.,"1. User should logged in and navigate to the Accounts: Security page URL: ""https://app.nostro.co/security "".","Entering the weak password, an error message should be displayed with specific requirements (""Password must be at least 8 characters long"").","1. Open the Account: Security page.
+2. Enter current password.
+3. Enter a password that does not meet the minimum requirements.",,,Shivam,,,,
+,,TC-308,"To verify ""Save Changes"" button is functional.","1. User should logged in and navigate to the Accounts: Security page URL: ""https://app.nostro.co/security "".","Clicking on the ""Save Changes"" button, It should change the current passwword into new password and saved in the database.","1. Open the Account: Security page.
+2. Enter current password, new password meeting all requirements, and confirm new password.
+3. Click on the ""Save Changes"" button.",,,Shivam,,,,
+,,TC-309,"To verify ""Cancel"" button is functional.","1. User should logged in and navigate to the Accounts: Security page URL: ""https://app.nostro.co/security "".","Clicking on the ""Cancel"" button, it should be navigated to the ""Home- Dashboard"" page.","1. Open the Account: Security page.
+2. Click on the ""Cancel"" button.",,,Shivam,,,,
+,,TC-310,"To verify Identity Verification ""Learn more"" hyperlink.","1. User should logged in and navigate to the Accounts: Security page URL: ""https://app.nostro.co/security "".","Cicking on the ""Learn more"" hyperlink, it should be navigated to tab Nostro Help Center page in a new tab.","1. Open the Account: Security page.
+2. Go to the Identity verification. 
+3. Click on the ""Learn more"" hyperlink.",,,Shivam,,,,
+,,TC-311,"To verify Identity Verification Status is ""VERIFIED""","1. User should logged in and navigate to the Accounts: Security page URL: ""https://app.nostro.co/security "".","If the Identity Verification it completed succesfully, then the current identity verification status should be displayed as ""VERIFIED"" (in Green Color background).","1. Open the Account: Security page.
+2. Go to the Identity verification. 
+3. Verify the Identity Verification status.",,,Shivam,,,,
+,,TC-312,To verify Completed Verifiication date display.,"1. User should logged in and navigate to the Accounts: Security page URL: ""https://app.nostro.co/security "".","If the Identity Verification it completed succesfully, then the ""Verification Date"" should be displayed.","1. Open the Account: Security page.
+2. Go to the Identity verification. 
+3. Verify the Verification Complted date is displayed.",,,Shivam,,,,
+,,TC-313,To verify Identity Verification Status displays Complete Verification button.,"1. User should logged in and navigate to the Accounts: Security page URL: ""https://app.nostro.co/security "".","Clicking on the ""Complete Verification"" button, it should be navigated to ""Identity Verification"" page for completing the overall verification of the user.","1. Open the Account: Security page.
+2. Go to the Identity verification. 
+3. Click on the ""Complete Verification"" button.",,,Shivam,,,,
+,,TC-314,To verify Two-Factor Authentication Status,"1. User should logged in and navigate to the Accounts: Security page URL: ""https://app.nostro.co/security "".","Display the current two-factor authentication status for both Authenticator App and SMS (""NOT CONFIGURED"").","1. Open the Account: Security page.
+2. Go to the Two-Factor Authentication. 
+3. Verify the current is correct.",,,Shivam,,,,
+,,TC-315,"To verify ""Configure"" Button (Authenticator App)","1. User should logged in and navigate to the Accounts: Security page URL: ""https://app.nostro.co/security "".","Clicking on the ""Configure"" button, it should open the iframe ""Scan QR Code"" from the Authenticator app.
+(Google Authenticator, Microsoft Authenticator, Authy, or 1Password)","1. Open the Account: Security page.
+2. Go to the Two-Factor Authentication.
+3. Click on ""Configure"" button for Authenticator App.",,,Shivam,,,,
+,,TC-316,"To verify ""Scan QR Code"" generate 6 digit code.","1. User should logged in and navigate to the Accounts: Security page URL: ""https://app.nostro.co/security "".",Scanning the QR code from an authenticator should generate the 6 digit code to enter in the field.,"1. Open the Account: Security page.
+2. Go to the Two-Factor Authentication.
+3. Click on ""Configure"" button for Authenticator App.
+4. Click on the ""Continue"" button. 
+5. Scan the QR code from the app.
+6. Verify the 6 digit code is generated",,,Shivam,,,,
+,,TC-317,To verify Valid 6 digit code.,"1. User should logged in and navigate to the Accounts: Security page URL: ""https://app.nostro.co/security "".","Entering the 6 digit valid code, the ""Continue"" button should be enabled.","1. Open the Account: Security page.
+2. Go to the Two-Factor Authentication.
+3. Click on ""Configure"" button for Authenticator App.
+4. Click on the ""Continue"" button. 
+5. Scan the QR code from the app.
+6. Enter the valid 6 digit code.",,,Shivam,,,,
+,,TC-318,To verify invalid 6 digit code.,"1. User should logged in and navigate to the Accounts: Security page URL: ""https://app.nostro.co/security "".","Entering the 6 digit invalid code, an error message: ""Please enter a valid, and current code."" should be displayed.","1. Open the Account: Security page.
+2. Go to the Two-Factor Authentication.
+3. Click on ""Configure"" button for Authenticator App.
+4. Click on the ""Continue"" button. 
+5. Scan the QR code from the app.
+6. Enter the invalid 6 digit code.",,,Shivam,,,,
+,,TC-319,"To verify ""BACK"" button.","1. User should logged in and navigate to the Accounts: Security page URL: ""https://app.nostro.co/security "".","Cicking on the ""BACK"" button, it should goto the previous iframe.","1. Open the Account: Security page.
+2. Go to the Two-Factor Authentication.
+3. Click on ""Configure"" button for Authenticator App.
+4. Click on the ""Continue"" button. 
+5. Scan the QR code from the app.
+6. Click on the ""BACK"" button.",,,Shivam,,,,
+,,TC-320,"To verify ""Continue"" button.","1. User should logged in and navigate to the Accounts: Security page URL: ""https://app.nostro.co/security "".","Cicking on the ""BACK"" button, it should goto the previous iframe.","1. Open the Account: Security page.
+2. Go to the Two-Factor Authentication.
+3. Click on ""Configure"" button for Authenticator App.
+4. Click on the ""Continue"" button. 
+5. Scan the QR code from the app.
+6. Enter the valid 6 digit code.
+7. Click on the ""Continue"" button and complete the process susccesfully..",,,Shivam,,,,
+,,TC-321,"To verify ""Configure"" Button (SMS)","1. User should logged in and navigate to the Accounts: Security page URL: ""https://app.nostro.co/security "".","Clicking on the ""Configure"" button, the user should be prompted to enter their mobile number for SMS verification.","1. Open the Account: Security page.
+2. Go to the Two-Factor Authentication.
+3. Click on ""Configure"" button for SMS Authentication and complete the process successfully.",,,Shivam,,,,
+,,TC-322,To verify Recent Devices,"1. User should logged in and navigate to the Accounts: Security page URL: ""https://app.nostro.co/security "".",List of recently logged-in devices should be displayed correctly.,"1. Open the Account: Security page.
+2. Go to the Recent Devices.
+3. View the list of recently logged-in devices are correct.",,,Shivam,,,,
+,,TC-323,To verify Pagination - Next Page,"1. User should logged in and navigate to the Accounts: Security page URL: ""https://app.nostro.co/security "".","Clicking on the ""Next"" button, it should display the next page of device history.","1. Open the Account: Security page.
+2. Go to the Recent Devices.
+3. Click on ""Next"" pagination button.",,,Shivam,,,,
+,,TC-324,To verify Pagination - Previous Page,"1. User should logged in and navigate to the Accounts: Security page URL: ""https://app.nostro.co/security "".","Clicking on the ""Previous"" button, it should display the previous page of device history.","1. Open the Account: Security page.
+2. Go to the Recent Devices.
+3. Click on ""Previous"" pagination button.",,,Shivam,,,,
+Accounts: Billing,,,,,,,,,,,,,
+,,TC-325,To verify Billing page loads properly.,"1. User should logged in and navigate to the Accounts: Billing page URL: ""https://app.nostro.co/billing "".","List of past payouts should be displayed with details (Account No., Type, Issued Date, Total, Status) .","1. Open the Account: Billing page.
+2. Verify the List of past payouts is displayed.",,,Shivam,,,,
+,,TC-326,To verify Page Layout.,"1. User should logged in and navigate to the Accounts: Billing page URL: ""https://app.nostro.co/billing "".","Page layout should be clean, organized, and easy to navigate.","1. Open the Account: Billing page.
+2. Check for proper alignment, spacing, and readability of elements.",,,Shivam,,,,
+,,TC-327,To verify Pagination - Next Page.,"1. User should logged in and navigate to the Accounts: Billing page URL: ""https://app.nostro.co/billing "".","Clicking on the ""Next"" button, it should display the next page of payouts history (if available).","1. Open the Account: Billing page.
+2. Click on ""Next"" pagination button.",,,Shivam,,,,
+,,TC-328,To verify Pagination - Previous Page.,"1. User should logged in and navigate to the Accounts: Billing page URL: ""https://app.nostro.co/billing "".","Clicking on the ""Previous"" button, it should display the previous page of payout history (if available).","1. Open the Account: Billing page.
+2. Click on ""Previous"" pagination button.",,,Shivam,,,,
+Support: Submit a Ticket,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+Support: Help center,,,,,,,,,,,,,
+,,TC-329,"To verify ""Help Center"" menu option.",1. User should logged in and navigate to the Support: Help Center page.,"Clicking on the ""Help Center"" option, it should be navigated to ""Nostro Help Center"" page in a new tab.","1. Open the Support menu option.
+2. Click on the ""Help Center"" option.",,,Shivam,,,,
+,,TC-330,To verify Help Center page loading.,1. User should logged in and navigate to the Support: Help Center page.,"Page Should be loaded completely and displays all elements correctly (header, search bar, categories, articles).","1. Open the Support menu option.
+2. Click on the ""Help Center"" option.
+3. Verify the page loads properly.",,,Shivam,,,,
+,,TC-331,To verify Back to Dashboard hyperlink.,1. User should logged in and navigate to the Support: Help Center page.,"Clicking on the ""Back to Dashboard"" hyperlink, th user should be redirected to the Nostro dashboard.","1. Open the Support menu option.
+2. Click on the ""Help Center"" option.
+3. Click on ""Back to Dashboard"" hyperlink.",,,Shivam,,,,
+,,TC-332,To verify Language Selection dropdown.,1. User should logged in and navigate to the Support: Help Center page.,"Clicking on the dropdown, available languages should be displayed, and the user should be able to select a different language.","1. Open the Support menu option.
+2. Click on the ""Help Center"" option.
+3. Click on ""Back to Dashboard"" hyperlink.
+4. Click on the language selector dropdown.",,,Shivam,,,,
+,,TC-333,To verify Search Functionality.,1. User should logged in and navigate to the Support: Help Center page.,Relevant articles matching the search query should be displayed.,"1. Open the Support menu option.
+2. Click on the ""Help Center"" option.
+3. Enter a search term in the search bar.",,,Shivam,,,,
+,,TC-334,To verify Invalid Search Query.,1. User should logged in and navigate to the Support: Help Center page.,"Searching an invalid query, it should displays an message: ""We coudn't find any articles for: ...""","1. Open the Support menu option.
+2. Click on the ""Help Center"" option.
+3. Enter an invalid or irrelevant search query.",,,Shivam,,,,
+,,TC-335,To verify Challenge Rules tab.,1. User should logged in and navigate to the Support: Help Center page.,"Clicking on the ""Challenge Rules"" tab, Articles related to Challenge Rules should be displayed.","1. Open the Support menu option.
+2. Click on the ""Help Center"" option.
+3. Click on ""Challenge Rules"" tab.",,,Shivam,,,,
+,,TC-336,To verify Dashboard tab.,1. User should logged in and navigate to the Support: Help Center page.,"Clicking on the ""Dashboard"" tab, Articles related to the Nostro Dashboard should be displayed.","1. Open the Support menu option.
+2. Click on the ""Help Center"" option.
+3. Click on ""Dashboard"" tab.",,,Shivam,,,,
+,,TC-337,To verify Security tab.,1. User should logged in and navigate to the Support: Help Center page.,"Clicking on the ""Security"" tab, Articles related to account security should be displayed.","1. Open the Support menu option.
+2. Click on the ""Help Center"" option.
+3. Click on ""Security"" tab.",,,Shivam,,,,
+,,TC-338,To verify Account tab.,1. User should logged in and navigate to the Support: Help Center page.,"Clicking on the ""Accounts"" tab, Articles related to Nostro accounts should be displayed.","1. Open the Support menu option.
+2. Click on the ""Help Center"" option.
+3. Click on ""Account"" tab.",,,Shivam,,,,
+,,TC-339,To verify Affiliates tab.,1. User should logged in and navigate to the Support: Help Center page.,"Clicking on the ""Affiliates"" tab, Articles related to the affiliate program shouold be displayed.","1. Open the Support menu option.
+2. Click on the ""Help Center"" option.
+3. Click on ""Affiliates"" tab.",,,Shivam,,,,
+,,TC-340,To verify F.A.Q.'s tab.,1. User should logged in and navigate to the Support: Help Center page.,"Clicking on the ""FAQ's"" tab, Frequently asked questions and their answers should be displayed.","1. Open the Support menu option.
+2. Click on the ""Help Center"" option.
+3. Click on ""F.A.Q.'s"" tab.",,,Shivam,,,,
+,,TC-341,"To verify ""Get Funded For Free"" button.",1. User should logged in and navigate to the Support: Help Center page.,"Clicking on the ""Get Funded For Free"" button, the user is redirected to ""New Challenge"" page.","1. Open the Support menu option.
+2. Click on the ""Help Center"" option.
+3. Click on ""Get Funded For Free"" button.",,,Shivam,,,,
+Support: FAQ,,,,,,,,,,,,,
+,,TC-342,To verify FAQ menu option.,1. User should logged in and navigate to the Support: FAQ page.,"Clicking on the ""FAQ's"" tab, Frequently asked questions and their answers should be displayed.","1. Open the Support menu option.
+2. Click on ""F.A.Q.'s"" tab.",,,Shivam,,,,

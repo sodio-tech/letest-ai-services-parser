@@ -1,0 +1,5 @@
+Title,Steps,Expected outcome
+Login to dashboard,"1. Enter username as 'kacikig477@lespedia.com'
+2. Enter Password as 'Test@12345'
+3. Click on login button
+4. Wait for dasboard to load",Dashboard must be loaded sucessfully
