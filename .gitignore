@@ -2,4 +2,7 @@
 venv/
 __pycache__/
 .dist/
-
+uploads/
+DOCS/
+data/
+sample_test_cases.csv

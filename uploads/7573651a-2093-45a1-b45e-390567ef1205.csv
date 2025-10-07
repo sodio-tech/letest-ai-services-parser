@@ -1,7 +1,0 @@
-Test Title,Test Steps,Expected Outcome
-Login Test,1. Navigate to login page 2. Enter valid username 3. Enter valid password 4. Click login button,User should be successfully logged in and redirected to dashboard
-Registration Test,a. Go to registration page b. Fill in all required fields c. Click submit button d. Verify email confirmation,New user account should be created and confirmation email sent
-Password Reset,i. Click forgot password link ii. Enter registered email address iii. Click send reset link iv. Check email for reset instructions,Password reset email should be sent to the user
-Product Search,Step 1: Open product catalog Step 2: Enter search term Step 3: Click search button Step 4: Verify results,Search should return relevant products matching the search term
-Add to Cart,• Select a product • Click add to cart button • Verify cart icon updates • Check cart contents,Product should be added to cart and cart count should increase
-Checkout Process,1) Login to account 2) Add items to cart 3) Proceed to checkout 4) Enter shipping details 5) Select payment method 6) Complete purchase,Order should be placed successfully and confirmation email sent

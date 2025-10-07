@@ -5,9 +5,10 @@ API Routes - FastAPI route handlers for CSV processing
 import os
 import uuid
 import asyncio
+import logging
 from datetime import datetime
 from typing import List, Optional
-from fastapi import APIRouter, HTTPException, UploadFile, File, Form, BackgroundTasks, Depends
+from fastapi import APIRouter, HTTPException, UploadFile, File, Form, BackgroundTasks, Depends, WebSocket, WebSocketDisconnect
 from fastapi.responses import JSONResponse, FileResponse
 import aiofiles
 import json
@@ -17,13 +18,19 @@ from .models import (
     BatchProcessingResponse, StatusResponse, HealthResponse, ErrorResponse,
     CSVInfoResponse, PatternAnalysisResponse, JSONOutputResponse,
     ConfigurationRequest, ConfigurationResponse, FileInfo, ProcessingJob,
-    ProcessingStatus, SingleProcessingRequest, SingleProcessingResponse
+    ProcessingStatus, SingleProcessingRequest, SingleProcessingResponse,
+    UploadTestCasesRequest, UploadTestCasesResponse, ProcessAndUploadRequest, ProcessAndUploadResponse
 )
 from .services import ProcessingService, FileService, ConfigurationService
-from .dependencies import get_processing_service, get_file_service, get_config_service
+from .external_api_service import ExternalAPIService
+from .websocket_manager import websocket_manager
+from .dependencies import get_processing_service, get_file_service, get_config_service, get_external_api_service
 
 # Create router
 router = APIRouter()
+
+# Setup logger
+logger = logging.getLogger(__name__)
 
 # In-memory storage for demo (in production, use Redis or database)
 processing_jobs = {}
@@ -405,8 +412,32 @@ async def process_batch_background(
             failed_count += 1
 
 
-# New single API endpoint
-@router.post("/process-csv", response_model=SingleProcessingResponse)
+# WebSocket endpoint for real-time processing updates
+@router.websocket("/ws/{session_id}")
+async def websocket_endpoint(websocket: WebSocket, session_id: str):
+    """WebSocket endpoint for real-time CSV processing updates"""
+    await websocket_manager.connect(websocket, session_id)
+    try:
+        while True:
+            # Keep connection alive and handle any incoming messages
+            data = await websocket.receive_text()
+            message = json.loads(data)
+            
+            # Handle client messages if needed
+            if message.get("type") == "ping":
+                await websocket_manager.send_message(session_id, {
+                    "type": "pong",
+                    "timestamp": datetime.utcnow().isoformat()
+                })
+                
+    except WebSocketDisconnect:
+        await websocket_manager.disconnect(session_id)
+    except Exception as e:
+        logger.error(f"WebSocket error for session {session_id}: {e}")
+        await websocket_manager.disconnect(session_id)
+
+# New single API endpoint with WebSocket support
+@router.post("/process-csv")
 async def process_csv_single(
     file: UploadFile = File(...),
     user_id: int = Form(...),
@@ -417,12 +448,263 @@ async def process_csv_single(
     output_format: str = Form("json"),
     include_metadata: bool = Form(False),
     sample_percentage: float = Form(0.2),
+    upload_to_external: bool = Form(True),
+    background_tasks: BackgroundTasks = BackgroundTasks(),
     processing_service: ProcessingService = Depends(get_processing_service),
-    file_service: FileService = Depends(get_file_service)
+    file_service: FileService = Depends(get_file_service),
+    external_api_service: ExternalAPIService = Depends(get_external_api_service)
 ):
     """
-    Single API endpoint for complete CSV processing
-    Upload CSV file and get processed JSON results in one request
+    Single API endpoint for complete CSV processing with WebSocket support
+    Returns WebSocket URL for real-time updates
+    """
+    import time
+    import tempfile
+    import os
+    
+    # Generate unique session ID
+    session_id = str(uuid.uuid4())
+    
+    try:
+        # Validate file type
+        if not file.filename.endswith('.csv'):
+            raise HTTPException(status_code=400, detail="Only CSV files are allowed")
+        
+        # Check file size (limit to 10MB for single processing)
+        max_size = 10 * 1024 * 1024  # 10MB
+        if file.size and file.size > max_size:
+            raise HTTPException(status_code=400, detail="File too large for single processing. Use /process endpoint for larger files.")
+        
+        # Create temporary file
+        with tempfile.NamedTemporaryFile(delete=False, suffix='.csv') as temp_file:
+            content = await file.read()
+            temp_file.write(content)
+            temp_file_path = temp_file.name
+        
+        # Return WebSocket URL immediately
+        websocket_url = f"/api/v1/ws/{session_id}"
+        
+        # Start background processing
+        background_tasks.add_task(
+            process_csv_with_websocket,
+            session_id,
+            temp_file_path,
+            user_id,
+            project_id,
+            environment_id,
+            category_id,
+            columns,
+            output_format,
+            include_metadata,
+            sample_percentage,
+            upload_to_external,
+            processing_service,
+            external_api_service
+        )
+        
+        return JSONResponse({
+            "success": True,
+            "session_id": session_id,
+            "websocket_url": websocket_url,
+            "message": "Processing started. Connect to WebSocket for real-time updates.",
+            "status": "processing_started"
+        })
+        
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+async def process_csv_with_websocket(
+    session_id: str,
+    temp_file_path: str,
+    user_id: int,
+    project_id: int,
+    environment_id: int,
+    category_id: int,
+    columns: str,
+    output_format: str,
+    include_metadata: bool,
+    sample_percentage: float,
+    upload_to_external: bool,
+    processing_service: ProcessingService,
+    external_api_service: ExternalAPIService
+):
+    """Background task for processing CSV with WebSocket updates"""
+    import time
+    import os
+    import json
+    
+    start_time = time.time()
+    
+    try:
+        # Wait for WebSocket connection
+        await websocket_manager.send_log(session_id, "info", "Waiting for WebSocket connection...")
+        
+        # Wait up to 30 seconds for client to connect
+        max_wait_time = 30
+        wait_time = 0
+        while session_id not in websocket_manager.active_connections and wait_time < max_wait_time:
+            await asyncio.sleep(1)
+            wait_time += 1
+        
+        if session_id not in websocket_manager.active_connections:
+            await websocket_manager.send_error(session_id, "WebSocket connection timeout. Client did not connect within 30 seconds.")
+            return
+        
+        await websocket_manager.send_log(session_id, "info", "WebSocket connected. Starting CSV processing...")
+        
+        # Parse columns parameter
+        try:
+            columns_mapping = json.loads(columns) if columns != "{}" else {}
+        except json.JSONDecodeError:
+            columns_mapping = {}
+        
+        # Step 1: Reading CSV file
+        await websocket_manager.send_progress(session_id, "reading", 1, 5, "Reading CSV file...")
+        await websocket_manager.send_log(session_id, "info", f"Reading CSV file: {temp_file_path}")
+        
+        # Step 2: Processing CSV file
+        await websocket_manager.send_progress(session_id, "processing", 2, 5, "Processing CSV file...")
+        await websocket_manager.send_log(session_id, "info", "Starting CSV processing with AI analysis...")
+        
+        result = await processing_service.process_csv_file(
+            temp_file_path,
+            output_format,
+            include_metadata,
+            sample_percentage,
+            columns_mapping
+        )
+        
+        processing_time = time.time() - start_time
+        
+        # Step 3: Processing complete
+        await websocket_manager.send_progress(session_id, "processing", 3, 5, "CSV processing completed")
+        await websocket_manager.send_log(session_id, "success", f"CSV processing completed in {processing_time:.2f} seconds")
+        
+        if result.get("success", False):
+            total_objects = result.get("total_objects", 0)
+            await websocket_manager.send_log(session_id, "info", f"Successfully processed {total_objects} test cases")
+            
+            # Step 4: Upload to external API (if requested)
+            upload_result = None
+            if upload_to_external:
+                await websocket_manager.send_progress(session_id, "uploading", 4, 5, "Uploading to external API...")
+                await websocket_manager.send_log(session_id, "info", "Uploading processed data to external API...")
+                
+                try:
+                    upload_result = external_api_service.upload_test_cases(
+                        user_id=user_id,
+                        project_id=project_id,
+                        environment_id=environment_id,
+                        category_id=category_id,
+                        total_objects=total_objects,
+                        data=result.get("json_objects", [])
+                    )
+                    
+                    if upload_result.get("success", False):
+                        await websocket_manager.send_log(session_id, "success", f"Successfully uploaded {total_objects} test cases to external API")
+                    else:
+                        await websocket_manager.send_log(session_id, "error", f"Failed to upload to external API: {upload_result.get('error', 'Unknown error')}")
+                        
+                except Exception as e:
+                    await websocket_manager.send_log(session_id, "error", f"Error uploading to external API: {str(e)}")
+                    upload_result = {
+                        "success": False,
+                        "error": str(e)
+                    }
+            else:
+                await websocket_manager.send_log(session_id, "info", "External API upload skipped")
+            
+            # Step 5: Final result
+            await websocket_manager.send_progress(session_id, "complete", 5, 5, "Processing completed successfully")
+            
+            final_result = {
+                "success": True,
+                "user_id": user_id,
+                "project_id": project_id,
+                "environment_id": environment_id,
+                "category_id": category_id,
+                "total_objects": total_objects,
+                "data": result.get("json_objects", []),
+                "processing_time": processing_time,
+                "upload_result": upload_result
+            }
+            
+            await websocket_manager.send_final_result(session_id, final_result)
+            await websocket_manager.send_log(session_id, "success", "Processing completed successfully!")
+            
+        else:
+            error_msg = result.get("error", "Unknown processing error")
+            await websocket_manager.send_error(session_id, f"CSV processing failed: {error_msg}")
+            
+    except Exception as e:
+        await websocket_manager.send_error(session_id, f"Unexpected error during processing: {str(e)}")
+        
+    finally:
+        # Clean up temporary file
+        if os.path.exists(temp_file_path):
+            os.unlink(temp_file_path)
+            await websocket_manager.send_log(session_id, "info", "Temporary file cleaned up")
+        
+        # Close WebSocket connection after a short delay
+        await asyncio.sleep(2)
+        await websocket_manager.disconnect(session_id)
+
+
+# New endpoints for external API integration
+@router.post("/upload-test-cases", response_model=UploadTestCasesResponse)
+async def upload_test_cases(
+    request: UploadTestCasesRequest,
+    external_api_service: ExternalAPIService = Depends(get_external_api_service)
+):
+    """
+    Upload processed test cases to external backend API
+    """
+    try:
+        result = external_api_service.upload_test_cases(
+            user_id=request.user_id,
+            project_id=request.project_id,
+            environment_id=request.environment_id,
+            category_id=request.category_id,
+            total_objects=request.total_objects,
+            data=request.data
+        )
+        
+        return UploadTestCasesResponse(
+            success=result.get("success", False),
+            message=result.get("message", "Upload completed"),
+            status_code=result.get("status_code"),
+            response=result.get("response"),
+            error=result.get("error")
+        )
+        
+    except Exception as e:
+        return UploadTestCasesResponse(
+            success=False,
+            message="Upload failed",
+            error=str(e)
+        )
+
+
+@router.post("/process-csv-and-upload", response_model=ProcessAndUploadResponse)
+async def process_csv_and_upload(
+    file: UploadFile = File(...),
+    user_id: int = Form(...),
+    project_id: int = Form(...),
+    environment_id: int = Form(...),
+    category_id: int = Form(...),
+    output_format: str = Form("json"),
+    include_metadata: bool = Form(False),
+    sample_percentage: float = Form(0.2),
+    columns: str = Form("{}"),
+    upload_to_external: bool = Form(True),
+    processing_service: ProcessingService = Depends(get_processing_service),
+    external_api_service: ExternalAPIService = Depends(get_external_api_service)
+):
+    """
+    Process CSV file and optionally upload to external API in one request
     """
     import time
     import tempfile
@@ -454,8 +736,8 @@ async def process_csv_single(
             except json.JSONDecodeError:
                 columns_mapping = {}
             
-            # Process CSV file directly
-            result = await processing_service.process_csv_file(
+            # Process CSV file
+            processing_result = await processing_service.process_csv_file(
                 temp_file_path,
                 output_format,
                 include_metadata,
@@ -465,17 +747,43 @@ async def process_csv_single(
             
             processing_time = time.time() - start_time
             
-            if result.get("success", False):
-                return SingleProcessingResponse(
+            if not processing_result.get("success", False):
+                return ProcessAndUploadResponse(
+                    success=False,
+                    message="CSV processing failed",
+                    processing_results=processing_result,
+                    error=processing_result.get("error", "Unknown processing error")
+                )
+            
+            # Prepare upload results
+            upload_results = None
+            if upload_to_external:
+                # Upload to external API
+                upload_result = external_api_service.upload_test_cases(
                     user_id=user_id,
                     project_id=project_id,
                     environment_id=environment_id,
                     category_id=category_id,
-                    total_objects=result.get("total_objects", 0),
-                    data=result.get("json_objects", [])
+                    total_objects=processing_result.get("total_objects", 0),
+                    data=processing_result.get("json_objects", [])
                 )
-            else:
-                raise HTTPException(status_code=500, detail=result.get("error", "Unknown processing error"))
+                upload_results = upload_result
+                
+                if not upload_result.get("success", False):
+                    return ProcessAndUploadResponse(
+                        success=False,
+                        message="CSV processing succeeded but upload failed",
+                        processing_results=processing_result,
+                        upload_results=upload_result,
+                        error=upload_result.get("error", "Upload failed")
+                    )
+            
+            return ProcessAndUploadResponse(
+                success=True,
+                message="Processing and upload completed successfully",
+                processing_results=processing_result,
+                upload_results=upload_results
+            )
                 
         finally:
             # Clean up temporary file
@@ -485,4 +793,30 @@ async def process_csv_single(
     except HTTPException:
         raise
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        return ProcessAndUploadResponse(
+            success=False,
+            message="Processing and upload failed",
+            error=str(e)
+        )
+
+
+@router.get("/external-api/test-connection")
+async def test_external_api_connection(
+    external_api_service: ExternalAPIService = Depends(get_external_api_service)
+):
+    """
+    Test connection to external backend API
+    """
+    try:
+        result = external_api_service.test_connection()
+        return {
+            "success": result.get("success", False),
+            "message": result.get("message", "Connection test completed"),
+            "error": result.get("error")
+        }
+    except Exception as e:
+        return {
+            "success": False,
+            "message": "Connection test failed",
+            "error": str(e)
+        }

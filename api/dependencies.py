@@ -5,6 +5,7 @@ API Dependencies - Dependency injection for FastAPI
 from functools import lru_cache
 from typing import Generator
 from .services import ProcessingService, FileService, ConfigurationService
+from .external_api_service import ExternalAPIService
 from src.utils.config import ConfigManager
 from src.utils.env_manager import EnvManager
 
@@ -14,6 +15,7 @@ _env_manager = None
 _processing_service = None
 _file_service = None
 _config_service = None
+_external_api_service = None
 
 
 def get_config_manager() -> ConfigManager:
@@ -57,3 +59,12 @@ def get_config_service() -> ConfigurationService:
         config_manager = get_config_manager()
         _config_service = ConfigurationService(config_manager)
     return _config_service
+
+
+def get_external_api_service() -> ExternalAPIService:
+    """Get external API service instance"""
+    global _external_api_service
+    if _external_api_service is None:
+        env_manager = get_env_manager()
+        _external_api_service = ExternalAPIService(env_manager)
+    return _external_api_service

@@ -1,6 +1,6 @@
 """
 LLM Analyzer Module
-Uses GPT-4o-mini for intelligent pattern recognition and text analysis
+Uses gpt-4o-mini for intelligent pattern recognition and text analysis
 """
 
 import re
@@ -33,7 +33,7 @@ class LLMAnalyzer:
     
     def _extract_patterns_with_llm(self) -> None:
         """
-        Use GPT-4o-mini to analyze and extract delimiter patterns
+        Use gpt-4o-mini to analyze and extract delimiter patterns
         """
         if not self.sample_data:
             logger.warning("No sample data available for pattern analysis")

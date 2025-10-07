@@ -194,7 +194,7 @@ class HeaderDetector:
     
     def find_columns_with_llm(self) -> Dict[str, Any]:
         """
-        Use GPT-4o-mini to intelligently identify column purposes
+        Use gpt-4o-mini to intelligently identify column purposes
         
         Returns:
             Dictionary containing column identification results

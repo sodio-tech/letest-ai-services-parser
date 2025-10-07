@@ -204,3 +204,363 @@
 2025-10-07 12:56:42 - csv_parser.processing - INFO - Step 5: Validating JSON output...
 2025-10-07 12:56:42 - csv_parser.processing - INFO - CSV processing completed successfully
 2025-10-07 12:59:08 - csv_parser.api_server - INFO - AI CSV Parser Agent API shutting down...
+2025-10-07 16:32:48 - csv_parser - INFO - Logging configured successfully
+2025-10-07 16:32:48 - csv_parser.api_server - INFO - Starting API server on 0.0.0.0:8000
+2025-10-07 16:32:48 - csv_parser - INFO - Logging configured successfully
+2025-10-07 16:32:48 - csv_parser.api_server - INFO - AI CSV Parser Agent API starting up...
+2025-10-07 16:32:48 - csv_parser.api_server - INFO - API server started successfully
+2025-10-07 16:34:12 - csv_parser - INFO - Logging configured successfully
+2025-10-07 16:34:13 - csv_parser.processing - INFO - OpenAI client initialized successfully
+2025-10-07 16:34:13 - csv_parser.processing - INFO - Starting CSV processing: C:\Users\athee\AppData\Local\Temp\tmpirhtvrvp.csv
+2025-10-07 16:34:13 - csv_parser.processing - INFO - Step 1: Reading CSV file...
+2025-10-07 16:34:13 - csv_parser.processing - INFO - Step 2: Detecting headers using LLM...
+2025-10-07 16:34:22 - csv_parser.processing - INFO - Step 3: Analyzing delimiter patterns using LLM...
+2025-10-07 16:34:27 - csv_parser.processing - ERROR - Error processing CSV: bad character range ◦-* at position 3
+2025-10-07 16:34:53 - csv_parser.api_server - INFO - AI CSV Parser Agent API shutting down...
+2025-10-07 16:34:59 - csv_parser - INFO - Logging configured successfully
+2025-10-07 16:34:59 - csv_parser.api_server - INFO - Starting API server on 0.0.0.0:8000
+2025-10-07 16:34:59 - csv_parser - INFO - Logging configured successfully
+2025-10-07 16:34:59 - csv_parser.api_server - INFO - AI CSV Parser Agent API starting up...
+2025-10-07 16:34:59 - csv_parser.api_server - INFO - API server started successfully
+2025-10-07 16:35:03 - csv_parser - INFO - Logging configured successfully
+2025-10-07 16:35:04 - csv_parser.processing - INFO - OpenAI client initialized successfully
+2025-10-07 16:35:04 - csv_parser.processing - INFO - Starting CSV processing: C:\Users\athee\AppData\Local\Temp\tmpgfupm2u2.csv
+2025-10-07 16:35:04 - csv_parser.processing - INFO - Step 1: Reading CSV file...
+2025-10-07 16:35:04 - csv_parser.processing - INFO - Step 2: Detecting headers using LLM...
+2025-10-07 16:35:09 - csv_parser.processing - INFO - Step 3: Analyzing delimiter patterns using LLM...
+2025-10-07 16:35:13 - csv_parser.processing - ERROR - Error processing CSV: bad character range ◦-* at position 3
+2025-10-07 16:35:55 - csv_parser.api_server - INFO - AI CSV Parser Agent API shutting down...
+2025-10-07 16:35:58 - csv_parser - INFO - Logging configured successfully
+2025-10-07 16:35:58 - csv_parser.api_server - INFO - Starting API server on 0.0.0.0:8000
+2025-10-07 16:35:58 - csv_parser - INFO - Logging configured successfully
+2025-10-07 16:35:58 - csv_parser.api_server - INFO - AI CSV Parser Agent API starting up...
+2025-10-07 16:35:58 - csv_parser.api_server - INFO - API server started successfully
+2025-10-07 16:36:04 - csv_parser - INFO - Logging configured successfully
+2025-10-07 16:36:05 - csv_parser.processing - INFO - OpenAI client initialized successfully
+2025-10-07 16:36:05 - csv_parser.processing - INFO - Starting CSV processing: C:\Users\athee\AppData\Local\Temp\tmp6hipn989.csv
+2025-10-07 16:36:05 - csv_parser.processing - INFO - Step 1: Reading CSV file...
+2025-10-07 16:36:05 - csv_parser.processing - INFO - Step 2: Detecting headers using LLM...
+2025-10-07 16:36:09 - csv_parser.processing - INFO - Step 3: Analyzing delimiter patterns using LLM...
+2025-10-07 16:36:12 - csv_parser.processing - INFO - Step 4: Generating JSON output...
+2025-10-07 16:36:17 - csv_parser.processing - INFO - Step 5: Validating JSON output...
+2025-10-07 16:36:17 - csv_parser.processing - INFO - CSV processing completed successfully
+2025-10-07 16:38:04 - csv_parser.processing - INFO - Starting CSV processing: C:\Users\athee\AppData\Local\Temp\tmp_5i933gv.csv
+2025-10-07 16:38:04 - csv_parser.processing - INFO - Step 1: Reading CSV file...
+2025-10-07 16:38:04 - csv_parser.processing - INFO - Step 2: Detecting headers using LLM...
+2025-10-07 16:38:06 - csv_parser.processing - INFO - Step 3: Analyzing delimiter patterns using LLM...
+2025-10-07 16:38:10 - csv_parser.processing - INFO - Step 4: Generating JSON output...
+2025-10-07 16:38:13 - csv_parser.processing - INFO - Step 5: Validating JSON output...
+2025-10-07 16:38:13 - csv_parser.processing - INFO - CSV processing completed successfully
+2025-10-07 16:39:31 - csv_parser.processing - INFO - Starting CSV processing: C:\Users\athee\AppData\Local\Temp\tmpt622pfu7.csv
+2025-10-07 16:39:31 - csv_parser.processing - INFO - Step 1: Reading CSV file...
+2025-10-07 16:39:31 - csv_parser.processing - INFO - Step 2: Detecting headers using LLM...
+2025-10-07 16:39:33 - csv_parser.processing - INFO - Step 3: Analyzing delimiter patterns using LLM...
+2025-10-07 16:39:36 - csv_parser.processing - INFO - Step 4: Generating JSON output...
+2025-10-07 16:39:39 - csv_parser.processing - INFO - Step 5: Validating JSON output...
+2025-10-07 16:39:39 - csv_parser.processing - INFO - CSV processing completed successfully
+2025-10-07 16:40:29 - csv_parser.api_server - INFO - AI CSV Parser Agent API shutting down...
+2025-10-07 16:40:34 - csv_parser - INFO - Logging configured successfully
+2025-10-07 16:40:34 - csv_parser.api_server - INFO - Starting API server on 0.0.0.0:8000
+2025-10-07 16:40:34 - csv_parser - INFO - Logging configured successfully
+2025-10-07 16:40:34 - csv_parser.api_server - INFO - AI CSV Parser Agent API starting up...
+2025-10-07 16:40:34 - csv_parser.api_server - INFO - API server started successfully
+2025-10-07 16:41:05 - csv_parser - INFO - Logging configured successfully
+2025-10-07 16:41:05 - csv_parser.processing - INFO - OpenAI client initialized successfully
+2025-10-07 16:41:05 - csv_parser.processing - INFO - Starting CSV processing: C:\Users\athee\AppData\Local\Temp\tmpg3t1h12z.csv
+2025-10-07 16:41:05 - csv_parser.processing - INFO - Step 1: Reading CSV file...
+2025-10-07 16:41:06 - csv_parser.processing - INFO - Step 2: Detecting headers using LLM...
+2025-10-07 16:41:08 - csv_parser.processing - INFO - Step 3: Analyzing delimiter patterns using LLM...
+2025-10-07 16:41:12 - csv_parser.processing - INFO - Step 4: Generating JSON output...
+2025-10-07 16:41:16 - csv_parser.processing - INFO - Step 5: Validating JSON output...
+2025-10-07 16:41:16 - csv_parser.processing - INFO - CSV processing completed successfully
+2025-10-07 16:41:59 - csv_parser.api_server - INFO - AI CSV Parser Agent API shutting down...
+2025-10-07 16:42:02 - csv_parser - INFO - Logging configured successfully
+2025-10-07 16:42:02 - csv_parser.api_server - INFO - Starting API server on 0.0.0.0:8000
+2025-10-07 16:42:02 - csv_parser - INFO - Logging configured successfully
+2025-10-07 16:42:02 - csv_parser.api_server - INFO - AI CSV Parser Agent API starting up...
+2025-10-07 16:42:02 - csv_parser.api_server - INFO - API server started successfully
+2025-10-07 16:42:04 - csv_parser - INFO - Logging configured successfully
+2025-10-07 16:42:05 - csv_parser.processing - INFO - OpenAI client initialized successfully
+2025-10-07 16:42:05 - csv_parser.processing - INFO - Starting CSV processing: C:\Users\athee\AppData\Local\Temp\tmp_oodsuoq.csv
+2025-10-07 16:42:05 - csv_parser.processing - INFO - Step 1: Reading CSV file...
+2025-10-07 16:42:05 - csv_parser.processing - INFO - Step 2: Detecting headers using LLM...
+2025-10-07 16:42:07 - csv_parser.processing - INFO - Step 3: Analyzing delimiter patterns using LLM...
+2025-10-07 16:42:11 - csv_parser.processing - INFO - Step 4: Generating JSON output...
+2025-10-07 16:42:14 - csv_parser.processing - INFO - Step 5: Validating JSON output...
+2025-10-07 16:42:14 - csv_parser.processing - INFO - CSV processing completed successfully
+2025-10-07 16:55:01 - csv_parser.api_server - INFO - AI CSV Parser Agent API shutting down...
+2025-10-07 16:55:03 - csv_parser - INFO - Logging configured successfully
+2025-10-07 16:55:03 - csv_parser.api_server - INFO - Starting API server on 0.0.0.0:8000
+2025-10-07 16:55:03 - csv_parser - INFO - Logging configured successfully
+2025-10-07 16:55:03 - csv_parser.api_server - INFO - AI CSV Parser Agent API starting up...
+2025-10-07 16:55:03 - csv_parser.api_server - INFO - API server started successfully
+2025-10-07 16:55:13 - csv_parser - INFO - Logging configured successfully
+2025-10-07 16:55:13 - csv_parser.processing - INFO - OpenAI client initialized successfully
+2025-10-07 16:55:13 - csv_parser.processing - INFO - Starting CSV processing: C:\Users\athee\AppData\Local\Temp\tmpwepmh7h2.csv
+2025-10-07 16:55:13 - csv_parser.processing - INFO - Step 1: Reading CSV file...
+2025-10-07 16:55:13 - csv_parser.processing - INFO - Step 2: Detecting headers using LLM...
+2025-10-07 16:55:17 - csv_parser.processing - INFO - Step 3: Analyzing delimiter patterns using LLM...
+2025-10-07 16:55:20 - csv_parser.processing - INFO - Step 4: Generating JSON output...
+2025-10-07 16:55:27 - csv_parser.processing - INFO - Step 5: Validating JSON output...
+2025-10-07 16:55:27 - csv_parser.processing - INFO - CSV processing completed successfully
+2025-10-07 17:04:29 - csv_parser.api_server - INFO - AI CSV Parser Agent API shutting down...
+2025-10-07 17:04:33 - csv_parser - INFO - Logging configured successfully
+2025-10-07 17:04:33 - csv_parser.api_server - INFO - Starting API server on 0.0.0.0:8000
+2025-10-07 17:04:33 - csv_parser - INFO - Logging configured successfully
+2025-10-07 17:04:33 - csv_parser.api_server - INFO - AI CSV Parser Agent API starting up...
+2025-10-07 17:04:33 - csv_parser.api_server - INFO - API server started successfully
+2025-10-07 17:05:03 - csv_parser.api_server - INFO - AI CSV Parser Agent API shutting down...
+2025-10-07 17:05:06 - csv_parser - INFO - Logging configured successfully
+2025-10-07 17:05:06 - csv_parser.api_server - INFO - Starting API server on 0.0.0.0:8000
+2025-10-07 17:05:06 - csv_parser - INFO - Logging configured successfully
+2025-10-07 17:05:06 - csv_parser.api_server - INFO - AI CSV Parser Agent API starting up...
+2025-10-07 17:05:06 - csv_parser.api_server - INFO - API server started successfully
+2025-10-07 17:06:59 - csv_parser - INFO - Logging configured successfully
+2025-10-07 17:06:59 - csv_parser.processing - INFO - OpenAI client initialized successfully
+2025-10-07 17:07:17 - csv_parser.api_server - INFO - AI CSV Parser Agent API shutting down...
+2025-10-07 17:07:20 - csv_parser - INFO - Logging configured successfully
+2025-10-07 17:07:20 - csv_parser.api_server - INFO - Starting API server on 0.0.0.0:8000
+2025-10-07 17:07:20 - csv_parser - INFO - Logging configured successfully
+2025-10-07 17:07:20 - csv_parser.api_server - INFO - AI CSV Parser Agent API starting up...
+2025-10-07 17:07:20 - csv_parser.api_server - INFO - API server started successfully
+2025-10-07 17:07:40 - csv_parser - INFO - Logging configured successfully
+2025-10-07 17:07:41 - csv_parser.processing - INFO - OpenAI client initialized successfully
+2025-10-07 17:14:00 - csv_parser.api_server - INFO - AI CSV Parser Agent API shutting down...
+2025-10-07 17:14:05 - csv_parser - INFO - Logging configured successfully
+2025-10-07 17:14:05 - csv_parser.api_server - INFO - Starting API server on 0.0.0.0:8000
+2025-10-07 17:14:05 - csv_parser - INFO - Logging configured successfully
+2025-10-07 17:14:05 - csv_parser.api_server - INFO - AI CSV Parser Agent API starting up...
+2025-10-07 17:14:05 - csv_parser.api_server - INFO - API server started successfully
+2025-10-07 17:14:07 - csv_parser - INFO - Logging configured successfully
+2025-10-07 17:14:08 - csv_parser.processing - INFO - OpenAI client initialized successfully
+2025-10-07 17:14:24 - csv_parser.api_server - INFO - AI CSV Parser Agent API shutting down...
+2025-10-07 17:14:38 - csv_parser - INFO - Logging configured successfully
+2025-10-07 17:14:38 - csv_parser.api_server - INFO - Starting API server on 0.0.0.0:8000
+2025-10-07 17:14:38 - csv_parser - INFO - Logging configured successfully
+2025-10-07 17:14:38 - csv_parser.api_server - INFO - AI CSV Parser Agent API starting up...
+2025-10-07 17:14:38 - csv_parser.api_server - INFO - API server started successfully
+2025-10-07 17:14:39 - csv_parser - INFO - Logging configured successfully
+2025-10-07 17:14:40 - csv_parser.processing - INFO - OpenAI client initialized successfully
+2025-10-07 17:16:09 - csv_parser.processing - INFO - Starting CSV processing: C:\Users\athee\AppData\Local\Temp\tmpuf_1l77h.csv
+2025-10-07 17:16:09 - csv_parser.processing - INFO - Step 1: Reading CSV file...
+2025-10-07 17:16:09 - csv_parser.processing - INFO - Step 2: Detecting headers using LLM...
+2025-10-07 17:16:13 - csv_parser.processing - INFO - Step 3: Analyzing delimiter patterns using LLM...
+2025-10-07 17:16:16 - csv_parser.processing - INFO - Step 4: Generating JSON output...
+2025-10-07 17:16:18 - csv_parser.processing - INFO - Step 5: Validating JSON output...
+2025-10-07 17:16:18 - csv_parser.processing - INFO - CSV processing completed successfully
+2025-10-07 17:16:30 - csv_parser.processing - INFO - Starting CSV processing: C:\Users\athee\AppData\Local\Temp\tmpwj6h1q42.csv
+2025-10-07 17:16:30 - csv_parser.processing - INFO - Step 1: Reading CSV file...
+2025-10-07 17:16:30 - csv_parser.processing - INFO - Step 2: Detecting headers using LLM...
+2025-10-07 17:16:33 - csv_parser.processing - INFO - Step 3: Analyzing delimiter patterns using LLM...
+2025-10-07 17:16:37 - csv_parser.processing - INFO - Step 4: Generating JSON output...
+2025-10-07 17:16:41 - csv_parser.processing - INFO - Step 5: Validating JSON output...
+2025-10-07 17:16:41 - csv_parser.processing - INFO - CSV processing completed successfully
+2025-10-07 17:22:06 - csv_parser.api_server - INFO - AI CSV Parser Agent API shutting down...
+2025-10-07 17:22:09 - csv_parser - INFO - Logging configured successfully
+2025-10-07 17:22:09 - csv_parser.api_server - INFO - Starting API server on 0.0.0.0:8000
+2025-10-07 17:22:09 - csv_parser - INFO - Logging configured successfully
+2025-10-07 17:22:09 - csv_parser.api_server - INFO - AI CSV Parser Agent API starting up...
+2025-10-07 17:22:09 - csv_parser.api_server - INFO - API server started successfully
+2025-10-07 17:22:11 - csv_parser - INFO - Logging configured successfully
+2025-10-07 17:22:11 - csv_parser.processing - INFO - OpenAI client initialized successfully
+2025-10-07 17:23:53 - csv_parser.api_server - INFO - AI CSV Parser Agent API shutting down...
+2025-10-07 17:23:56 - csv_parser - INFO - Logging configured successfully
+2025-10-07 17:23:56 - csv_parser.api_server - INFO - Starting API server on 0.0.0.0:8000
+2025-10-07 17:23:56 - csv_parser - INFO - Logging configured successfully
+2025-10-07 17:23:56 - csv_parser.api_server - INFO - AI CSV Parser Agent API starting up...
+2025-10-07 17:23:56 - csv_parser.api_server - INFO - API server started successfully
+2025-10-07 17:23:58 - csv_parser - INFO - Logging configured successfully
+2025-10-07 17:23:59 - csv_parser.processing - INFO - OpenAI client initialized successfully
+2025-10-07 17:28:58 - csv_parser.api_server - INFO - AI CSV Parser Agent API shutting down...
+2025-10-07 17:29:02 - csv_parser - INFO - Logging configured successfully
+2025-10-07 17:29:02 - csv_parser.api_server - INFO - Starting API server on 0.0.0.0:8000
+2025-10-07 17:29:02 - csv_parser - INFO - Logging configured successfully
+2025-10-07 17:29:02 - csv_parser.api_server - INFO - AI CSV Parser Agent API starting up...
+2025-10-07 17:29:02 - csv_parser.api_server - INFO - API server started successfully
+2025-10-07 17:29:26 - csv_parser - INFO - Logging configured successfully
+2025-10-07 17:29:26 - csv_parser.processing - INFO - OpenAI client initialized successfully
+2025-10-07 17:30:43 - csv_parser.api_server - INFO - AI CSV Parser Agent API shutting down...
+2025-10-07 17:30:46 - csv_parser - INFO - Logging configured successfully
+2025-10-07 17:30:46 - csv_parser.api_server - INFO - Starting API server on 0.0.0.0:8000
+2025-10-07 17:30:46 - csv_parser - INFO - Logging configured successfully
+2025-10-07 17:30:46 - csv_parser.api_server - INFO - AI CSV Parser Agent API starting up...
+2025-10-07 17:30:46 - csv_parser.api_server - INFO - API server started successfully
+2025-10-07 17:30:48 - csv_parser - INFO - Logging configured successfully
+2025-10-07 17:30:49 - csv_parser.processing - INFO - OpenAI client initialized successfully
+2025-10-07 17:30:49 - csv_parser.api_server - ERROR - Unhandled exception: AI_KEY not set in environment
+Traceback (most recent call last):
+  File "C:\Users\athee\OneDrive\Documents\Sodio\Github\letest-ai-services-parser\venv\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\athee\OneDrive\Documents\Sodio\Github\letest-ai-services-parser\venv\Lib\site-packages\starlette\middleware\trustedhost.py", line 36, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\athee\OneDrive\Documents\Sodio\Github\letest-ai-services-parser\venv\Lib\site-packages\starlette\middleware\cors.py", line 85, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\athee\OneDrive\Documents\Sodio\Github\letest-ai-services-parser\venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\athee\OneDrive\Documents\Sodio\Github\letest-ai-services-parser\venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\athee\OneDrive\Documents\Sodio\Github\letest-ai-services-parser\venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\athee\OneDrive\Documents\Sodio\Github\letest-ai-services-parser\venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\athee\OneDrive\Documents\Sodio\Github\letest-ai-services-parser\venv\Lib\site-packages\starlette\routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\athee\OneDrive\Documents\Sodio\Github\letest-ai-services-parser\venv\Lib\site-packages\starlette\routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\athee\OneDrive\Documents\Sodio\Github\letest-ai-services-parser\venv\Lib\site-packages\starlette\routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\athee\OneDrive\Documents\Sodio\Github\letest-ai-services-parser\venv\Lib\site-packages\fastapi\routing.py", line 123, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\athee\OneDrive\Documents\Sodio\Github\letest-ai-services-parser\venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\athee\OneDrive\Documents\Sodio\Github\letest-ai-services-parser\venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\athee\OneDrive\Documents\Sodio\Github\letest-ai-services-parser\venv\Lib\site-packages\fastapi\routing.py", line 109, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\athee\OneDrive\Documents\Sodio\Github\letest-ai-services-parser\venv\Lib\site-packages\fastapi\routing.py", line 377, in app
+    solved_result = await solve_dependencies(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\athee\OneDrive\Documents\Sodio\Github\letest-ai-services-parser\venv\Lib\site-packages\fastapi\dependencies\utils.py", line 648, in solve_dependencies
+    solved = await run_in_threadpool(call, **solved_result.values)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\athee\OneDrive\Documents\Sodio\Github\letest-ai-services-parser\venv\Lib\site-packages\starlette\concurrency.py", line 38, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\athee\OneDrive\Documents\Sodio\Github\letest-ai-services-parser\venv\Lib\site-packages\anyio\to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\athee\OneDrive\Documents\Sodio\Github\letest-ai-services-parser\venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 2485, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\athee\OneDrive\Documents\Sodio\Github\letest-ai-services-parser\venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 976, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\athee\OneDrive\Documents\Sodio\Github\letest-ai-services-parser\api\debug_hmac.py", line 112, in debug_hmac_validation
+    if not verify_signature(payload, timestamp_for_signature, x_signature):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\athee\OneDrive\Documents\Sodio\Github\letest-ai-services-parser\api\debug_hmac.py", line 21, in verify_signature
+    raise ValueError('AI_KEY not set in environment')
+ValueError: AI_KEY not set in environment
+2025-10-07 17:32:02 - csv_parser.api_server - INFO - AI CSV Parser Agent API shutting down...
+2025-10-07 17:32:06 - csv_parser - INFO - Logging configured successfully
+2025-10-07 17:32:06 - csv_parser.api_server - INFO - Starting API server on 0.0.0.0:8000
+2025-10-07 17:32:06 - csv_parser - INFO - Logging configured successfully
+2025-10-07 17:32:06 - csv_parser.api_server - INFO - AI CSV Parser Agent API starting up...
+2025-10-07 17:32:06 - csv_parser.api_server - INFO - API server started successfully
+2025-10-07 17:32:15 - csv_parser - INFO - Logging configured successfully
+2025-10-07 17:32:15 - csv_parser.processing - INFO - OpenAI client initialized successfully
+2025-10-07 17:34:38 - csv_parser.api_server - INFO - AI CSV Parser Agent API shutting down...
+2025-10-07 17:34:41 - csv_parser - INFO - Logging configured successfully
+2025-10-07 17:34:41 - csv_parser.api_server - INFO - Starting API server on 0.0.0.0:8000
+2025-10-07 17:34:41 - csv_parser - INFO - Logging configured successfully
+2025-10-07 17:34:41 - csv_parser.api_server - INFO - AI CSV Parser Agent API starting up...
+2025-10-07 17:34:41 - csv_parser.api_server - INFO - API server started successfully
+2025-10-07 17:34:45 - csv_parser - INFO - Logging configured successfully
+2025-10-07 17:34:46 - csv_parser.processing - INFO - OpenAI client initialized successfully
+2025-10-07 17:36:09 - csv_parser.api_server - INFO - AI CSV Parser Agent API shutting down...
+2025-10-07 17:36:35 - csv_parser - INFO - Logging configured successfully
+2025-10-07 17:36:35 - csv_parser.api_server - INFO - Starting API server on 0.0.0.0:8000
+2025-10-07 17:36:35 - csv_parser - INFO - Logging configured successfully
+2025-10-07 17:36:35 - csv_parser.api_server - INFO - AI CSV Parser Agent API starting up...
+2025-10-07 17:36:35 - csv_parser.api_server - INFO - API server started successfully
+2025-10-07 17:36:37 - csv_parser - INFO - Logging configured successfully
+2025-10-07 17:36:38 - csv_parser.processing - INFO - OpenAI client initialized successfully
+2025-10-07 17:36:38 - csv_parser.api_server - ERROR - Unhandled exception: Stream consumed
+Traceback (most recent call last):
+  File "C:\Users\athee\OneDrive\Documents\Sodio\Github\letest-ai-services-parser\venv\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\athee\OneDrive\Documents\Sodio\Github\letest-ai-services-parser\venv\Lib\site-packages\starlette\middleware\trustedhost.py", line 36, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\athee\OneDrive\Documents\Sodio\Github\letest-ai-services-parser\venv\Lib\site-packages\starlette\middleware\cors.py", line 85, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\athee\OneDrive\Documents\Sodio\Github\letest-ai-services-parser\venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\athee\OneDrive\Documents\Sodio\Github\letest-ai-services-parser\venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\athee\OneDrive\Documents\Sodio\Github\letest-ai-services-parser\venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\athee\OneDrive\Documents\Sodio\Github\letest-ai-services-parser\venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\athee\OneDrive\Documents\Sodio\Github\letest-ai-services-parser\venv\Lib\site-packages\starlette\routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\athee\OneDrive\Documents\Sodio\Github\letest-ai-services-parser\venv\Lib\site-packages\starlette\routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\athee\OneDrive\Documents\Sodio\Github\letest-ai-services-parser\venv\Lib\site-packages\starlette\routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\athee\OneDrive\Documents\Sodio\Github\letest-ai-services-parser\venv\Lib\site-packages\fastapi\routing.py", line 123, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\athee\OneDrive\Documents\Sodio\Github\letest-ai-services-parser\venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\athee\OneDrive\Documents\Sodio\Github\letest-ai-services-parser\venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\athee\OneDrive\Documents\Sodio\Github\letest-ai-services-parser\venv\Lib\site-packages\fastapi\routing.py", line 109, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\athee\OneDrive\Documents\Sodio\Github\letest-ai-services-parser\venv\Lib\site-packages\fastapi\routing.py", line 377, in app
+    solved_result = await solve_dependencies(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\athee\OneDrive\Documents\Sodio\Github\letest-ai-services-parser\venv\Lib\site-packages\fastapi\dependencies\utils.py", line 646, in solve_dependencies
+    solved = await call(**solved_result.values)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\athee\OneDrive\Documents\Sodio\Github\letest-ai-services-parser\api\debug_hmac.py", line 80, in debug_hmac_validation
+    body = await request.body()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\athee\OneDrive\Documents\Sodio\Github\letest-ai-services-parser\venv\Lib\site-packages\starlette\requests.py", line 242, in body
+    async for chunk in self.stream():
+  File "C:\Users\athee\OneDrive\Documents\Sodio\Github\letest-ai-services-parser\venv\Lib\site-packages\starlette\requests.py", line 225, in stream
+    raise RuntimeError("Stream consumed")
+RuntimeError: Stream consumed
+2025-10-07 17:36:59 - csv_parser.api_server - INFO - AI CSV Parser Agent API shutting down...
+2025-10-07 17:38:40 - csv_parser - INFO - Logging configured successfully
+2025-10-07 17:38:40 - csv_parser.api_server - INFO - Starting API server on 0.0.0.0:8000
+2025-10-07 17:38:40 - csv_parser - INFO - Logging configured successfully
+2025-10-07 17:38:40 - csv_parser.api_server - INFO - AI CSV Parser Agent API starting up...
+2025-10-07 17:38:40 - csv_parser.api_server - INFO - API server started successfully
+2025-10-07 17:38:42 - csv_parser - INFO - Logging configured successfully
+2025-10-07 17:38:43 - csv_parser.processing - INFO - OpenAI client initialized successfully
+2025-10-07 17:38:43 - csv_parser.processing - INFO - Starting CSV processing: C:\Users\athee\AppData\Local\Temp\tmpd6x8kumb.csv
+2025-10-07 17:38:43 - csv_parser.processing - INFO - Step 1: Reading CSV file...
+2025-10-07 17:38:43 - csv_parser.processing - INFO - Step 2: Detecting headers using LLM...
+2025-10-07 17:38:56 - csv_parser.processing - INFO - Step 3: Analyzing delimiter patterns using LLM...
+2025-10-07 17:38:59 - csv_parser.processing - INFO - Step 4: Generating JSON output...
+2025-10-07 17:39:04 - csv_parser.processing - INFO - Step 5: Validating JSON output...
+2025-10-07 17:39:04 - csv_parser.processing - INFO - CSV processing completed successfully
+2025-10-07 17:41:21 - csv_parser - INFO - Logging configured successfully
+2025-10-07 17:41:21 - csv_parser.api_server - INFO - Starting API server on 0.0.0.0:8000
+2025-10-07 17:41:21 - csv_parser - INFO - Logging configured successfully
+2025-10-07 17:41:21 - csv_parser.api_server - INFO - AI CSV Parser Agent API starting up...
+2025-10-07 17:41:21 - csv_parser.api_server - INFO - API server started successfully
+2025-10-07 17:41:35 - csv_parser - INFO - Logging configured successfully
+2025-10-07 17:41:35 - csv_parser.processing - INFO - OpenAI client initialized successfully
+2025-10-07 17:41:35 - csv_parser.processing - INFO - Starting CSV processing: C:\Users\athee\AppData\Local\Temp\tmpwz737neq.csv
+2025-10-07 17:41:35 - csv_parser.processing - INFO - Step 1: Reading CSV file...
+2025-10-07 17:41:35 - csv_parser.processing - INFO - Step 2: Detecting headers using LLM...
+2025-10-07 17:41:38 - csv_parser.processing - INFO - Step 3: Analyzing delimiter patterns using LLM...
+2025-10-07 17:41:41 - csv_parser.processing - INFO - Step 4: Generating JSON output...
+2025-10-07 17:41:45 - csv_parser.processing - INFO - Step 5: Validating JSON output...
+2025-10-07 17:41:45 - csv_parser.processing - INFO - CSV processing completed successfully
+2025-10-07 17:47:35 - csv_parser.api_server - INFO - AI CSV Parser Agent API shutting down...
+2025-10-07 17:57:39 - csv_parser - INFO - Logging configured successfully
+2025-10-07 17:57:39 - csv_parser.api_server - INFO - Starting API server on 0.0.0.0:8000
+2025-10-07 17:57:39 - csv_parser - INFO - Logging configured successfully
+2025-10-07 17:57:39 - csv_parser.api_server - INFO - AI CSV Parser Agent API starting up...
+2025-10-07 17:57:39 - csv_parser.api_server - INFO - API server started successfully
+2025-10-07 17:57:46 - csv_parser - INFO - Logging configured successfully
+2025-10-07 17:57:46 - csv_parser.processing - INFO - OpenAI client initialized successfully
+2025-10-07 17:58:32 - csv_parser.api_server - INFO - AI CSV Parser Agent API shutting down...
+2025-10-07 17:59:49 - csv_parser - INFO - Logging configured successfully
+2025-10-07 17:59:49 - csv_parser.api_server - INFO - Starting API server on 0.0.0.0:8000
+2025-10-07 17:59:49 - csv_parser - INFO - Logging configured successfully
+2025-10-07 17:59:49 - csv_parser.api_server - INFO - AI CSV Parser Agent API starting up...
+2025-10-07 17:59:49 - csv_parser.api_server - INFO - API server started successfully
+2025-10-07 17:59:54 - csv_parser - INFO - Logging configured successfully
+2025-10-07 17:59:54 - csv_parser.processing - INFO - OpenAI client initialized successfully
+2025-10-07 18:00:05 - csv_parser.processing - INFO - Starting CSV processing: C:\Users\athee\AppData\Local\Temp\tmp52uj1d6q.csv
+2025-10-07 18:00:05 - csv_parser.processing - INFO - Step 1: Reading CSV file...
+2025-10-07 18:00:05 - csv_parser.processing - INFO - Step 2: Detecting headers using LLM...
+2025-10-07 18:00:09 - csv_parser.processing - INFO - Step 3: Analyzing delimiter patterns using LLM...
+2025-10-07 18:00:12 - csv_parser.processing - INFO - Step 4: Generating JSON output...
+2025-10-07 18:00:16 - csv_parser.processing - INFO - Step 5: Validating JSON output...
+2025-10-07 18:00:16 - csv_parser.processing - INFO - CSV processing completed successfully
+2025-10-07 18:00:52 - csv_parser.api_server - INFO - AI CSV Parser Agent API shutting down...

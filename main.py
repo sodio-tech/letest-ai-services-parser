@@ -1,6 +1,6 @@
 """
 AI CSV Parser Agent - Main Pipeline
-Processes CSV files using GPT-4o-mini for intelligent pattern recognition
+Processes CSV files using gpt-4o-mini for intelligent pattern recognition
 """
 
 import os

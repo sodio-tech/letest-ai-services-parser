@@ -33,7 +33,7 @@ logger = logger_setup.get_logger("api_server")
 # Create FastAPI app
 app = FastAPI(
     title="AI CSV Parser Agent API",
-    description="Intelligent CSV to JSON conversion using GPT-4o-mini",
+    description="Intelligent CSV to JSON conversion using gpt-4o-mini",
     version="1.0.0",
     docs_url="/docs",
     redoc_url="/redoc",
@@ -133,6 +133,9 @@ async def api_root():
             "upload": "/api/v1/upload",
             "process": "/api/v1/process",
             "process_csv": "/api/v1/process-csv",
+            "process_csv_and_upload": "/api/v1/process-csv-and-upload",
+            "upload_test_cases": "/api/v1/upload-test-cases",
+            "test_external_connection": "/api/v1/external-api/test-connection",
             "files": "/api/v1/files",
             "config": "/api/v1/config"
         },

@@ -1,5 +1,5 @@
 """
-OpenAI Client Module for GPT-4o-mini Integration
+OpenAI Client Module for gpt-4o-mini Integration
 Handles all LLM interactions for CSV parsing tasks
 """
 
@@ -13,7 +13,7 @@ logger = logging.getLogger(__name__)
 
 
 class OpenAIClient:
-    """Client for interacting with OpenAI GPT-4o-mini API"""
+    """Client for interacting with OpenAI gpt-4o-mini API"""
     
     def __init__(self, api_key: str, model: str = "gpt-4o-mini", 
                  temperature: float = 0.1, max_tokens: int = 2000, 
@@ -69,7 +69,7 @@ class OpenAIClient:
     
     def analyze_text_patterns(self, text_samples: List[str]) -> Dict[str, Any]:
         """
-        Use GPT-4o-mini to analyze delimiter patterns in text samples
+        Use gpt-4o-mini to analyze delimiter patterns in text samples
         
         Args:
             text_samples: List of text samples to analyze

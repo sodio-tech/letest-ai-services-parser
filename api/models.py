@@ -178,3 +178,45 @@ class SingleProcessingResponse(BaseModel):
     category_id: int
     total_objects: int
     data: List[Dict[str, Any]]
+
+
+# New models for external API upload
+class UploadTestCasesRequest(BaseModel):
+    """Request model for uploading test cases to external API"""
+    user_id: int = Field(..., description="User ID")
+    project_id: int = Field(..., description="Project ID")
+    environment_id: int = Field(..., description="Environment ID")
+    category_id: int = Field(..., description="Category ID")
+    total_objects: int = Field(..., description="Total number of test case objects")
+    data: List[Dict[str, Any]] = Field(..., description="List of test case data")
+
+
+class UploadTestCasesResponse(BaseModel):
+    """Response model for test cases upload"""
+    success: bool
+    message: str
+    status_code: Optional[int] = None
+    response: Optional[Dict[str, Any]] = None
+    error: Optional[str] = None
+
+
+class ProcessAndUploadRequest(BaseModel):
+    """Request model for processing CSV and uploading to external API"""
+    user_id: int = Field(..., description="User ID")
+    project_id: int = Field(..., description="Project ID")
+    environment_id: int = Field(..., description="Environment ID")
+    category_id: int = Field(..., description="Category ID")
+    output_format: str = Field(default="json", description="Output format (json)")
+    include_metadata: bool = Field(default=False, description="Include processing metadata")
+    sample_percentage: float = Field(default=0.2, ge=0.1, le=1.0, description="Percentage of data to sample for analysis")
+    columns: str = Field(default="{}", description="JSON string for column mapping")
+    upload_to_external: bool = Field(default=True, description="Whether to upload to external API after processing")
+
+
+class ProcessAndUploadResponse(BaseModel):
+    """Response model for process and upload operation"""
+    success: bool
+    message: str
+    processing_results: Optional[Dict[str, Any]] = None
+    upload_results: Optional[Dict[str, Any]] = None
+    error: Optional[str] = None
