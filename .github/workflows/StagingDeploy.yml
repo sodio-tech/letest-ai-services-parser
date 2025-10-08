@@ -1,0 +1,25 @@
+name: Deploy to Staging Server
+
+on:
+  push:
+    branches:
+      - staging
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checking out code
+        uses: actions/checkout@v4
+
+      - name: Execute commands on EC2
+        uses: appleboy/ssh-action@v1.2.2
+        with:
+            host: ${{ secrets.STAGE_SERVER_IP }}
+            username: ${{ secrets.STAGE_SERVER_USER }}
+            key: ${{ secrets.STAGE_SSH_PRIVATE_KEY }}
+            script: |
+              cd ${{ secrets.DEV_PATH_STAGING }}
+              git pull
+              source .venv/bin/activate
+              pip install -r requirements.txt
+              sudo systemctl restart staging-ai-services-parser.service
