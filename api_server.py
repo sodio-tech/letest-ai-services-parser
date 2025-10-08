@@ -151,7 +151,7 @@ def create_app() -> FastAPI:
 if __name__ == "__main__":
     # Get configuration
     host = os.getenv("API_HOST", "0.0.0.0")
-    port = int(os.getenv("API_PORT", "8000"))
+    port = int(os.getenv("API_PORT", "8001"))
     reload = os.getenv("API_RELOAD", "false").lower() == "true"
     
     logger.info(f"Starting API server on {host}:{port}")
